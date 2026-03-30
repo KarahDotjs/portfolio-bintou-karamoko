@@ -809,11 +809,15 @@ section {
   padding: 90px 6%;
 }
 .exp-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 18px;
 }
 .exp-card {
+  flex: 1 1 calc(33.333% - 18px);
+  max-width: 340px;
+  min-width: 280px;
   background: var(--card-bg);
   border-radius: 18px;
   padding: 28px 22px 24px;
@@ -922,12 +926,16 @@ section {
   background: rgba(0, 82, 165, 0.025);
 }
 .projets-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 22px;
   margin-bottom: 40px;
 }
 .proj-card {
+  flex: 1 1 calc(33.333% - 22px);
+  max-width: 360px;
+  min-width: 280px;
   background: var(--card-bg);
   border-radius: 18px;
   overflow: hidden;
@@ -1552,10 +1560,18 @@ footer {
     justify-content: center;
   }
   .exp-grid {
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .exp-card {
+    flex: 1 1 calc(50% - 18px);
+    max-width: 420px;
   }
   .projets-grid {
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+  }
+  .proj-card {
+    flex: 1 1 calc(50% - 18px);
+    max-width: 420px;
   }
   .labo-card {
     grid-template-columns: 1fr;
@@ -1668,10 +1684,22 @@ footer {
     grid-template-columns: 1fr;
   }
   .exp-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+  .exp-card {
+    flex: 1 1 100%;
+    max-width: min(420px, 100%);
+    width: 100%;
   }
   .projets-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+  .proj-card {
+    flex: 1 1 100%;
+    max-width: min(420px, 100%);
+    width: 100%;
   }
   .methodo-grid {
     grid-template-columns: 1fr;
