@@ -14,15 +14,22 @@
     content="Bintou Karamoko, portfolio IT, administratrice systèmes et réseaux, Active Directory, GPO, VLAN, Cisco, virtualisation, support informatique" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Portfolio de Bintou Karamoko" />
   <meta property="og:title" content="Bintou Karamoko | Administratrice Systèmes & Réseaux Junior" />
   <meta property="og:description"
     content="Découvrez le portfolio de Bintou Karamoko : systèmes, réseaux, Cisco, Active Directory, GPO et virtualisation." />
-  <meta property="og:image" content="assets/pp.png" />
+  <meta property="og:image" content="/og-image.png" />
   <meta property="og:image:alt" content="Portrait de Bintou Karamoko" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Bintou Karamoko | Portfolio IT" />
   <meta name="twitter:description"
     content="Portfolio d'une administratrice systèmes et réseaux junior en recherche d'opportunités en Île-de-France." />
+  <meta name="twitter:image" content="/og-image.png" />
+  <meta name="twitter:image:alt" content="Portrait de Bintou Karamoko" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/og-image.png" />
+  <link rel="manifest" href="/site.webmanifest" />
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&display=swap"
     rel="stylesheet" />
@@ -34,7 +41,7 @@
       "name": "Bintou Karamoko",
       "jobTitle": "Administratrice Systèmes & Réseaux Junior",
       "description": "Portfolio professionnel orienté systèmes, réseaux, Cisco, Active Directory, GPO et virtualisation.",
-      "email": "mailto:bintoukaramoko3@gmail.com",
+      "email": "mailto:bintou.karamoko.dev@gmail.com",
       "address": {
         "@type": "PostalAddress",
         "addressRegion": "Île-de-France",
@@ -116,7 +123,7 @@
     </ul>
   </nav>
 
-  git config --global http.postBuffer 524288000 <main>
+  <main>
     <!-- ══════════════════════════════════
      SECTION 1 — HERO
 ══════════════════════════════════ -->
@@ -143,8 +150,7 @@
         </p>
 
         <div class="hero-btns">
-          <a href="/public/Bintou_Karamoko_stage-juin_2026-2-3-mois.pdf" class="btn btn-solid">⬇&nbsp; Télécharger mon
-            CV</a>
+          <a href="/bintou-karamoko-cv.pdf" class="btn btn-solid" target="_blank" rel="noopener">⬇&nbsp; Voir mon CV</a>
           <a href="mailto:bintou.karamoko.dev@gmail.com" class="btn btn-ghost">📅&nbsp; Planifier un échange</a>
         </div>
 
@@ -669,7 +675,12 @@
             </div>
           </div>
 
-          <form class="contact-form reveal reveal-d2" id="contact-form">
+          <form class="contact-form reveal reveal-d2" id="contact-form" name="contact" method="POST" data-netlify="true"
+            netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="sr-only">
+              <label>Ne pas remplir ce champ : <input name="bot-field" type="text" /></label>
+            </p>
             <div class="form-row">
               <div class="form-group">
                 <label for="first-name">Prénom</label>
@@ -777,13 +788,29 @@
       const formStatus = document.querySelector("#form-status");
 
       if (contactForm && formStatus) {
-        contactForm.addEventListener("submit", (event) => {
+        const submitButton = contactForm.querySelector(".contact-submit");
+
+        const showFormStatus = (message, type = "info") => {
+          formStatus.textContent = message;
+          formStatus.classList.remove("is-error", "is-success");
+
+          if (type === "error") {
+            formStatus.classList.add("is-error");
+          }
+
+          if (type === "success") {
+            formStatus.classList.add("is-success");
+          }
+
+          formStatus.classList.add("is-visible");
+        };
+
+        contactForm.addEventListener("submit", async (event) => {
           event.preventDefault();
 
           if (!contactForm.checkValidity()) {
             contactForm.reportValidity();
-            formStatus.textContent = "Merci de remplir les champs obligatoires.";
-            formStatus.classList.add("is-visible");
+            showFormStatus("Merci de remplir les champs obligatoires.", "error");
             return;
           }
 
@@ -795,23 +822,47 @@
           const subject = String(formData.get("subject") || "Message depuis le portfolio").trim();
           const message = String(formData.get("message") || "").trim();
 
-          const mailSubject = `${subject} — ${firstName} ${lastName}`;
-          const mailBody = [
-            "Bonjour Bintou,",
-            "",
-            message,
-            "",
-            `Prénom : ${firstName}`,
-            `Nom : ${lastName}`,
-            `Email : ${email}`,
-            `Entreprise / Poste : ${company || "Non renseigné"}`,
-          ].join("\n");
+          if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = "Envoi en cours...";
+          }
 
-          window.location.href = `mailto:bintoukaramoko3@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+          try {
+            const response = await fetch("/", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: new URLSearchParams(formData).toString(),
+            });
 
-          formStatus.textContent = "Votre application mail va s'ouvrir pour finaliser l'envoi.";
-          formStatus.classList.add("is-visible");
-          contactForm.reset();
+            if (!response.ok) {
+              throw new Error("Échec de l'envoi Netlify");
+            }
+
+            showFormStatus("Message envoyé avec succès. Merci, je vous répondrai rapidement.", "success");
+            contactForm.reset();
+          } catch (error) {
+            const mailSubject = `${subject} — ${firstName} ${lastName}`;
+            const mailBody = [
+              "Bonjour Bintou,",
+              "",
+              message,
+              "",
+              `Prénom : ${firstName}`,
+              `Nom : ${lastName}`,
+              `Email : ${email}`,
+              `Entreprise / Poste : ${company || "Non renseigné"}`,
+            ].join("\n");
+
+            window.location.href = `mailto:bintou.karamoko.dev@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+            showFormStatus("Votre messagerie va s'ouvrir pour finaliser l'envoi.");
+          } finally {
+            if (submitButton) {
+              submitButton.disabled = false;
+              submitButton.innerHTML = "✉️ Envoyer le message";
+            }
+          }
         });
       }
     })();
