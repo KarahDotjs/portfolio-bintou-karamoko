@@ -869,8 +869,6 @@
               `Entreprise / Poste : ${company || "Non renseigné"}`,
             ].join("\n");
 
-            window.location.href = `mailto:bintou.karamoko.dev@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
-            showFormStatus("Votre messagerie va s'ouvrir pour finaliser l'envoi.");
           } finally {
             if (submitButton) {
               submitButton.disabled = false;
