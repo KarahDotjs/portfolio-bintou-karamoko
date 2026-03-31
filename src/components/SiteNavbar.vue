@@ -28,7 +28,7 @@ onBeforeUnmount(() => {
 
 <template>
   <nav :class="{ 'menu-open': isOpen }">
-    <a href="#hero" class="nav-logo">Bintou<span><em>KR</em></span></a>
+    <a href="/" class="nav-logo">Bintou<span><em>KR</em></span></a>
 
     <button class="nav-toggle" type="button" :aria-label="isOpen ? 'Fermer le menu' : 'Ouvrir le menu'"
       :aria-expanded="String(isOpen)" aria-controls="nav-menu" @click="toggleMenu">
