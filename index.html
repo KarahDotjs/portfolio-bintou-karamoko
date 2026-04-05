@@ -61,823 +61,835 @@
 </head>
 
 <body>
-  <!-- ─── CIRCUIT BACKGROUND ─── -->
-  <div id="circuit-layer">
-    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none">
-      <path d="M0 80 H90 V40 H260 V90 H440 V60 H620" stroke="#0052A5" stroke-width="1.4" />
-      <circle cx="620" cy="60" r="3.5" fill="#0052A5" />
-      <path d="M260 90 V160 H180 V240 H80 V320" stroke="#0052A5" stroke-width="1.4" />
-      <circle cx="80" cy="320" r="3.5" fill="#0052A5" />
-      <path d="M0 220 H50 V180 H160 V280 H100 V380 H40 V460 H0" stroke="#0052A5" stroke-width="1.4" />
-      <path d="M440 60 V160 H380 V240 H500 V200 H600 V260" stroke="#0052A5" stroke-width="1.4" />
-      <circle cx="600" cy="260" r="3.5" fill="#0052A5" />
-      <path d="M1440 60 H1340 V120 H1220 V80 H1060 V130 H900" stroke="#0052A5" stroke-width="1.4" />
-      <circle cx="900" cy="130" r="3.5" fill="#0052A5" />
-      <path d="M1220 80 V40 H1100" stroke="#0052A5" stroke-width="1.4" />
-      <circle cx="1100" cy="40" r="3.5" fill="#0052A5" />
-      <path d="M1340 120 V220 H1400 V300 H1440" stroke="#0052A5" stroke-width="1.4" />
-      <path d="M1060 130 V200 H1140 V280 H1080 V360 H1200 V420" stroke="#0052A5" stroke-width="1.4" />
-      <circle cx="1200" cy="420" r="3.5" fill="#0052A5" />
-      <rect x="650" y="340" width="140" height="120" rx="3" stroke="#0052A5" stroke-width="1.8" />
-      <path d="M650 365 H600 M650 385 H580 M650 405 H600 M650 425 H580 M650 445 H600" stroke="#0052A5"
-        stroke-width="1.4" />
-      <path d="M790 365 H840 M790 385 H860 M790 405 H840 M790 425 H860 M790 445 H840" stroke="#0052A5"
-        stroke-width="1.4" />
-      <path d="M690 340 V290 M710 340 V275 M730 340 V290 M750 340 V275 M770 340 V290" stroke="#0052A5"
-        stroke-width="1.4" />
-      <path d="M690 460 V510 M710 460 V525 M730 460 V510 M750 460 V525 M770 460 V510" stroke="#0052A5"
-        stroke-width="1.4" />
-      <circle cx="600" cy="365" r="3" fill="#0052A5" />
-      <circle cx="580" cy="385" r="3" fill="#0052A5" />
-      <circle cx="600" cy="405" r="3" fill="#0052A5" />
-      <circle cx="580" cy="425" r="3" fill="#0052A5" />
-      <circle cx="840" cy="365" r="3" fill="#0052A5" />
-      <circle cx="860" cy="385" r="3" fill="#0052A5" />
-      <circle cx="840" cy="405" r="3" fill="#0052A5" />
-      <circle cx="860" cy="425" r="3" fill="#0052A5" />
-      <path d="M0 700 H120 V760 H280 V820 H460 V870 H640" stroke="#0052A5" stroke-width="1.4" />
-      <circle cx="640" cy="870" r="3.5" fill="#0052A5" />
-      <path d="M280 820 V900" stroke="#0052A5" stroke-width="1.4" />
-      <path d="M1440 720 H1320 V780 H1160 V840 H980 V900" stroke="#0052A5" stroke-width="1.4" />
-      <path d="M1160 840 H1080 V900" stroke="#0052A5" stroke-width="1.4" />
-      <circle cx="1080" cy="900" r="3.5" fill="#0052A5" />
-    </svg>
-  </div>
+  <script>if (location.pathname.startsWith('/projet')) document.documentElement.classList.add('is-projet')</script>
 
-  <!-- ─── NAV ─── -->
-  <nav>
-    <a href="#hero" class="nav-logo">Bintou<span><em>KR</em></span></a>
+  <div id="home-content">
+    <!-- ─── CIRCUIT BACKGROUND ─── -->
+    <div id="circuit-layer">
+      <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path d="M0 80 H90 V40 H260 V90 H440 V60 H620" stroke="#0052A5" stroke-width="1.4" />
+        <circle cx="620" cy="60" r="3.5" fill="#0052A5" />
+        <path d="M260 90 V160 H180 V240 H80 V320" stroke="#0052A5" stroke-width="1.4" />
+        <circle cx="80" cy="320" r="3.5" fill="#0052A5" />
+        <path d="M0 220 H50 V180 H160 V280 H100 V380 H40 V460 H0" stroke="#0052A5" stroke-width="1.4" />
+        <path d="M440 60 V160 H380 V240 H500 V200 H600 V260" stroke="#0052A5" stroke-width="1.4" />
+        <circle cx="600" cy="260" r="3.5" fill="#0052A5" />
+        <path d="M1440 60 H1340 V120 H1220 V80 H1060 V130 H900" stroke="#0052A5" stroke-width="1.4" />
+        <circle cx="900" cy="130" r="3.5" fill="#0052A5" />
+        <path d="M1220 80 V40 H1100" stroke="#0052A5" stroke-width="1.4" />
+        <circle cx="1100" cy="40" r="3.5" fill="#0052A5" />
+        <path d="M1340 120 V220 H1400 V300 H1440" stroke="#0052A5" stroke-width="1.4" />
+        <path d="M1060 130 V200 H1140 V280 H1080 V360 H1200 V420" stroke="#0052A5" stroke-width="1.4" />
+        <circle cx="1200" cy="420" r="3.5" fill="#0052A5" />
+        <rect x="650" y="340" width="140" height="120" rx="3" stroke="#0052A5" stroke-width="1.8" />
+        <path d="M650 365 H600 M650 385 H580 M650 405 H600 M650 425 H580 M650 445 H600" stroke="#0052A5"
+          stroke-width="1.4" />
+        <path d="M790 365 H840 M790 385 H860 M790 405 H840 M790 425 H860 M790 445 H840" stroke="#0052A5"
+          stroke-width="1.4" />
+        <path d="M690 340 V290 M710 340 V275 M730 340 V290 M750 340 V275 M770 340 V290" stroke="#0052A5"
+          stroke-width="1.4" />
+        <path d="M690 460 V510 M710 460 V525 M730 460 V510 M750 460 V525 M770 460 V510" stroke="#0052A5"
+          stroke-width="1.4" />
+        <circle cx="600" cy="365" r="3" fill="#0052A5" />
+        <circle cx="580" cy="385" r="3" fill="#0052A5" />
+        <circle cx="600" cy="405" r="3" fill="#0052A5" />
+        <circle cx="580" cy="425" r="3" fill="#0052A5" />
+        <circle cx="840" cy="365" r="3" fill="#0052A5" />
+        <circle cx="860" cy="385" r="3" fill="#0052A5" />
+        <circle cx="840" cy="405" r="3" fill="#0052A5" />
+        <circle cx="860" cy="425" r="3" fill="#0052A5" />
+        <path d="M0 700 H120 V760 H280 V820 H460 V870 H640" stroke="#0052A5" stroke-width="1.4" />
+        <circle cx="640" cy="870" r="3.5" fill="#0052A5" />
+        <path d="M280 820 V900" stroke="#0052A5" stroke-width="1.4" />
+        <path d="M1440 720 H1320 V780 H1160 V840 H980 V900" stroke="#0052A5" stroke-width="1.4" />
+        <path d="M1160 840 H1080 V900" stroke="#0052A5" stroke-width="1.4" />
+        <circle cx="1080" cy="900" r="3.5" fill="#0052A5" />
+      </svg>
+    </div>
 
-    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <!-- ─── NAV ─── -->
+    <nav>
+      <a href="#hero" class="nav-logo">Bintou<span><em>KR</em></span></a>
 
-    <ul class="nav-links" id="nav-menu">
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#expertises">Expertises</a></li>
-      <li><a href="#projets">Projets</a></li>
-      <li><a href="#dispo">Disponibilité</a></li>
-      <li><a href="#contact" class="nav-cta">Contact</a></li>
-    </ul>
-  </nav>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+        aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <main>
-    <!-- ══════════════════════════════════
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#expertises">Expertises</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#dispo">Disponibilité</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <!-- ══════════════════════════════════
      SECTION 1 — HERO
 ══════════════════════════════════ -->
-    <section id="hero">
-      <div class="hero-text">
-        <div class="hero-available">
-          <div class="dot-live"></div>
-          Disponible — Stage Juin 2026 - durée 2-3 mois
-        </div>
-
-        <h1 class="hero-name">
-          Bintou
-          <span class="accent">KARAMOKO</span>
-        </h1>
-
-        <p class="hero-role"> Administratrice Systèmes &amp; Réseaux Junior</p>
-
-        <p class="hero-tagline">
-          Garantir la haute disponibilité et la sécurité de vos infrastructures.
-          Maîtrise des environnements <strong>VLAN</strong>,
-          <strong>Active Directory</strong>, <strong>GPO</strong> et
-          <strong>Cisco Packet Tracer</strong>. Passionnée d'infra, rigoureuse, prête
-          à apporter de la valeur dès le premier jour.
-        </p>
-
-        <div class="hero-btns">
-          <a href="/bintou_Karamoko_stage-juin.pdf" class="btn btn-solid" target="_blank" rel="noopener">⬇&nbsp;
-            Voir mon CV</a>
-          <a href="#contact-form" class="btn btn-ghost">✉️&nbsp;Me contacter</a>
-        </div>
-
-        <div class="hero-socials">
-          <a href="https://www.linkedin.com/in/bintou-karamoko/" class="social-link linkedin-link" target="_blank"
-            rel="noopener noreferrer" aria-label="Voir le profil LinkedIn de Bintou Karamoko">
-            <span class="social-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M6.94 8.5A1.56 1.56 0 1 0 6.94 5.38A1.56 1.56 0 0 0 6.94 8.5ZM5.62 9.75H8.25V18.25H5.62V9.75ZM9.88 9.75H12.4V10.91H12.43C12.78 10.24 13.64 9.53 14.92 9.53C17.58 9.53 18.07 11.18 18.07 13.33V18.25H15.44V13.89C15.44 12.85 15.42 11.5 13.98 11.5C12.52 11.5 12.3 12.6 12.3 13.81V18.25H9.88V9.75Z"
-                  fill="currentColor" />
-              </svg>
-            </span>
-            <span>Mon LinkedIn</span>
-          </a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat-item">
-            <div class="stat-val">TSSR</div>
-            <div class="stat-label">Formation en cours</div>
+      <section id="hero">
+        <div class="hero-text">
+          <div class="hero-available">
+            <div class="dot-live"></div>
+            Disponible — Stage Juin 2026 - durée 2-3 mois
           </div>
-          <div class="stat-item">
-            <div class="stat-val">3<span>+</span></div>
-            <div class="stat-label">Projets labo réalisés</div>
+
+          <h1 class="hero-name">
+            Bintou
+            <span class="accent">KARAMOKO</span>
+          </h1>
+
+          <p class="hero-role"> Administratrice Systèmes &amp; Réseaux Junior</p>
+
+          <p class="hero-tagline">
+            Garantir la haute disponibilité et la sécurité de vos infrastructures.
+            Maîtrise des environnements <strong>VLAN</strong>,
+            <strong>Active Directory</strong>, <strong>GPO</strong> et
+            <strong>Cisco Packet Tracer</strong>. Passionnée d'infra, rigoureuse, prête
+            à apporter de la valeur dès le premier jour.
+          </p>
+
+          <div class="hero-btns">
+            <a href="/bintou_Karamoko_stage-juin.pdf" class="btn btn-solid" target="_blank" rel="noopener">⬇&nbsp;
+              Voir mon CV</a>
+            <a href="#contact-form" class="btn btn-ghost">✉️&nbsp;Me contacter</a>
           </div>
-          <div class="stat-item">
-            <div class="stat-val">4<span>+</span></div>
-            <div class="stat-label">Technologies maîtrisées</div>
+
+          <div class="hero-socials">
+            <a href="https://www.linkedin.com/in/bintou-karamoko/" class="social-link linkedin-link" target="_blank"
+              rel="noopener noreferrer" aria-label="Voir le profil LinkedIn de Bintou Karamoko">
+              <span class="social-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.94 8.5A1.56 1.56 0 1 0 6.94 5.38A1.56 1.56 0 0 0 6.94 8.5ZM5.62 9.75H8.25V18.25H5.62V9.75ZM9.88 9.75H12.4V10.91H12.43C12.78 10.24 13.64 9.53 14.92 9.53C17.58 9.53 18.07 11.18 18.07 13.33V18.25H15.44V13.89C15.44 12.85 15.42 11.5 13.98 11.5C12.52 11.5 12.3 12.6 12.3 13.81V18.25H9.88V9.75Z"
+                    fill="currentColor" />
+                </svg>
+              </span>
+              <span>Mon LinkedIn</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-val">TSSR</div>
+              <div class="stat-label">Formation en cours</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val">3<span>+</span></div>
+              <div class="stat-label">Projets labo réalisés</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-val">4<span>+</span></div>
+              <div class="stat-label">Technologies maîtrisées</div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="hero-visual">
-        <div class="photo-frame">
-          <div class="photo-ring"></div>
-          <div class="photo-ring2"></div>
-          <div class="photo-bg"></div>
-          <img src="assets/pp.png" alt="Portrait de Bintou Karamoko" class="hero-img" fetchpriority="high"
-            decoding="async" />
+        <div class="hero-visual">
+          <div class="photo-frame">
+            <div class="photo-ring"></div>
+            <div class="photo-ring2"></div>
+            <div class="photo-bg"></div>
+            <img src="assets/pp.png" alt="Portrait de Bintou Karamoko" class="hero-img" fetchpriority="high"
+              decoding="async" />
 
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ══════════════════════════════════
+      <!-- ══════════════════════════════════
      SECTION 2 — INFO BAR
 ══════════════════════════════════ -->
-    <section id="infos">
-      <div class="container">
-        <div class="infos-bar reveal">
-          <div class="icard reveal-d2">
-            <div class="icard-icon">🎓</div>
-            <div class="icard-label">Formation</div>
-            <div class="icard-val">Titre Technicien supérieur systèmes et réseaux — Studi</div>
-          </div>
-          <div class="icard reveal-d3">
-            <div class="icard-icon">📍</div>
-            <div class="icard-label">Localisation</div>
-            <div class="icard-val">Île-de-France</div>
-          </div>
-          <div class="icard reveal-d4">
-            <div class="icard-icon">🗓</div>
-            <div class="icard-label">Disponibilité à partir de </div>
-            <div class="icard-val">Juin 2026</div>
-          </div>
-          <div class="icard reveal-d5">
-            <div class="icard-icon">⏰</div>
-            <div class="icard-label"> Durée</div>
-            <div class="icard-val">2-3 mois</div>
-          </div>
-          <div class="icard reveal-d6">
-            <div class="icard-icon">🌍</div>
-            <div class="icard-label">Langues</div>
-            <div class="icard-val">Français</div>
+      <section id="infos">
+        <div class="container">
+          <div class="infos-bar reveal">
+            <div class="icard reveal-d2">
+              <div class="icard-icon">🎓</div>
+              <div class="icard-label">Formation</div>
+              <div class="icard-val">Titre Technicien supérieur systèmes et réseaux — Studi</div>
+            </div>
+            <div class="icard reveal-d3">
+              <div class="icard-icon">📍</div>
+              <div class="icard-label">Localisation</div>
+              <div class="icard-val">Île-de-France</div>
+            </div>
+            <div class="icard reveal-d4">
+              <div class="icard-icon">🗓</div>
+              <div class="icard-label">Disponibilité à partir de </div>
+              <div class="icard-val">Juin 2026</div>
+            </div>
+            <div class="icard reveal-d5">
+              <div class="icard-icon">⏰</div>
+              <div class="icard-label"> Durée</div>
+              <div class="icard-val">2-3 mois</div>
+            </div>
+            <div class="icard reveal-d6">
+              <div class="icard-icon">🌍</div>
+              <div class="icard-label">Langues</div>
+              <div class="icard-val">Français</div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ══════════════════════════════════
+      <!-- ══════════════════════════════════
      SECTION 3 — À PROPOS
 ══════════════════════════════════ -->
-    <section id="about">
-      <div class="container">
-        <div class="eyebrow reveal">// Qui suis-je ?</div>
-        <h2 class="section-title reveal">À <span>Propos</span></h2>
+      <section id="about">
+        <div class="container">
+          <div class="eyebrow reveal">// Qui suis-je ?</div>
+          <h2 class="section-title reveal">À <span>Propos</span></h2>
 
-        <div class="about-layout">
-          <div>
-            <div class="about-text reveal">
-              <p>
-                En formation <strong>TSSR chez Studi</strong>, j'apprends
-                l'administration d'infrastructures (<strong>Windows Server</strong>,
-                <strong>Linux</strong>, <strong>Cisco</strong>) et les bases de la
-                cybersécurité.
-              </p>
-              <p>
-                Pour assimiler ces nouveaux concepts, je pratique régulièrement
-                en environnement virtuel afin de monter en compétence.
-              </p>
-              <p>
-                Mon objectif est de confronter mes acquis théoriques à la
-                réalité du terrain et de progresser au sein d'une équipe
-                technique.
-              </p>
-            </div>
+          <div class="about-layout">
+            <div>
+              <div class="about-text reveal">
+                <p>
+                  En formation <strong>TSSR chez Studi</strong>, j'apprends
+                  l'administration d'infrastructures (<strong>Windows Server</strong>,
+                  <strong>Linux</strong>, <strong>Cisco</strong>) et les bases de la
+                  cybersécurité.
+                </p>
+                <p>
+                  Pour assimiler ces nouveaux concepts, je pratique régulièrement
+                  en environnement virtuel afin de monter en compétence.
+                </p>
+                <p>
+                  Mon objectif est de confronter mes acquis théoriques à la
+                  réalité du terrain et de progresser au sein d'une équipe
+                  technique.
+                </p>
+              </div>
 
-            <div class="timeline reveal">
-              <div class="tl-item reveal-d1">
-                <div class="tl-dot">🎓</div>
-                <div class="tl-content">
-                  <div class="tl-date">2025 — 2026</div>
-                  <div class="tl-title">Titre TSSR — Studi</div>
-                  <div class="tl-sub">
-                    Systèmes, réseaux, cybersécurité
+              <div class="timeline reveal">
+                <div class="tl-item reveal-d1">
+                  <div class="tl-dot">🎓</div>
+                  <div class="tl-content">
+                    <div class="tl-date">2025 — 2026</div>
+                    <div class="tl-title">Titre TSSR — Studi</div>
+                    <div class="tl-sub">
+                      Systèmes, réseaux, cybersécurité
+                    </div>
+                  </div>
+                </div>
+                <div class="tl-item reveal-d2">
+
+                </div>
+                <div class="tl-item reveal-d3">
+                  <div class="tl-dot">💻</div>
+                  <div class="tl-content">
+                    <div class="tl-date">Antérieur</div>
+                    <div class="tl-title">Développement Front-End</div>
+                    <div class="tl-sub">HTML/CSS/JS · Atout différenciateur</div>
                   </div>
                 </div>
               </div>
-              <div class="tl-item reveal-d2">
+            </div>
 
+            <div class="skills-col reveal">
+              <div class="skill-group">
+                <div class="skill-group-title">🖥️ Systèmes & Administration</div>
+                <div class="skill-tags">
+                  <span class="stag hot">Windows Server 2019/2022</span>
+                  <span class="stag hot">Active Directory</span>
+                  <span class="stag hot">GPO</span>
+                  <span class="stag">Gestion utilisateurs & groupes</span>
+                  <span class="stag">Unités organisationnelles</span>
+                  <span class="stag">Administration distante</span>
+                </div>
               </div>
-              <div class="tl-item reveal-d3">
-                <div class="tl-dot">💻</div>
-                <div class="tl-content">
-                  <div class="tl-date">Antérieur</div>
-                  <div class="tl-title">Développement Front-End</div>
-                  <div class="tl-sub">HTML/CSS/JS · Atout différenciateur</div>
+              <div class="skill-group">
+                <div class="skill-group-title">🌐 Réseaux & Protocoles</div>
+                <div class="skill-tags">
+                  <span class="stag hot">Cisco Packet Tracer</span>
+                  <span class="stag hot">VLANs</span>
+                  <span class="stag hot">Routage statique & dynamique</span>
+                  <span class="stag">TCP/IP</span>
+                  <span class="stag">Modèle OSI</span>
+                  <span class="stag">IPv4 / IPv6</span>
+                  <span class="stag">Commutation</span>
+                  <span class="stag">Câblage réseau</span>
+                  <span class="stag">Topologies réseaux</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <div class="skill-group-title">💻 Bases de programmation</div>
+                <div class="skill-tags">
+                  <span class="stag">Variables & types</span>
+                  <span class="stag">Structures de contrôle</span>
+                  <span class="stag">Opérateurs logiques</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <div class="skill-group-title">🎨 Développement Web</div>
+                <div class="skill-tags">
+                  <span class="stag hot">JavaScript</span>
+                  <span class="stag">HTML5</span>
+                  <span class="stag">CSS3</span>
+                  <span class="stag">Vue.js</span>
+                  <span class="stag">Git</span>
+                  <span class="stag">VS Code</span>
+                </div>
+              </div>
+              <div class="skill-group">
+                <div class="skill-group-title">🔒 Sécurité & Bonnes pratiques</div>
+                <div class="skill-tags">
+                  <span class="stag">Sécurité des ports</span>
+                  <span class="stag">Sessions AD</span>
+                  <span class="stag">Permissions</span>
+                  <span class="stag">Bonnes pratiques élémentaires</span>
                 </div>
               </div>
             </div>
           </div>
-
-          <div class="skills-col reveal">
-            <div class="skill-group">
-              <div class="skill-group-title">🖥️ Systèmes & Administration</div>
-              <div class="skill-tags">
-                <span class="stag hot">Windows Server 2019/2022</span>
-                <span class="stag hot">Active Directory</span>
-                <span class="stag hot">GPO</span>
-                <span class="stag">Gestion utilisateurs & groupes</span>
-                <span class="stag">Unités organisationnelles</span>
-                <span class="stag">Administration distante</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <div class="skill-group-title">🌐 Réseaux & Protocoles</div>
-              <div class="skill-tags">
-                <span class="stag hot">Cisco Packet Tracer</span>
-                <span class="stag hot">VLANs</span>
-                <span class="stag hot">Routage statique & dynamique</span>
-                <span class="stag">TCP/IP</span>
-                <span class="stag">Modèle OSI</span>
-                <span class="stag">IPv4 / IPv6</span>
-                <span class="stag">Commutation</span>
-                <span class="stag">Câblage réseau</span>
-                <span class="stag">Topologies réseaux</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <div class="skill-group-title">💻 Bases de programmation</div>
-              <div class="skill-tags">
-                <span class="stag">Variables & types</span>
-                <span class="stag">Structures de contrôle</span>
-                <span class="stag">Opérateurs logiques</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <div class="skill-group-title">🎨 Développement Web</div>
-              <div class="skill-tags">
-                <span class="stag hot">JavaScript</span>
-                <span class="stag">HTML5</span>
-                <span class="stag">CSS3</span>
-                <span class="stag">Vue.js</span>
-                <span class="stag">Git</span>
-                <span class="stag">VS Code</span>
-              </div>
-            </div>
-            <div class="skill-group">
-              <div class="skill-group-title">🔒 Sécurité & Bonnes pratiques</div>
-              <div class="skill-tags">
-                <span class="stag">Sécurité des ports</span>
-                <span class="stag">Sessions AD</span>
-                <span class="stag">Permissions</span>
-                <span class="stag">Bonnes pratiques élémentaires</span>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ══════════════════════════════════
+      <!-- ══════════════════════════════════
      SECTION 4 — EXPERTISES
 ══════════════════════════════════ -->
-    <section id="expertises">
-      <div class="container">
-        <div class="eyebrow reveal">// Compétences techniques</div>
-        <h2 class="section-title reveal">Mes <span>Expertises</span></h2>
+      <section id="expertises">
+        <div class="container">
+          <div class="eyebrow reveal">// Compétences techniques</div>
+          <h2 class="section-title reveal">Mes <span>Expertises</span></h2>
 
-        <div class="exp-grid">
-          <div class="exp-card reveal reveal-d1">
-            <div class="exp-ico">🖥️</div>
-            <div class="exp-name">Systèmes & Administration</div>
-            <ul class="exp-items">
-              <li>Windows Server 2019/2022 : installation, configuration, administration distante</li>
-              <li>Active Directory : création de domaine, OUs, utilisateurs, groupes</li>
-              <li>GPO : déploiement de stratégies de sécurité et configuration</li>
-              <li>Introduction Linux : culture Unix/Linux, familles de distributions</li>
-            </ul>
-            <div class="exp-level">
-              <div class="exp-level-bar" style="width: 80%"></div>
+          <div class="exp-grid">
+            <div class="exp-card reveal reveal-d1">
+              <div class="exp-ico">🖥️</div>
+              <div class="exp-name">Systèmes & Administration</div>
+              <ul class="exp-items">
+                <li>Windows Server 2019/2022 : installation, configuration, administration distante</li>
+                <li>Active Directory : création de domaine, OUs, utilisateurs, groupes</li>
+                <li>GPO : déploiement de stratégies de sécurité et configuration</li>
+                <li>Introduction Linux : culture Unix/Linux, familles de distributions</li>
+              </ul>
+              <div class="exp-level">
+                <div class="exp-level-bar" style="width: 80%"></div>
+              </div>
             </div>
-          </div>
 
-          <div class="exp-card reveal reveal-d2">
-            <div class="exp-ico">🌐</div>
-            <div class="exp-name">Réseaux & Commutation</div>
-            <ul class="exp-items">
-              <li>Cisco Packet Tracer : configuration de switches et routeurs</li>
-              <li>VLANs, routage inter-VLAN, commutation couche 3</li>
-              <li>Routage statique et dynamique, tables de routage</li>
-              <li>Modèles OSI/TCP-IP, adressage IPv4/IPv6, sous-réseaux</li>
-            </ul>
-            <div class="exp-level">
-              <div class="exp-level-bar" style="width: 78%"></div>
+            <div class="exp-card reveal reveal-d2">
+              <div class="exp-ico">🌐</div>
+              <div class="exp-name">Réseaux & Commutation</div>
+              <ul class="exp-items">
+                <li>Cisco Packet Tracer : configuration de switches et routeurs</li>
+                <li>VLANs, routage inter-VLAN, commutation couche 3</li>
+                <li>Routage statique et dynamique, tables de routage</li>
+                <li>Modèles OSI/TCP-IP, adressage IPv4/IPv6, sous-réseaux</li>
+              </ul>
+              <div class="exp-level">
+                <div class="exp-level-bar" style="width: 78%"></div>
+              </div>
             </div>
-          </div>
 
-          <div class="exp-card reveal reveal-d3">
-            <div class="exp-ico">🎨</div>
-            <div class="exp-name">Développement Web</div>
-            <ul class="exp-items">
-              <li>Langages : JavaScript, HTML5 et CSS3</li>
-              <li>Framework : Vue.js</li>
-              <li>Outils : Git et VS Code</li>
-            </ul>
-            <div class="exp-level">
-              <div class="exp-level-bar" style="width: 84%"></div>
+            <div class="exp-card reveal reveal-d3">
+              <div class="exp-ico">🎨</div>
+              <div class="exp-name">Développement Web</div>
+              <ul class="exp-items">
+                <li>Langages : JavaScript, HTML5 et CSS3</li>
+                <li>Framework : Vue.js</li>
+                <li>Outils : Git et VS Code</li>
+              </ul>
+              <div class="exp-level">
+                <div class="exp-level-bar" style="width: 84%"></div>
+              </div>
             </div>
-          </div>
 
-          <div class="exp-card reveal reveal-d4">
-            <div class="exp-ico">💻</div>
-            <div class="exp-name">Bases de programmation</div>
-            <ul class="exp-items">
-              <li>Variables, types et portées</li>
-              <li>Structures de contrôle (conditions, boucles)</li>
-              <li>Opérateurs arithmétiques et logiques</li>
-            </ul>
-            <div class="exp-level">
-              <div class="exp-level-bar" style="width: 65%"></div>
+            <div class="exp-card reveal reveal-d4">
+              <div class="exp-ico">💻</div>
+              <div class="exp-name">Bases de programmation</div>
+              <ul class="exp-items">
+                <li>Variables, types et portées</li>
+                <li>Structures de contrôle (conditions, boucles)</li>
+                <li>Opérateurs arithmétiques et logiques</li>
+              </ul>
+              <div class="exp-level">
+                <div class="exp-level-bar" style="width: 65%"></div>
+              </div>
             </div>
-          </div>
 
-          <div class="exp-card reveal reveal-d5">
-            <div class="exp-ico">🔒</div>
-            <div class="exp-name">Sécurité & Bonnes pratiques</div>
-            <ul class="exp-items">
-              <li>Sécurité des ports sous Cisco Packet Tracer</li>
-              <li>Gestion des sessions et permissions Active Directory</li>
-              <li>Bonnes pratiques élémentaires de sécurité informatique</li>
-            </ul>
-            <div class="exp-level">
-              <div class="exp-level-bar" style="width: 68%"></div>
+            <div class="exp-card reveal reveal-d5">
+              <div class="exp-ico">🔒</div>
+              <div class="exp-name">Sécurité & Bonnes pratiques</div>
+              <ul class="exp-items">
+                <li>Sécurité des ports sous Cisco Packet Tracer</li>
+                <li>Gestion des sessions et permissions Active Directory</li>
+                <li>Bonnes pratiques élémentaires de sécurité informatique</li>
+              </ul>
+              <div class="exp-level">
+                <div class="exp-level-bar" style="width: 68%"></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ══════════════════════════════════
+      <!-- ══════════════════════════════════
      SECTION 5 — PROJETS & LABO
 ══════════════════════════════════ -->
-    <section id="projets">
-      <div class="container">
-        <div class="eyebrow reveal">// Réalisations concrètes</div>
-        <h2 class="section-title reveal">Projets &amp; <span>Labo</span></h2>
+      <section id="projets">
+        <div class="container">
+          <div class="eyebrow reveal">// Réalisations concrètes</div>
+          <h2 class="section-title reveal">Projets &amp; <span>Labo</span></h2>
 
-        <div class="projets-grid">
-          <div class="proj-card reveal reveal-d1">
-            <div class="proj-thumb" style="background: linear-gradient(135deg, #002b5c, #0077ff)">
-              🔌
-            </div>
-            <div class="proj-body">
-              <div class="proj-tags">
-                <span class="tag">Cisco</span><span class="tag">VLAN</span><span class="tag">Routage inter-VLAN</span>
+          <div class="projets-grid">
+            <div class="proj-card reveal reveal-d1">
+              <div class="proj-thumb" style="background: linear-gradient(135deg, #002b5c, #0077ff)">
+                🔌
               </div>
-              <div class="proj-name">Architecture Réseau VLAN</div>
-              <p class="proj-desc">
-                Conception et déploiement d'une architecture réseau segmentée
-                sous Packet Tracer : création de VLANs, configuration du
-                routage inter-VLAN et commutation de couche 3 pour isoler
-                les flux par service.
-              </p>
-              <a href="#" class="proj-link">À venir →</a>
+              <div class="proj-body">
+                <div class="proj-tags">
+                  <span class="tag">Cisco</span><span class="tag">VLAN</span><span class="tag">Routage inter-VLAN</span>
+                </div>
+                <div class="proj-name">Architecture Réseau VLAN</div>
+                <p class="proj-desc">
+                  Conception et déploiement d'une architecture réseau segmentée
+                  sous Packet Tracer : création de VLANs, configuration du
+                  routage inter-VLAN et commutation de couche 3 pour isoler
+                  les flux par service.
+                </p>
+                <a href="/projet/vlan" class="proj-link">Voir le projet →</a>
+              </div>
+            </div>
+
+            <div class="proj-card reveal reveal-d2">
+              <div class="proj-thumb" style="background: linear-gradient(135deg, #003d82, #00c8e0)">
+                🏛️
+              </div>
+              <div class="proj-body">
+                <div class="proj-tags">
+                  <span class="tag">Windows Server</span><span class="tag">AD</span><span class="tag">GPO</span>
+                </div>
+                <div class="proj-name">Labo Active Directory & GPO</div>
+                <p class="proj-desc">
+                  Mise en place d'un domaine Active Directory complet :
+                  installation et configuration d'AD, création d'unités
+                  organisationnelles, gestion des utilisateurs et groupes,
+                  déploiement de stratégies de groupe (GPO) et
+                  intégration de postes au domaine.
+                </p>
+                <a href="/projet/active-directory" class="proj-link">Voir le projet →</a>
+              </div>
+            </div>
+
+            <div class="proj-card reveal reveal-d3">
+              <div class="proj-thumb" style="background: linear-gradient(135deg, #001f4d, #0052a5)">
+                🌐
+              </div>
+              <div class="proj-body">
+                <div class="proj-tags">
+                  <span class="tag">Cisco</span><span class="tag">Routage</span><span class="tag">Packet Tracer</span>
+                </div>
+                <div class="proj-name">Routage & Commutation Réseau</div>
+                <p class="proj-desc">
+                  Configuration complète d'une infrastructure réseau sous
+                  Packet Tracer : paramétrage de routeurs et switches Cisco,
+                  routage statique et dynamique, découpage en sous-réseaux
+                  IPv4 et sécurisation des ports.
+                </p>
+                <a href="/projet/routage" class="proj-link">Voir le projet →</a>
+              </div>
             </div>
           </div>
 
-          <div class="proj-card reveal reveal-d2">
-            <div class="proj-thumb" style="background: linear-gradient(135deg, #003d82, #00c8e0)">
-              🏛️
-            </div>
-            <div class="proj-body">
-              <div class="proj-tags">
-                <span class="tag">Windows Server</span><span class="tag">AD</span><span class="tag">GPO</span>
+          <!-- BIG LABO CARD -->
+          <div class="labo-card reveal" style="margin-top: 22px">
+            <div class="labo-visual">
+              <div>
+                <div class="labo-badge">🧪 Projet Phare</div>
+                <div class="labo-title">Labo Infrastructure<br />Windows Server & Réseau</div>
+                <div class="labo-sub">
+                  Infrastructure complète sous Packet Tracer et Windows Server :
+                  AD, GPO, VLANs et routage
+                </div>
               </div>
-              <div class="proj-name">Labo Active Directory & GPO</div>
-              <p class="proj-desc">
-                Mise en place d'un domaine Active Directory complet :
-                installation et configuration d'AD, création d'unités
-                organisationnelles, gestion des utilisateurs et groupes,
-                déploiement de stratégies de groupe (GPO) et
-                intégration de postes au domaine.
-              </p>
-              <a href="#" class="proj-link">À venir →</a>
-            </div>
-          </div>
-
-          <div class="proj-card reveal reveal-d3">
-            <div class="proj-thumb" style="background: linear-gradient(135deg, #001f4d, #0052a5)">
-              🌐
-            </div>
-            <div class="proj-body">
-              <div class="proj-tags">
-                <span class="tag">Cisco</span><span class="tag">Routage</span><span class="tag">Packet Tracer</span>
+              <div class="labo-stack">
+                <span class="lstack">Packet Tracer</span>
+                <span class="lstack">Windows Server</span>
+                <span class="lstack">Active Directory</span>
+                <span class="lstack">VLANs</span>
+                <span class="lstack">Routage</span>
               </div>
-              <div class="proj-name">Routage & Commutation Réseau</div>
-              <p class="proj-desc">
-                Configuration complète d'une infrastructure réseau sous
-                Packet Tracer : paramétrage de routeurs et switches Cisco,
-                routage statique et dynamique, découpage en sous-réseaux
-                IPv4 et sécurisation des ports.
-              </p>
-              <a href="#" class="proj-link">À venir →</a>
+            </div>
+            <div class="labo-details">
+              <h4>Étapes du projet</h4>
+              <ul class="labo-steps">
+                <li>
+                  <div class="step-num">1</div>
+                  Configuration de l'adressage IP et découpage en sous-réseaux IPv4
+                </li>
+                <li>
+                  <div class="step-num">2</div>
+                  Paramétrage des switches et routeurs Cisco sous Packet Tracer
+                </li>
+                <li>
+                  <div class="step-num">3</div>
+                  Création des VLANs et configuration du routage inter-VLAN
+                </li>
+                <li>
+                  <div class="step-num">4</div>
+                  Installation de Windows Server et déploiement d'Active Directory via VMware Fusion (macOS M2)
+                </li>
+                <li>
+                  <div class="step-num">5</div>
+                  Création des OUs, utilisateurs, groupes et déploiement des GPO
+                </li>
+                <li>
+                  <div class="step-num">6</div>
+                  Intégration des postes au domaine et tests de validation
+                </li>
+              </ul>
+              <a href="#contact" class="btn btn-solid" style="margin-top: 24px">📁 Demander la doc technique</a>
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- BIG LABO CARD -->
-        <div class="labo-card reveal" style="margin-top: 22px">
-          <div class="labo-visual">
-            <div>
-              <div class="labo-badge">🧪 Projet Phare</div>
-              <div class="labo-title">Labo Infrastructure<br />Windows Server & Réseau</div>
-              <div class="labo-sub">
-                Infrastructure complète sous Packet Tracer et Windows Server :
-                AD, GPO, VLANs et routage
-              </div>
-            </div>
-            <div class="labo-stack">
-              <span class="lstack">Packet Tracer</span>
-              <span class="lstack">Windows Server</span>
-              <span class="lstack">Active Directory</span>
-              <span class="lstack">VLANs</span>
-              <span class="lstack">Routage</span>
-            </div>
-          </div>
-          <div class="labo-details">
-            <h4>Étapes du projet</h4>
-            <ul class="labo-steps">
-              <li>
-                <div class="step-num">1</div>
-                Configuration de l'adressage IP et découpage en sous-réseaux IPv4
-              </li>
-              <li>
-                <div class="step-num">2</div>
-                Paramétrage des switches et routeurs Cisco sous Packet Tracer
-              </li>
-              <li>
-                <div class="step-num">3</div>
-                Création des VLANs et configuration du routage inter-VLAN
-              </li>
-              <li>
-                <div class="step-num">4</div>
-                Installation de Windows Server et déploiement d'Active Directory via VMware Fusion (macOS M2)
-              </li>
-              <li>
-                <div class="step-num">5</div>
-                Création des OUs, utilisateurs, groupes et déploiement des GPO
-              </li>
-              <li>
-                <div class="step-num">6</div>
-                Intégration des postes au domaine et tests de validation
-              </li>
-            </ul>
-            <a href="#contact" class="btn btn-solid" style="margin-top: 24px">📁 Demander la doc technique</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══════════════════════════════════
+      <!-- ══════════════════════════════════
      SECTION 6 — MÉTHODOLOGIE
 ══════════════════════════════════ -->
-    <section id="methodo">
-      <div class="container">
-        <div class="eyebrow reveal">// Comment je travaille</div>
-        <h2 class="section-title reveal">Méthodo<span>logie</span></h2>
+      <section id="methodo">
+        <div class="container">
+          <div class="eyebrow reveal">// Comment je travaille</div>
+          <h2 class="section-title reveal">Méthodo<span>logie</span></h2>
 
-        <div class="methodo-grid">
-          <div class="mcard reveal reveal-d1">
-            <div class="mcard-icon">🎯</div>
-            <div>
-              <div class="mcard-name">Analyse avant tout</div>
-              <div class="mcard-desc">
-                Je commence toujours par comprendre le contexte et les besoins
-                avant de proposer une solution technique, pour éviter le
-                solutionnisme inutile.
+          <div class="methodo-grid">
+            <div class="mcard reveal reveal-d1">
+              <div class="mcard-icon">🎯</div>
+              <div>
+                <div class="mcard-name">Analyse avant tout</div>
+                <div class="mcard-desc">
+                  Je commence toujours par comprendre le contexte et les besoins
+                  avant de proposer une solution technique, pour éviter le
+                  solutionnisme inutile.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="mcard reveal reveal-d2">
-            <div class="mcard-icon">📐</div>
-            <div>
-              <div class="mcard-name">Documentation rigoureuse</div>
-              <div class="mcard-desc">
-                Chaque configuration, chaque projet est documenté proprement :
-                schémas réseau, procédures pas-à-pas et notes de maintenance.
+            <div class="mcard reveal reveal-d2">
+              <div class="mcard-icon">📐</div>
+              <div>
+                <div class="mcard-name">Documentation rigoureuse</div>
+                <div class="mcard-desc">
+                  Chaque configuration, chaque projet est documenté proprement :
+                  schémas réseau, procédures pas-à-pas et notes de maintenance.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="mcard reveal reveal-d3">
-            <div class="mcard-icon">🔁</div>
-            <div>
-              <div class="mcard-name">Itération & tests</div>
-              <div class="mcard-desc">
-                Je teste en environnement virtualisé avant toute mise en
-                production. Les erreurs en labo, pas en prod — c'est ma règle
-                d'or.
+            <div class="mcard reveal reveal-d3">
+              <div class="mcard-icon">🔁</div>
+              <div>
+                <div class="mcard-name">Itération & tests</div>
+                <div class="mcard-desc">
+                  Je teste en environnement virtualisé avant toute mise en
+                  production. Les erreurs en labo, pas en prod — c'est ma règle
+                  d'or.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="mcard reveal reveal-d4">
-            <div class="mcard-icon">🤝</div>
-            <div>
-              <div class="mcard-name">Esprit d'équipe</div>
-              <div class="mcard-desc">
-                Autonome mais pas isolée. Je communique, je documente pour mes
-                collègues et je cherche toujours à monter en compétence
-                collectivement.
+            <div class="mcard reveal reveal-d4">
+              <div class="mcard-icon">🤝</div>
+              <div>
+                <div class="mcard-name">Esprit d'équipe</div>
+                <div class="mcard-desc">
+                  Autonome mais pas isolée. Je communique, je documente pour mes
+                  collègues et je cherche toujours à monter en compétence
+                  collectivement.
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ══════════════════════════════════
+      <!-- ══════════════════════════════════
      SECTION 7 — DISPONIBILITÉ
 ══════════════════════════════════ -->
-    <section id="dispo">
-      <div class="container">
-        <div class="dispo-inner reveal">
-          <div class="dispo-left">
-            <div class="dispo-eyebrow">// Disponibilité</div>
-            <div class="dispo-title">Prête à intégrer<br />votre équipe</div>
-            <div class="dispo-date">Juin 2026</div>
-            <div class="dispo-sub">
-              Île-de-France · Présentiel ou hybride<br />
-              Rythme stage classique
+      <section id="dispo">
+        <div class="container">
+          <div class="dispo-inner reveal">
+            <div class="dispo-left">
+              <div class="dispo-eyebrow">// Disponibilité</div>
+              <div class="dispo-title">Prête à intégrer<br />votre équipe</div>
+              <div class="dispo-date">Juin 2026</div>
+              <div class="dispo-sub">
+                Île-de-France · Présentiel ou hybride<br />
+                Rythme stage classique
+              </div>
+            </div>
+            <div class="dispo-right">
+              <ul class="dispo-checks">
+                <li>
+                  <div class="dcheck">✓</div>
+                  Disponible dès Juin 2026 pour un stage de 2-3 mois
+                </li>
+                <li>
+                  <div class="dcheck">✓</div>
+                  Mobilité sur toute l'Île-de-France
+                </li>
+                <li>
+                  <div class="dcheck">✓</div>
+                  Ouverte au présentiel, hybride ou full remote
+                </li>
+                <li>
+                  <div class="dcheck">✓</div>
+                  Titres TSSR en cours de validation
+                </li>
+                <li>
+                  <div class="dcheck">✓</div>
+                  Disponible rapidement pour un entretien
+                </li>
+              </ul>
+              <a href="#contact" class="btn btn-cyan">📅&nbsp; Planifier un entretien</a>
             </div>
           </div>
-          <div class="dispo-right">
-            <ul class="dispo-checks">
-              <li>
-                <div class="dcheck">✓</div>
-                Disponible dès Juin 2026 pour un stage de 2-3 mois
-              </li>
-              <li>
-                <div class="dcheck">✓</div>
-                Mobilité sur toute l'Île-de-France
-              </li>
-              <li>
-                <div class="dcheck">✓</div>
-                Ouverte au présentiel, hybride ou full remote
-              </li>
-              <li>
-                <div class="dcheck">✓</div>
-                Titres TSSR en cours de validation
-              </li>
-              <li>
-                <div class="dcheck">✓</div>
-                Disponible rapidement pour un entretien
-              </li>
-            </ul>
-            <a href="#contact" class="btn btn-cyan">📅&nbsp; Planifier un entretien</a>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ══════════════════════════════════
+      <!-- ══════════════════════════════════
      SECTION 8 — CONTACT
 ══════════════════════════════════ -->
-    <section id="contact">
-      <div class="container">
-        <div class="eyebrow reveal">// Me contacter</div>
-        <h2 class="section-title reveal">
-          Parlons de <span>votre projet</span>
-        </h2>
+      <section id="contact">
+        <div class="container">
+          <div class="eyebrow reveal">// Me contacter</div>
+          <h2 class="section-title reveal">
+            Parlons de <span>votre projet</span>
+          </h2>
 
-        <div class="contact-layout">
-          <div class="contact-info reveal">
-            <p>
-              Vous recherchez un profil junior motivé, rigoureux et capable de
-              monter en compétence rapidement ? Je suis disponible pour un
-              <strong>stage à partir de juin 2026 pour une durée de 2 ou 3 mois</strong> en Île-de-France.
-              N'hésitez pas à me contacter pour discuter de vos besoins
-              infrastructure.
-            </p>
-            <div class="contact-items">
-              <div class="citem">
-                <div class="citem-ico">📧</div>
-                <div>
-                  <div class="citem-label">Email</div>
-                  <div class="citem-val">bintou.karamoko.dev@gmail.com</div>
+          <div class="contact-layout">
+            <div class="contact-info reveal">
+              <p>
+                Vous recherchez un profil junior motivé, rigoureux et capable de
+                monter en compétence rapidement ? Je suis disponible pour un
+                <strong>stage à partir de juin 2026 pour une durée de 2 ou 3 mois</strong> en Île-de-France.
+                N'hésitez pas à me contacter pour discuter de vos besoins
+                infrastructure.
+              </p>
+              <div class="contact-items">
+                <div class="citem">
+                  <div class="citem-ico">📧</div>
+                  <div>
+                    <div class="citem-label">Email</div>
+                    <div class="citem-val">bintou.karamoko.dev@gmail.com</div>
+                  </div>
                 </div>
-              </div>
-              <div class="citem">
-                <div class="citem-ico">📍</div>
-                <div>
-                  <div class="citem-label">Localisation</div>
-                  <div class="citem-val">Île-de-France, France</div>
+                <div class="citem">
+                  <div class="citem-ico">📍</div>
+                  <div>
+                    <div class="citem-label">Localisation</div>
+                    <div class="citem-val">Île-de-France, France</div>
+                  </div>
                 </div>
-              </div>
-              <div class="citem">
-                <div class="citem-ico">🗓</div>
-                <div>
-                  <div class="citem-label">Disponibilité</div>
-                  <div class="citem-val">Stage — Juin 2026</div>
+                <div class="citem">
+                  <div class="citem-ico">🗓</div>
+                  <div>
+                    <div class="citem-label">Disponibilité</div>
+                    <div class="citem-val">Stage — Juin 2026</div>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <form class="contact-form reveal reveal-d2" id="contact-form" name="contact" method="POST"
+              data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
+              <p class="sr-only">
+                <label>Ne pas remplir ce champ : <input name="bot-field" type="text" /></label>
+              </p>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">Prénom</label>
+                  <input id="first-name" name="firstName" type="text" placeholder="Marie" autocomplete="given-name"
+                    required />
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Nom</label>
+                  <input id="last-name" name="lastName" type="text" placeholder="Dupont" autocomplete="family-name"
+                    required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email">Email professionnel</label>
+                <input id="email" name="email" type="email" placeholder="m.dupont@entreprise.com" autocomplete="email"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="company">Entreprise / Poste</label>
+                <input id="company" name="company" type="text" placeholder="Ex : DSI chez TechCorp"
+                  autocomplete="organization-title" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Objet</label>
+                <select id="subject" name="subject" required>
+                  <option value="" selected disabled>Choisissez un sujet</option>
+                  <option>Proposition de stage</option>
+                  <option>Renseignement</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Décrivez votre besoin ou votre proposition…"
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn-solid contact-submit">
+                ✉️ Envoyer le message
+              </button>
+              <p class="form-status" id="form-status" aria-live="polite"></p>
+            </form>
           </div>
-
-          <form class="contact-form reveal reveal-d2" id="contact-form" name="contact" method="POST" data-netlify="true"
-            netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact" />
-            <p class="sr-only">
-              <label>Ne pas remplir ce champ : <input name="bot-field" type="text" /></label>
-            </p>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="first-name">Prénom</label>
-                <input id="first-name" name="firstName" type="text" placeholder="Marie" autocomplete="given-name"
-                  required />
-              </div>
-              <div class="form-group">
-                <label for="last-name">Nom</label>
-                <input id="last-name" name="lastName" type="text" placeholder="Dupont" autocomplete="family-name"
-                  required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email">Email professionnel</label>
-              <input id="email" name="email" type="email" placeholder="m.dupont@entreprise.com" autocomplete="email"
-                required />
-            </div>
-            <div class="form-group">
-              <label for="company">Entreprise / Poste</label>
-              <input id="company" name="company" type="text" placeholder="Ex : DSI chez TechCorp"
-                autocomplete="organization-title" />
-            </div>
-            <div class="form-group">
-              <label for="subject">Objet</label>
-              <select id="subject" name="subject" required>
-                <option value="" selected disabled>Choisissez un sujet</option>
-                <option>Proposition de stage</option>
-                <option>Renseignement</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="6" placeholder="Décrivez votre besoin ou votre proposition…"
-                required></textarea>
-            </div>
-            <button type="submit" class="btn btn-solid contact-submit">
-              ✉️ Envoyer le message
-            </button>
-            <p class="form-status" id="form-status" aria-live="polite"></p>
-          </form>
         </div>
+      </section>
+    </main>
+
+    <!-- ─── FOOTER ─── -->
+    <footer>
+      <div class="footer-left">
+        © 2026 Bintou Karamoko · Administratrice Systèmes &amp; Réseaux Junior
       </div>
-    </section>
-  </main>
+      <div class="footer-links">
+        <a href="#hero">Accueil</a>
+        <a href="#expertises">Expertises</a>
+        <a href="#projets">Projets</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </footer>
 
-  <!-- ─── FOOTER ─── -->
-  <footer>
-    <div class="footer-left">
-      © 2026 Bintou Karamoko · Administratrice Systèmes &amp; Réseaux Junior
-    </div>
-    <div class="footer-links">
-      <a href="#hero">Accueil</a>
-      <a href="#expertises">Expertises</a>
-      <a href="#projets">Projets</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </footer>
+    <!-- ─── SCROLL REVEAL SCRIPT ─── -->
+    <script>
+        (function () {
+          const els = document.querySelectorAll(".reveal");
+          const io = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((e) => {
+                if (e.isIntersecting) {
+                  e.target.classList.add("visible");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          els.forEach((el) => io.observe(el));
 
-  <!-- ─── SCROLL REVEAL SCRIPT ─── -->
-  <script>
-    (function () {
-      const els = document.querySelectorAll(".reveal");
-      const io = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("visible");
-              io.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.12 },
-      );
-      els.forEach((el) => io.observe(el));
+          const nav = document.querySelector("nav");
+          const navToggle = document.querySelector(".nav-toggle");
+          const navLinks = document.querySelectorAll(".nav-links a");
 
-      const nav = document.querySelector("nav");
-      const navToggle = document.querySelector(".nav-toggle");
-      const navLinks = document.querySelectorAll(".nav-links a");
-
-      if (nav && navToggle) {
-        navToggle.addEventListener("click", () => {
-          const isOpen = nav.classList.toggle("menu-open");
-          navToggle.setAttribute("aria-expanded", String(isOpen));
-          navToggle.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
-        });
-
-        navLinks.forEach((link) => {
-          link.addEventListener("click", () => {
-            nav.classList.remove("menu-open");
-            navToggle.setAttribute("aria-expanded", "false");
-            navToggle.setAttribute("aria-label", "Ouvrir le menu");
-          });
-        });
-
-        window.addEventListener("resize", () => {
-          if (window.innerWidth > 768) {
-            nav.classList.remove("menu-open");
-            navToggle.setAttribute("aria-expanded", "false");
-            navToggle.setAttribute("aria-label", "Ouvrir le menu");
-          }
-        });
-      }
-
-      const contactForm = document.querySelector("#contact-form");
-      const formStatus = document.querySelector("#form-status");
-
-      if (contactForm && formStatus) {
-        const submitButton = contactForm.querySelector(".contact-submit");
-
-        const showFormStatus = (message, type = "info") => {
-          formStatus.textContent = message;
-          formStatus.classList.remove("is-error", "is-success");
-
-          if (type === "error") {
-            formStatus.classList.add("is-error");
-          }
-
-          if (type === "success") {
-            formStatus.classList.add("is-success");
-          }
-
-          formStatus.classList.add("is-visible");
-        };
-
-        contactForm.addEventListener("submit", async (event) => {
-          event.preventDefault();
-
-          if (!contactForm.checkValidity()) {
-            contactForm.reportValidity();
-            showFormStatus("Merci de remplir les champs obligatoires.", "error");
-            return;
-          }
-
-          const formData = new FormData(contactForm);
-          const firstName = String(formData.get("firstName") || "").trim();
-          const lastName = String(formData.get("lastName") || "").trim();
-          const email = String(formData.get("email") || "").trim();
-          const company = String(formData.get("company") || "").trim();
-          const subject = String(formData.get("subject") || "Message depuis le portfolio").trim();
-          const message = String(formData.get("message") || "").trim();
-
-          if (submitButton) {
-            submitButton.disabled = true;
-            submitButton.textContent = "Envoi en cours...";
-          }
-
-          try {
-            const response = await fetch("/", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
-              },
-              body: new URLSearchParams(formData).toString(),
+          if (nav && navToggle) {
+            navToggle.addEventListener("click", () => {
+              const isOpen = nav.classList.toggle("menu-open");
+              navToggle.setAttribute("aria-expanded", String(isOpen));
+              navToggle.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
             });
 
-            if (!response.ok) {
-              throw new Error("Échec de l'envoi Netlify");
-            }
+            navLinks.forEach((link) => {
+              link.addEventListener("click", () => {
+                nav.classList.remove("menu-open");
+                navToggle.setAttribute("aria-expanded", "false");
+                navToggle.setAttribute("aria-label", "Ouvrir le menu");
+              });
+            });
 
-            showFormStatus("Message envoyé avec succès. Merci, je vous répondrai rapidement.", "success");
-            contactForm.reset();
-          } catch (error) {
-            const mailSubject = `${subject} — ${firstName} ${lastName}`;
-            const mailBody = [
-              "Bonjour Bintou,",
-              "",
-              message,
-              "",
-              `Prénom : ${firstName}`,
-              `Nom : ${lastName}`,
-              `Email : ${email}`,
-              `Entreprise / Poste : ${company || "Non renseigné"}`,
-            ].join("\n");
-
-          } finally {
-            if (submitButton) {
-              submitButton.disabled = false;
-              submitButton.innerHTML = "✉️ Envoyer le message";
-            }
+            window.addEventListener("resize", () => {
+              if (window.innerWidth > 768) {
+                nav.classList.remove("menu-open");
+                navToggle.setAttribute("aria-expanded", "false");
+                navToggle.setAttribute("aria-label", "Ouvrir le menu");
+              }
+            });
           }
-        });
-      }
-    })();
-  </script>
+
+          const contactForm = document.querySelector("#contact-form");
+          const formStatus = document.querySelector("#form-status");
+
+          if (contactForm && formStatus) {
+            const submitButton = contactForm.querySelector(".contact-submit");
+
+            const showFormStatus = (message, type = "info") => {
+              formStatus.textContent = message;
+              formStatus.classList.remove("is-error", "is-success");
+
+              if (type === "error") {
+                formStatus.classList.add("is-error");
+              }
+
+              if (type === "success") {
+                formStatus.classList.add("is-success");
+              }
+
+              formStatus.classList.add("is-visible");
+            };
+
+            contactForm.addEventListener("submit", async (event) => {
+              event.preventDefault();
+
+              if (!contactForm.checkValidity()) {
+                contactForm.reportValidity();
+                showFormStatus("Merci de remplir les champs obligatoires.", "error");
+                return;
+              }
+
+              const formData = new FormData(contactForm);
+              const firstName = String(formData.get("firstName") || "").trim();
+              const lastName = String(formData.get("lastName") || "").trim();
+              const email = String(formData.get("email") || "").trim();
+              const company = String(formData.get("company") || "").trim();
+              const subject = String(formData.get("subject") || "Message depuis le portfolio").trim();
+              const message = String(formData.get("message") || "").trim();
+
+              if (submitButton) {
+                submitButton.disabled = true;
+                submitButton.textContent = "Envoi en cours...";
+              }
+
+              try {
+                const response = await fetch("/", {
+                  method: "POST",
+                  headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                  },
+                  body: new URLSearchParams(formData).toString(),
+                });
+
+                if (!response.ok) {
+                  throw new Error("Échec de l'envoi Netlify");
+                }
+
+                showFormStatus("Message envoyé avec succès. Merci, je vous répondrai rapidement.", "success");
+                contactForm.reset();
+              } catch (error) {
+                const mailSubject = `${subject} — ${firstName} ${lastName}`;
+                const mailBody = [
+                  "Bonjour Bintou,",
+                  "",
+                  message,
+                  "",
+                  `Prénom : ${firstName}`,
+                  `Nom : ${lastName}`,
+                  `Email : ${email}`,
+                  `Entreprise / Poste : ${company || "Non renseigné"}`,
+                ].join("\n");
+
+                const mailtoLink = `mailto:bintou.karamoko.dev@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+                showFormStatus("L'envoi automatique a échoué. Cliquez ici pour envoyer par email.", "error");
+                formStatus.innerHTML = `L'envoi automatique a échoué. <a href="${mailtoLink}" style="color:var(--blue);text-decoration:underline">Envoyer par email à la place</a>`;
+
+              } finally {
+                if (submitButton) {
+                  submitButton.disabled = false;
+                  submitButton.innerHTML = "✉️ Envoyer le message";
+                }
+              }
+            });
+          }
+        })();
+    </script>
+  </div><!-- /home-content -->
+
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>

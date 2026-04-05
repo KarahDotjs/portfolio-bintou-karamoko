@@ -1,0 +1,220 @@
+/* ═══════════════════════════════════════
+   PAGES PROJET — Styles
+═══════════════════════════════════════ */
+
+.projet-hero {
+  position: relative;
+  z-index: 1;
+  padding: 120px 0 60px;
+}
+
+/* ─── BOUTON RETOUR ─── */
+.projet-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Space Mono", monospace;
+  font-size: 0.85rem;
+  color: var(--blue);
+  text-decoration: none;
+  margin-bottom: 16px;
+  padding: 6px 14px;
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.projet-back:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.projet-breadcrumb {
+  font-family: "Space Mono", monospace;
+  font-size: 0.82rem;
+  color: var(--slate2);
+  margin-bottom: 20px;
+}
+.projet-breadcrumb a {
+  color: var(--blue);
+  text-decoration: none;
+}
+.projet-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.projet-hero .projet-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.projet-title {
+  font-family: "Syne", sans-serif;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.projet-title span {
+  color: var(--blue);
+}
+
+.projet-intro {
+  font-size: 1.12rem;
+  color: var(--slate2);
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+/* ─── CONTENU ─── */
+.projet-content {
+  position: relative;
+  z-index: 1;
+  padding: 40px 0 80px;
+}
+
+.projet-block {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow);
+}
+
+.projet-block h2 {
+  font-family: "Syne", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.projet-block p {
+  color: var(--slate);
+  line-height: 1.7;
+}
+
+.projet-block ul {
+  list-style: none;
+  padding: 0;
+}
+.projet-block ul li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  color: var(--slate);
+  line-height: 1.6;
+}
+.projet-block ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+/* ─── ÉTAPES ─── */
+.projet-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projet-step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.projet-step .step-num {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--blue), var(--cyan));
+  color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Syne", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.projet-step h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 4px;
+}
+
+.projet-step p {
+  font-size: 0.95rem;
+  color: var(--slate2);
+}
+
+/* ─── IMAGE PLACEHOLDER ─── */
+.projet-image-placeholder {
+  background: linear-gradient(135deg, var(--glacier), var(--sand2));
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  padding: 48px 24px;
+  text-align: center;
+  color: var(--slate2);
+  font-style: italic;
+}
+.projet-image-placeholder img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* ─── GALERIE ─── */
+.projet-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+/* ─── COMPÉTENCES ─── */
+.projet-competences {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* ─── NAVIGATION PROJETS ─── */
+.projet-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 640px) {
+  .projet-hero {
+    padding: 100px 0 40px;
+  }
+  .projet-block {
+    padding: 24px 18px;
+  }
+  .projet-step {
+    gap: 14px;
+  }
+  .projet-nav {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+}

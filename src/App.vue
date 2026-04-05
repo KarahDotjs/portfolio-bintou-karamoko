@@ -1,9 +1,18 @@
 <script setup>
-import { onBeforeUnmount, onMounted } from 'vue'
+import { onBeforeUnmount, onMounted, computed, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import CircuitBackground from './components/CircuitBackground.vue'
 import SiteNavbar from './components/SiteNavbar.vue'
-import PortfolioMain from './components/PortfolioMain.vue'
-import SiteFooter from './components/SiteFooter.vue'
+
+const route = useRoute()
+const isProjetPage = computed(() => route.path.startsWith('/projet'))
+
+// Sync the is-projet class on <html> so the static home content toggles correctly
+watch(isProjetPage, (val) => {
+  document.documentElement.classList.toggle('is-projet', val)
+  const homeContent = document.getElementById('home-content')
+  if (homeContent) homeContent.style.display = val ? 'none' : ''
+}, { immediate: true })
 
 let observer
 
@@ -31,11 +40,16 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <CircuitBackground />
-
-  <SiteNavbar />
-  <main>
-    <PortfolioMain />
-  </main>
-  <SiteFooter />
+  <template v-if="isProjetPage">
+    <CircuitBackground />
+    <SiteNavbar />
+    <main>
+      <router-view />
+    </main>
+    <footer>
+      <div class="footer-left">
+        © 2026 Bintou Karamoko · Administratrice Systèmes &amp; Réseaux Junior
+      </div>
+    </footer>
+  </template>
 </template>

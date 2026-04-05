@@ -38,11 +38,11 @@ onBeforeUnmount(() => {
     </button>
 
     <ul class="nav-links" id="nav-menu">
-      <li><a href="#about" @click="closeMenu">À propos</a></li>
-      <li><a href="#expertises" @click="closeMenu">Expertises</a></li>
-      <li><a href="#projets" @click="closeMenu">Projets</a></li>
-      <li><a href="#dispo" @click="closeMenu">Disponibilité</a></li>
-      <li><a href="#contact" class="nav-cta" @click="closeMenu">Contact</a></li>
+      <li><a href="/#about" @click="closeMenu">À propos</a></li>
+      <li><a href="/#expertises" @click="closeMenu">Expertises</a></li>
+      <li><a href="/#projets" @click="closeMenu">Projets</a></li>
+      <li><a href="/#dispo" @click="closeMenu">Disponibilité</a></li>
+      <li><a href="/#contact" class="nav-cta" @click="closeMenu">Contact</a></li>
     </ul>
   </nav>
 </template>

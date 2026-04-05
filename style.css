@@ -1,3 +1,8 @@
+/* Hide home content on project pages */
+.is-projet #home-content {
+  display: none;
+}
+
 /* ═══════════════════════════════════════
    VARIABLES & RESET
 ═══════════════════════════════════════ */
@@ -1074,16 +1079,22 @@ section {
 .proj-link {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   margin-top: 14px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: var(--electric);
+  color: var(--white);
+  background: var(--blue);
   text-decoration: none;
-  transition: gap 0.2s;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s;
 }
 .proj-link:hover {
-  gap: 8px;
+  background: var(--electric);
+  color: var(--white);
+  box-shadow: 0 0 20px rgba(0, 119, 255, 0.4);
+  transform: translateY(-2px);
 }
 
 /* Labo big card */
