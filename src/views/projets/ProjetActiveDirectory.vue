@@ -17,7 +17,7 @@
       <p class="projet-intro">
         Mise en place d'un domaine Active Directory complet : installation et configuration d'AD,
         création d'unités organisationnelles, gestion des utilisateurs et groupes,
-        déploiement de stratégies de groupe (GPO) et intégration de postes au domaine.
+        déploiement de stratégies de groupe (GPO) et intégration de postes au domaine. — Projet à venir.
       </p>
     </div>
   </section>
@@ -29,10 +29,9 @@
       <div class="projet-block">
         <h2>📋 Contexte du projet</h2>
         <p>
-          <!-- TODO: Décris ici le contexte -->
-          Ce projet a été réalisé dans le cadre de ma formation TSSR
+          Ce projet sera réalisé dans le cadre de ma formation TSSR
           (modules Installer et configurer un domaine ActiveDirectory).
-          L'objectif était de simuler un environnement d'entreprise avec un domaine AD complet
+          L'objectif est de simuler un environnement d'entreprise avec un domaine AD complet
           sous VMware Fusion sur Mac M2.
         </p>
       </div>
@@ -61,13 +60,13 @@
 
       <!-- ═══ ÉTAPES ═══ -->
       <div class="projet-block">
-        <h2>⚙️ Étapes de réalisation</h2>
+        <h2>⚙️ Étapes de réalisation prévues</h2>
         <div class="projet-steps">
           <div class="projet-step">
             <div class="step-num">1</div>
             <div>
               <h3>Installation de Windows Server</h3>
-              <p><!-- TODO --> Installation de Windows Server 2022 sur une VM VMware Fusion (Mac M2). Configuration
+              <p>Installation de Windows Server 2022 sur une VM VMware Fusion (Mac M2). Configuration
                 réseau avec IP fixe.</p>
             </div>
           </div>
@@ -75,7 +74,7 @@
             <div class="step-num">2</div>
             <div>
               <h3>Promotion en contrôleur de domaine</h3>
-              <p><!-- TODO --> Installation du rôle AD DS et promotion du serveur en contrôleur de domaine (ex :
+              <p>Installation du rôle AD DS et promotion du serveur en contrôleur de domaine (ex :
                 entreprise.local).</p>
             </div>
           </div>
@@ -83,21 +82,21 @@
             <div class="step-num">3</div>
             <div>
               <h3>Création des OUs</h3>
-              <p><!-- TODO --> Organisation de l'annuaire : OUs par service (Direction, Comptabilité, IT, RH…).</p>
+              <p>Organisation de l'annuaire : OUs par service (Direction, Comptabilité, IT, RH…).</p>
             </div>
           </div>
           <div class="projet-step">
             <div class="step-num">4</div>
             <div>
               <h3>Gestion des utilisateurs et groupes</h3>
-              <p><!-- TODO --> Création des comptes utilisateurs, des groupes de sécurité et attribution aux OUs.</p>
+              <p>Création des comptes utilisateurs, des groupes de sécurité et attribution aux OUs.</p>
             </div>
           </div>
           <div class="projet-step">
             <div class="step-num">5</div>
             <div>
               <h3>Déploiement des GPO</h3>
-              <p><!-- TODO --> Création et liaison de GPO : politique de mots de passe, restrictions d'accès,
+              <p>Création et liaison de GPO : politique de mots de passe, restrictions d'accès,
                 configuration des postes.</p>
             </div>
           </div>
@@ -105,7 +104,7 @@
             <div class="step-num">6</div>
             <div>
               <h3>Intégration et tests</h3>
-              <p><!-- TODO --> Jonction de postes clients Windows au domaine, vérification de l'application des GPO,
+              <p>Jonction de postes clients Windows au domaine, vérification de l'application des GPO,
                 tests de connexion.</p>
             </div>
           </div>
@@ -134,16 +133,16 @@
 
       <!-- ═══ DIFFICULTÉS ═══ -->
       <div class="projet-block">
-        <h2>🧩 Difficultés rencontrées</h2>
+        <h2>🧩 Difficultés anticipées</h2>
         <ul>
-          <li><!-- TODO --> Exemple : Windows Server ARM sur Mac M2 — adaptation nécessaire</li>
-          <li><!-- TODO --> Exemple : résolution DNS à configurer avant la promotion en DC</li>
+          <li>Windows Server ARM sur Mac M2 — adaptation nécessaire</li>
+          <li>Résolution DNS à configurer avant la promotion en DC</li>
         </ul>
       </div>
 
       <!-- ═══ COMPÉTENCES ═══ -->
       <div class="projet-block">
-        <h2>✅ Compétences acquises</h2>
+        <h2>✅ Compétences visées</h2>
         <div class="projet-competences">
           <span class="stag hot">Active Directory</span>
           <span class="stag hot">GPO</span>
@@ -157,7 +156,7 @@
       <!-- ═══ NAVIGATION ═══ -->
       <div class="projet-nav">
         <router-link to="/projet/vlan" class="btn btn-ghost">← Projet VLAN</router-link>
-        <router-link to="/projet/routage" class="btn btn-solid">Projet suivant : Routage →</router-link>
+        <router-link to="/#projets" class="btn btn-solid">Tous les projets →</router-link>
       </div>
 
     </div>
