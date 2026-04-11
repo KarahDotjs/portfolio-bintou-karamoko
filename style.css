@@ -467,6 +467,15 @@ section {
   animation: heroIn 0.7s 0.2s ease both;
 }
 
+.hero-subtitle {
+  font-family: var(--font-mono, "Space Mono", monospace);
+  font-size: 0.95rem;
+  color: var(--slate2);
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+  animation: heroIn 0.7s 0.25s ease both;
+}
+
 .hero-tagline {
   font-size: 1.2rem;
   color: var(--slate2);
