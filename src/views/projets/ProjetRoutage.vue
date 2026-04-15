@@ -53,7 +53,7 @@
         <h2>🗺️ Schéma réseau</h2>
         <div class="projet-image-placeholder">
           <!-- TODO: Remplace par ton image de topologie Packet Tracer -->
-          <p>📸 Ajoute ici une capture de ta topologie Packet Tracer</p>
+          <p>📸 Ajouter une capture de ma topologie Packet Tracer</p>
           <!-- <img src="/assets/projets/routage-topologie.png" alt="Topologie routage sous Packet Tracer" /> -->
         </div>
       </div>
