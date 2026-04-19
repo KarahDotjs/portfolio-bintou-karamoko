@@ -83,3 +83,4 @@ npm run build
 ---
 
 _Disponible pour un stage à partir de Juin 2026 en Île-de-France_
+# Trigger redeploy Sun Apr 19 23:25:35 CEST 2026
