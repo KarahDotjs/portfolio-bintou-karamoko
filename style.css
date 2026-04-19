@@ -1,3 +1,66 @@
+/* About section — texte plus lisible et plus grand */
+.about-text--large {
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.13rem;
+  line-height: 1.7;
+  color: var(--slate);
+  letter-spacing: 0.01em;
+  margin-bottom: 18px;
+}
+@media (max-width: 700px) {
+  .about-text--large {
+    font-size: 1.01rem;
+    line-height: 1.6;
+  }
+}
+/* Groupes d'expertises */
+.exp-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+/* Ajout forcé pour Netlify */
+.exp-group-label {
+  font-family: "Syne", sans-serif;
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: var(--blue);
+  margin-bottom: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.exp-group-label--secondary {
+  color: var(--slate2);
+  font-size: 0.98rem;
+  font-weight: 700;
+  opacity: 0.7;
+}
+.exp-group-secondary .exp-card--secondary {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  opacity: 0.85;
+  box-shadow: none;
+  filter: grayscale(0.12) brightness(0.98);
+  transform: scale(0.94);
+}
+.exp-grid--secondary {
+  gap: 14px;
+}
+.exp-card--secondary {
+  max-width: 260px;
+  min-width: 180px;
+  font-size: 0.92em;
+  opacity: 0.85;
+  box-shadow: none;
+  filter: grayscale(0.12) brightness(0.98);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.exp-card--secondary:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-3px) scale(0.97);
+}
 /* Hide home content on project pages */
 .is-projet #home-content {
   display: none;
