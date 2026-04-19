@@ -1,4 +1,4 @@
-# 🥷🏾 Bintou Karamoko — Portfolio Administratrice Systèmes & Réseaux Junior
+# 🥷🏾 Bintou Karamoko — Portfolio Technicienne Systèmes & Réseaux
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c8e1e00d-6943-4f7b-b56b-f710e7549ded
 /deploy-status)](https://bintoukaramoko-admin.netlify.app)
@@ -15,22 +15,23 @@
 
 ## ✨ Aperçu
 
-Portfolio one-page conçu pour mettre en valeur mon profil d'Administratrice Systèmes & Réseaux Junior, avec un double background en développement front-end et en infrastructure.
+Portfolio one-page conçu pour mettre en valeur mon profil de Technicienne Systèmes & Réseaux, avec un double background en développement front-end et en infrastructure.
 
 ---
 
 ## 🛠️ Stack technique
 
-| Technologie | Usage |
-|---|---|
-| Vue.js 3 | Framework JS (Composition API) |
-| Vite | Bundler & dev server |
-| CSS3 natif | Styles, animations, responsive |
-| Netlify | Déploiement continu (CI/CD) |
+| Technologie | Usage                          |
+| ----------- | ------------------------------ |
+| Vue.js 3    | Framework JS (Composition API) |
+| Vite        | Bundler & dev server           |
+| CSS3 natif  | Styles, animations, responsive |
+| Netlify     | Déploiement continu (CI/CD)    |
 
 ---
 
 ## 📁 Structure du projet
+
 ```
 src/
 ├── components/
@@ -45,6 +46,7 @@ src/
 ---
 
 ## 🚀 Lancer le projet en local
+
 ```bash
 # Cloner le repo
 git clone https://github.com/KarahDotjs/portfolio-bintou-karamoko.git
@@ -80,4 +82,4 @@ npm run build
 
 ---
 
-*Disponible pour un stage à partir de Juin 2026 en Île-de-France*
+_Disponible pour un stage à partir de Juin 2026 en Île-de-France_
