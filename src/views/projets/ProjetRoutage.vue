@@ -134,11 +134,14 @@
         <h2>✅ Compétences visées</h2>
         <div class="projet-competences">
           <span class="stag hot">Routage statique</span>
-          <span class="stag hot">Routage dynamique</span>
+          <span class="stag hot">Routage dynamique OSPF</span>
           <span class="stag hot">Sous-réseaux IPv4</span>
           <span class="stag">Cisco IOS</span>
           <span class="stag">Tables de routage</span>
+          <span class="stag">Port-security</span>
           <span class="stag">Packet Tracer</span>
+          <span class="stag">Liaison série</span>
+          <span class="stag">Plan d'adressage</span>
         </div>
       </div>
 
