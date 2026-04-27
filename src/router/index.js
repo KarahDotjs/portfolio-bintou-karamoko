@@ -6,16 +6,16 @@ const routes = [
     name: "home",
     component: () => import("../views/HomeView.vue"),
   },
-  {
-    path: "/projet/vlan",
-    name: "projet-vlan",
-    component: () => import("../views/projets/ProjetVlan.vue"),
-  },
-  {
-    path: "/projet/active-directory",
-    name: "projet-ad",
-    component: () => import("../views/projets/ProjetActiveDirectory.vue"),
-  },
+  // {
+  //   path: "/projet/vlan",
+  //   name: "projet-vlan",
+  //   component: () => import("../views/projets/ProjetVlan.vue"),
+  // },
+  // {
+  //   path: "/projet/active-directory",
+  //   name: "projet-ad",
+  //   component: () => import("../views/projets/ProjetActiveDirectory.vue"),
+  // },
   {
     path: "/projet/routage",
     name: "projet-routage",

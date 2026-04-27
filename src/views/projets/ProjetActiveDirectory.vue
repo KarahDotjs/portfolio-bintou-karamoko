@@ -155,7 +155,7 @@
 
       <!-- ═══ NAVIGATION ═══ -->
       <div class="projet-nav">
-        <router-link to="/projet/vlan" class="btn btn-ghost">← Projet VLAN</router-link>
+        <!-- <router-link to="/projet/vlan" class="btn btn-ghost">← Projet VLAN</router-link> -->
         <router-link to="/#projets" class="btn btn-solid">Tous les projets →</router-link>
       </div>
 

@@ -1083,12 +1083,21 @@ section {
   padding: 90px 6%;
   background: rgba(0, 82, 165, 0.025);
 }
+/* Quand il ne reste qu'un projet, occupe toute la largeur */
 .projets-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 22px;
   margin-bottom: 40px;
+}
+.projets-grid:only-child, .projets-grid > .proj-card:only-child {
+  justify-content: center;
+}
+.projets-grid > .proj-card:only-child {
+  flex: 1 1 100%;
+  max-width: 700px;
+  min-width: 320px;
 }
 .proj-card {
   flex: 1 1 calc(33.333% - 22px);

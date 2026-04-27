@@ -146,7 +146,7 @@
       <!-- ═══ NAVIGATION ═══ -->
       <div class="projet-nav">
         <router-link to="/projet/routage" class="btn btn-ghost">← Projet Routage</router-link>
-        <router-link to="/projet/active-directory" class="btn btn-solid">Projet suivant : AD & GPO →</router-link>
+        <!-- <router-link to="/projet/active-directory" class="btn btn-solid">Projet suivant : AD & GPO →</router-link> -->
       </div>
 
     </div>

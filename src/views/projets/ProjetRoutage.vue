@@ -15,9 +15,7 @@
       </div>
       <h1 class="projet-title">Routage & Commutation <span>Réseau</span></h1>
       <p class="projet-intro">
-        Configuration complète d'une infrastructure réseau sous Packet Tracer : paramétrage
-        de routeurs et switches Cisco, routage statique et dynamique, découpage en sous-réseaux
-        IPv4 et sécurisation des ports. — Projet à venir.
+        Configuration complète d'une infrastructure réseau multi-sites simulée sous Packet Tracer pour l'entreprise fictive "BeeNet" — 3 sites interconnectés (RH, IT, Direction), 2 routeurs Cisco, routage statique et OSPF, sécurisation des équipements.
       </p>
     </div>
   </section>
@@ -29,10 +27,7 @@
       <div class="projet-block">
         <h2>📋 Contexte du projet</h2>
         <p>
-          Ce projet sera réalisé dans le cadre de ma formation TSSR
-          (modules Paramétrer un actif de type Routeur et Les bases des réseaux IP).
-          L'objectif est de configurer une infrastructure réseau complète simulant un
-          réseau multi-sites d'entreprise.
+          Réalisé dans le cadre de ma formation TSSR (modules Paramétrer un actif de type Routeur et Les bases des réseaux IP). L'entreprise fictive "BeeNet" interconnecte trois sites géographiques via un plan d'adressage structuré : Site RH (192.168.10.0/24), Site IT (192.168.20.0/24), Site Direction (192.168.30.0/24).
         </p>
       </div>
 
@@ -40,11 +35,13 @@
       <div class="projet-block">
         <h2>🎯 Objectifs</h2>
         <ul>
-          <li>Concevoir un plan d'adressage IPv4 avec découpage en sous-réseaux</li>
-          <li>Paramétrer des routeurs et switches Cisco</li>
-          <li>Configurer le routage statique entre sous-réseaux</li>
-          <li>Mettre en œuvre un protocole de routage dynamique</li>
-          <li>Sécuriser les équipements réseau</li>
+          <li>Concevoir un plan d'adressage IPv4 avec découpage en sous-réseaux /24 pour 3 sites distincts (RH, IT, Direction)</li>
+          <li>Paramétrer BeeNet-R1 et BeeNet-R2 (hostname, bannière MOTD, enable secret, interfaces)</li>
+          <li>Configurer les switches BeeNet-SW-RH, BeeNet-SW-IT et BeeNet-SW-DIR</li>
+          <li>Configurer le routage statique entre BeeNet-R1 et BeeNet-R2 via liaison série</li>
+          <li>Mettre en œuvre le routage dynamique OSPF pour la découverte automatique des routes</li>
+          <li>Sécuriser les switches avec le port-security sur chaque site</li>
+          <li>Valider la connectivité end-to-end par tests ping (Site RH ↔ Site Direction)</li>
         </ul>
       </div>
 
@@ -60,50 +57,48 @@
 
       <!-- ═══ ÉTAPES ═══ -->
       <div class="projet-block">
-        <h2>⚙️ Étapes de réalisation prévues</h2>
+        <h2>⚙️ Étapes de réalisation</h2>
         <div class="projet-steps">
           <div class="projet-step">
             <div class="step-num">1</div>
             <div>
               <h3>Plan d'adressage IPv4</h3>
-              <p>Découpage du réseau en sous-réseaux, attribution des plages IP par site/service.</p>
+              <p>Découpage en 3 sous-réseaux /24 — attribution des plages IP par site : RH (192.168.10.0/24), IT (192.168.20.0/24), Direction (192.168.30.0/24).</p>
             </div>
           </div>
           <div class="projet-step">
             <div class="step-num">2</div>
             <div>
               <h3>Configuration des routeurs</h3>
-              <p>Paramétrage des interfaces, configuration des noms d'hôtes, mots de passe et bannières.
-              </p>
+              <p>Paramétrage de BeeNet-R1 et BeeNet-R2 : hostname, bannière MOTD, enable secret, adresses IP sur toutes les interfaces, liaison série inter-routeurs.</p>
             </div>
           </div>
           <div class="projet-step">
             <div class="step-num">3</div>
             <div>
-              <h3>Routage statique</h3>
-              <p>Ajout des routes statiques pour interconnecter les différents sous-réseaux.</p>
+              <h3>Configuration des switches</h3>
+              <p>Attribution des ports, sécurisation port-security, configuration sur BeeNet-SW-RH, BeeNet-SW-IT et BeeNet-SW-DIR.</p>
             </div>
           </div>
           <div class="projet-step">
             <div class="step-num">4</div>
             <div>
-              <h3>Routage dynamique</h3>
-              <p>Mise en œuvre d'un protocole de routage (ex : RIP, OSPF) pour automatiser la découverte
-                des routes.</p>
+              <h3>Routage statique</h3>
+              <p>Ajout des routes statiques sur BeeNet-R1 vers BeeNet-R2 pour interconnecter les sous-réseaux.</p>
             </div>
           </div>
           <div class="projet-step">
             <div class="step-num">5</div>
             <div>
-              <h3>Configuration des switches</h3>
-              <p>Attribution des ports, sécurisation port-security, configuration des trunks.</p>
+              <h3>Routage dynamique OSPF</h3>
+              <p>Mise en œuvre d'OSPF pour automatiser la découverte des routes entre les 3 sites.</p>
             </div>
           </div>
           <div class="projet-step">
             <div class="step-num">6</div>
             <div>
               <h3>Tests et validation</h3>
-              <p>Tests ping, traceroute, lecture des tables de routage pour valider la connectivité.</p>
+              <p>show ip route sur BeeNet-R1, ping Site RH → Site Direction, lecture des tables de routage pour valider la connectivité end-to-end.</p>
             </div>
           </div>
         </div>
@@ -150,7 +145,7 @@
       <!-- ═══ NAVIGATION ═══ -->
       <div class="projet-nav">
         <router-link to="/#projets" class="btn btn-ghost">← Tous les projets</router-link>
-        <router-link to="/projet/vlan" class="btn btn-solid">Projet suivant : VLAN →</router-link>
+        <!-- <router-link to="/projet/vlan" class="btn btn-solid">Projet suivant : VLAN →</router-link> -->
       </div>
 
     </div>
