@@ -1,6 +1,7 @@
 <script setup>
 import { onMounted, onBeforeUnmount } from 'vue'
 import HeroSection from '../components/HeroSection.vue'
+import QuiSuisJe from '../components/QuiSuisJe.vue'
 import ParcoursTimeline from '../components/ParcoursTimeline.vue'
 import AboutSection from '../components/AboutSection.vue'
 import ExpertisesSection from '../components/ExpertisesSection.vue'
@@ -36,6 +37,7 @@ onBeforeUnmount(() => {
 <template>
   <main id="home-view">
     <HeroSection />
+    <QuiSuisJe />
     <ParcoursTimeline />
     <AboutSection />
     <ExpertisesSection />
