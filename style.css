@@ -114,7 +114,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+  scroll-padding-top: 90px;
   font-size: 16px;
 }
 
@@ -348,7 +348,7 @@ section {
   align-items: center;
   gap: 8px;
   font-family: "Space Mono", monospace;
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: var(--electric);
   text-transform: uppercase;
@@ -581,12 +581,12 @@ section {
   max-width: 100%;
   justify-content: center;
 }
-}
-.hero-btns .btn {
+
+/* Version commit 7b43ac9 : la règle suivante n'est pas dupliquée */
+.hero-btns .btn-alt {
   width: fit-content;
   min-width: 180px;
   max-width: 100%;
-}
 }
 .hero-socials {
   display: flex;
@@ -963,7 +963,7 @@ section {
 /* ═══════════════════════════════════════
    SECTION 4 — EXPERTISES
 ═══════════════════════════════════════ */
-#expertises {
+#skills {
   padding: 90px 6%;
 }
 .exp-grid {
@@ -1079,7 +1079,7 @@ section {
 /* ═══════════════════════════════════════
    SECTION 5 — PROJETS & LABO
 ═══════════════════════════════════════ */
-#projets {
+#projects {
   padding: 90px 6%;
   background: rgba(0, 82, 165, 0.025);
 }
@@ -1091,7 +1091,8 @@ section {
   gap: 22px;
   margin-bottom: 40px;
 }
-.projets-grid:only-child, .projets-grid > .proj-card:only-child {
+.projets-grid:only-child,
+.projets-grid > .proj-card:only-child {
   justify-content: center;
 }
 .projets-grid > .proj-card:only-child {
@@ -1407,7 +1408,7 @@ section {
 /* ═══════════════════════════════════════
    SECTION 7 — DISPONIBILITÉ
 ═══════════════════════════════════════ */
-#dispo {
+#availability {
   padding: 0 6% 90px;
 }
 .dispo-inner {

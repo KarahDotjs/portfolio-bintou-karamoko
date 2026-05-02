@@ -1,13 +1,13 @@
 <script setup>
 import { onMounted, onBeforeUnmount } from 'vue'
 import HeroSection from '../components/HeroSection.vue'
-import QuiSuisJe from '../components/QuiSuisJe.vue'
-import ParcoursTimeline from '../components/ParcoursTimeline.vue'
+import AboutMe from '../components/AboutMe.vue'
+import CareerTimeline from '../components/CareerTimeline.vue'
 import AboutSection from '../components/AboutSection.vue'
-import ExpertisesSection from '../components/ExpertisesSection.vue'
-import ProjetsSection from '../components/ProjetsSection.vue'
-import MethodologieSection from '../components/MethodologieSection.vue'
-import DispoSection from '../components/DispoSection.vue'
+import SkillsSection from '../components/SkillsSection.vue'
+import ProjectsSection from '../components/ProjectsSection.vue'
+import MethodologySection from '../components/MethodologySection.vue'
+import AvailabilitySection from '../components/AvailabilitySection.vue'
 import ContactSection from '../components/ContactSection.vue'
 
 /** @type {IntersectionObserver | undefined} */
@@ -37,13 +37,13 @@ onBeforeUnmount(() => {
 <template>
   <main id="home-view">
     <HeroSection />
-    <QuiSuisJe />
-    <ParcoursTimeline />
+    <AboutMe />
+    <CareerTimeline />
     <AboutSection />
-    <ExpertisesSection />
-    <ProjetsSection />
-    <MethodologieSection />
-    <DispoSection />
+    <SkillsSection />
+    <ProjectsSection />
+    <MethodologySection />
+    <AvailabilitySection />
     <ContactSection />
   </main>
 </template>

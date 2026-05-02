@@ -1,5 +1,5 @@
 <template>
-  <section id="expertises">
+  <section id="skills">
     <div class="container">
       <div class="eyebrow reveal">// Compétences techniques</div>
       <h2 class="section-title reveal">Mes <span>Expertises</span></h2>

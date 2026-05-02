@@ -1,5 +1,5 @@
 <template>
-  <section id="dispo">
+  <section id="availability">
     <div class="container">
       <div class="dispo-inner reveal">
         <div class="dispo-left">

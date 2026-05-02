@@ -41,7 +41,7 @@
         <div class="actions-sep" aria-hidden="true"></div>
 
         <div class="actions-icons">
-          <a href="https://www.linkedin.com/in/bintou-karamoko/" class="icon-btn"
+          <a href="https://www.linkedin.com/in/bintou-karamoko" class="icon-btn"
             target="_blank" rel="noopener noreferrer"
             aria-label="LinkedIn de Bintou Karamoko">
             <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -49,7 +49,7 @@
             </svg>
           </a>
 
-          <a href="https://github.com/KarahDotjs/tssr-labs/tree/main" class="icon-btn"
+          <a href="https://github.com/KarahDotjs" class="icon-btn"
             target="_blank" rel="noopener noreferrer"
             aria-label="GitHub de Bintou Karamoko">
             <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -57,7 +57,7 @@
             </svg>
           </a>
 
-          <a href="mailto:bintou.karamoko.dev@gmail.com" class="icon-btn"
+          <a href="mailto:bintoukaramoko3@gmail.com" class="icon-btn"
             aria-label="Envoyer un email à Bintou Karamoko">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round"
@@ -120,10 +120,16 @@
   order: 0;
 }
 
+.hero-role {
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+
 /* Override explicite du grid pour contrôler le responsive depuis ici */
 #hero {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
+  padding-bottom: 40px;
 }
 
 /* ══════════════════════════════════════
@@ -137,9 +143,9 @@
   border: 1px solid rgba(0, 200, 224, 0.35);
   color: #007a8c;
   font-family: 'Space Mono', monospace;
-  font-size: 0.73rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  padding: 6px 16px 6px 10px;
+  padding: 7px 16px 7px 12px;
   border-radius: 100px;
   margin-bottom: 20px;
   letter-spacing: 0.05em;
@@ -173,6 +179,7 @@
 .hero-comment {
   font-family: 'Space Mono', monospace;
   font-size: 1.3rem;
+  max-width: 440px;
   line-height: 1.75;
   color: var(--slate2);
   border-left: 3px solid var(--blue);
@@ -220,8 +227,8 @@
 }
 
 .icon-btn {
-  width: 42px;
-  height: 42px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   border: 1.5px solid rgba(0, 82, 165, 0.18);
   background: rgba(255, 255, 255, 0.75);
@@ -249,8 +256,8 @@
 }
 
 .icon-btn svg {
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   display: block;
 }
 

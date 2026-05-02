@@ -1,10 +1,10 @@
 <template>
   <section class="projet-hero">
     <div class="container">
-      <router-link to="/#projets" class="projet-back">← Retour aux projets</router-link>
+      <router-link to="/#projects" class="projet-back">← Retour aux projets</router-link>
       <div class="projet-breadcrumb">
         <router-link to="/">Accueil</router-link> /
-        <router-link to="/#projets">Projets</router-link> /
+        <router-link to="/#projects">Projets</router-link> /
         Architecture Réseau VLAN
       </div>
       <div class="projet-tags">

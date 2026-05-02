@@ -1,5 +1,5 @@
 <template>
-  <section id="parcours" class="parcours-section">
+  <section id="career" class="parcours-section">
     <div class="container">
 
       <div class="parcours-header reveal" ref="header">
@@ -17,8 +17,7 @@
           <div class="tl-period-title">Les premières fondations</div>
           <div class="tl-period-sub">Du code comme première langue</div>
           <div class="tl-period-intro">
-            Je code, j'apprends, je livre. Mais le syndrome de l'imposteur s'installe —
-            suis-je vraiment à ma place&nbsp;? Cette remise en question va tout changer.
+            Je code, j'apprends, je livre. Mais le syndrome de l'imposteur s'installe. Suis-je vraiment à ma place ? Cette remise en question va tout changer.
           </div>
           <div class="tl-connector p1" :class="{ drawn: lineDrawn }"></div>
           <div class="tl-steps">
@@ -42,8 +41,7 @@
           <div class="tl-period-title">La parenthèse qui construit</div>
           <div class="tl-period-sub">Précision, adaptabilité, résilience</div>
           <div class="tl-period-intro">
-            Je quitte le code, pas la rigueur. Entre Londres, un fournil en Suisse
-            et un diplôme passé en plein Covid, j'apprends à m'adapter à tout.
+            Je quitte le code, pas la rigueur. Cette parenthèse m'a appris ce qu'aucune formation ne m'aurait enseigné : m'adapter, persévérer et avancer même quand ce n'est pas facile.
           </div>
           <div class="tl-connector p2" :class="{ drawn: lineDrawn }"></div>
           <div class="tl-steps">
@@ -67,8 +65,7 @@
           <div class="tl-period-title">L'infrastructure comme destination</div>
           <div class="tl-period-sub">Une direction choisie, pas subie</div>
           <div class="tl-period-intro">
-            Je pose un choix clair&nbsp;: l'infrastructure et la sécurité cloud.
-            Chaque étape est construite pour y arriver — formation, stage, bachelor, certification.
+            Je pose un choix clair : l'infrastructure et la sécurité cloud. Chaque étape est construite pour y arriver. Formation, stage, bachelor, certification.
           </div>
           <div class="tl-connector p3" :class="{ drawn: lineDrawn }"></div>
           <div class="tl-steps">
@@ -102,28 +99,28 @@ const col1   = ref(null)
 const lineDrawn = ref(false)
 
 const periode1 = [
-  { date: 'Sept. 2016', text: '<strong>Simplon</strong> — dev fullstack' },
-  { date: '2017',       text: '<strong>Stages startups</strong> — premiers projets réels' },
-  { date: '2018',       text: '<strong>OpenClassrooms</strong> — dev web' },
+  { date: 'Sept. 2016', text: '<strong>Simplon.</strong> Formation Développeur fullstack' },
+  { date: '2017',       text: '<strong>Stages startups.</strong> Premiers projets réels' },
+  { date: '2018',       text: '<strong>OpenClassrooms.</strong> Formation Développeur React, abandonnée' },
 ]
 
 const periode2 = [
-  { date: '2018 – 2021', text: '<strong>UK & CAP Pâtissier</strong> — Londres, formation à distance, retour France' },
-  { date: '2021 – 2023', text: '<strong>Auto-entrepreneuse</strong> — pâtisserie, Suisse, rigueur des process' },
-  { date: '2024',        text: '<strong>Le Réacteur</strong> — retour au front-end, Vue.js' },
+  { date: '2018 – 2021', text: '<strong>UK & CAP Pâtissier.</strong> Londres, formation à distance, stage pâtisserie en France' },
+  { date: '2021 – 2023', text: '<strong>Auto-entrepreneuse.</strong> Pâtisserie en Suisse, rigueur des process' },
+  { date: '2024',        text: '<strong>Le Réacteur.</strong> Retour au front-end, Vue.js' },
 ]
 
 const periode3 = [
-  { date: 'Mars 2026',   text: '<strong>Formation TSSR</strong> — Studi, réseaux & systèmes' },
-  { date: '2026',        text: '<strong>Stage</strong> — Île-de-France, en recherche' },
-  { date: 'Début 2027',  text: '<strong>Bachelor</strong> — Systèmes, Réseaux & Cloud' },
+  { date: 'Mars 2026',   text: '<strong>Formation TSSR.</strong> Studi, réseaux & systèmes' },
+  { date: '2026',        text: '<strong>Stage.</strong> Île-de-France, en recherche' },
+  { date: 'Début 2027',  text: '<strong>Bachelor.</strong> Systèmes, Réseaux & Cloud' },
 ]
 
 let observer = null
 
 onMounted(() => {
   // Scroll reveal général
-  const revealEls = document.querySelectorAll('#parcours .reveal')
+  const revealEls = document.querySelectorAll('#career .reveal')
   const revealObserver = new IntersectionObserver(
     (entries) => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible') }),
     { threshold: 0.1 }
@@ -153,7 +150,7 @@ onUnmounted(() => {
 <style scoped>
 /* ── Section ── */
 .parcours-section {
-  padding: 90px 6%;
+  padding: 90px 3%;
   position: relative;
   z-index: 1;
 }
@@ -178,7 +175,7 @@ onUnmounted(() => {
 /* ── Badge période ── */
 .tl-period-badge {
   display: inline-flex;
-  font-size: 0.68rem;
+  font-size: 0.78rem;
   font-weight: 700;
   font-family: 'Space Mono', monospace;
   padding: 4px 12px;
@@ -186,13 +183,13 @@ onUnmounted(() => {
   margin-bottom: 8px;
   letter-spacing: 0.04em;
 }
-.badge-p1 { background: rgba(0,43,92,0.08);   color: #002b5c; border: 1px solid rgba(0,43,92,0.2); }
-.badge-p2 { background: rgba(196,122,0,0.08); color: #8a5700; border: 1px solid rgba(196,122,0,0.2); }
-.badge-p3 { background: rgba(0,82,165,0.08);  color: #0052a5; border: 1px solid rgba(0,82,165,0.2); }
+.badge-p1 { background: var(--navy); color: var(--white); border: none; }
+.badge-p2 { background: #8a5700;    color: var(--white); border: none; }
+.badge-p3 { background: var(--blue); color: var(--white); border: none; }
 
 .tl-period-title {
   font-family: 'Syne', sans-serif;
-  font-size: 0.92rem;
+  font-size: 1rem;
   font-weight: 800;
   color: var(--navy);
   margin-bottom: 3px;
@@ -200,19 +197,21 @@ onUnmounted(() => {
 }
 
 .tl-period-sub {
-  font-size: 0.78rem;
-  color: var(--slate2);
-  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--slate);
+  font-style: normal;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 .tl-period-intro {
-  font-size: 0.82rem;
-  color: var(--slate2);
+  font-size: 0.9rem;
+  color: var(--slate);
   line-height: 1.6;
   margin-bottom: 14px;
   padding-bottom: 14px;
   border-bottom: 1px solid var(--border);
+  text-align: justify;
 }
 
 /* ── Ligne animée ── */
@@ -259,7 +258,7 @@ onUnmounted(() => {
 
 .tl-step-date {
   font-family: 'Space Mono', monospace;
-  font-size: 0.68rem;
+  font-size: 0.75rem;
   font-weight: 700;
   color: var(--electric);
   margin-bottom: 2px;
@@ -268,7 +267,7 @@ onUnmounted(() => {
 .tl-step-date.teal  { color: var(--blue); }
 
 .tl-step-text {
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   color: var(--slate2);
   line-height: 1.45;
 }
@@ -289,24 +288,27 @@ onUnmounted(() => {
 .tl-arrow-line {
   width: 1px;
   height: 24px;
-  background: rgba(0, 82, 165, 0.2);
+  background: rgba(0, 82, 165, 0.35);
 }
 .tl-arrow-head {
   width: 0;
   height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 7px solid rgba(0, 119, 255, 0.3);
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 9px solid rgba(0, 119, 255, 0.5);
 }
 .tl-arrow-label {
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-weight: 700;
   color: var(--electric);
   font-family: 'Space Mono', monospace;
   writing-mode: vertical-rl;
   letter-spacing: 0.08em;
   margin-top: 6px;
-  opacity: 0.45;
+  opacity: 0.8;
+  background: rgba(0, 82, 165, 0.06);
+  padding: 4px 3px;
+  border-radius: 4px;
 }
 
 /* ── Bloc final ── */

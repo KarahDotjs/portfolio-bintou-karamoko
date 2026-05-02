@@ -1,9 +1,9 @@
 <template>
-  <section id="qui-suis-je">
+  <section id="about">
     <div class="container">
 
       <!-- En-tête -->
-      <div class="qsj-header reveal">
+      <div class="about-header reveal">
         <div class="eyebrow">// Qui suis-je</div>
         <h2 class="section-title">
           Une trajectoire <span>construite</span>
@@ -11,82 +11,69 @@
       </div>
 
       <!-- Grille 2 colonnes -->
-      <div class="qsj-grid">
+      <div class="about-grid">
 
         <!-- ─── GAUCHE ─── -->
-        <div class="qsj-left">
+        <div class="about-left">
 
           <!-- Carte identité -->
-          <div class="qsj-card reveal reveal-d1">
-            <div class="qsj-card-name">Bintou Karamoko</div>
-            <ul class="qsj-tags">
-              <li class="qsj-tag">
-                <span class="tag-dot tag-dot--blue"></span>
+          <div class="about-card reveal reveal-d1">
+            <div class="about-name">Bintou Karamoko</div>
+            <ul class="about-tags">
+              <li class="about-tag">
+                <span class="about-tag-dot about-tag-dot--blue"></span>
                 Île-de-France
               </li>
-              <li class="qsj-tag">
-                <span class="tag-dot tag-dot--blue"></span>
+              <li class="about-tag">
+                <span class="about-tag-dot about-tag-dot--blue"></span>
                 En formation TSSR
               </li>
-              <li class="qsj-tag">
-                <span class="tag-dot tag-dot--blue"></span>
+              <li class="about-tag">
+                <span class="about-tag-dot about-tag-dot--blue"></span>
                 Objectif : Cloud Security Engineer
               </li>
             </ul>
           </div>
 
           <!-- Cartes communauté -->
-          <div class="qsj-card qsj-card--community reveal reveal-d2">
-            <div class="community-header">
-              <span class="community-dot community-dot--blue"></span>
-              <span class="community-name">Tech With Women</span>
+          <div class="about-card about-community-card reveal reveal-d2">
+            <div class="about-community-header">
+              <span class="about-community-dot about-community-dot--blue"></span>
+              <span class="about-community-name">Tech With Women</span>
             </div>
-            <p class="community-sub">
+            <p class="about-community-role">
               Là où j'apprends des expertes et construis ma vision
             </p>
           </div>
 
-          <div class="qsj-card qsj-card--community reveal reveal-d3">
-            <div class="community-header">
-              <span class="community-dot community-dot--cyan"></span>
-              <span class="community-name">la Bekka Tech Club</span>
+          <div class="about-card about-community-card reveal reveal-d3">
+            <div class="about-community-header">
+              <span class="about-community-dot about-community-dot--cyan"></span>
+              <span class="about-community-name">la Bekka Tech Club</span>
             </div>
-            <p class="community-sub">
+            <p class="about-community-role">
               Là où je partage mon parcours et soutiens d'autres femmes en reconversion
             </p>
           </div>
 
-          <!-- Pills -->
-          <div class="qsj-pills reveal reveal-d4">
-            <span class="qsj-pill">Persévérante</span>
-            <span class="qsj-pill">Méthodique</span>
-            <span class="qsj-pill">Engagée</span>
+          <!-- Keywords -->
+          <div class="about-keywords reveal reveal-d4">
+            <span class="about-keyword">Persévérante</span>
+            <span class="about-keyword">Méthodique</span>
+            <span class="about-keyword">Engagée</span>
           </div>
 
         </div>
 
         <!-- ─── DROITE ─── -->
-        <div class="qsj-right">
+        <div class="about-right">
 
-          <p class="qsj-para reveal reveal-d1">
-            Partie du développement web front-end, j'ai réalisé à un moment que je
-            m'accrochais à quelque chose qui ne me portait plus vraiment. J'ai pris
-            le temps de m'informer, d'échanger, de réfléchir.
-          </p>
-
-          <div class="qsj-sep reveal reveal-d2"></div>
-
-          <p class="qsj-para reveal reveal-d2">
-            C'est en explorant le cloud et la cybersécurité que j'ai trouvé ma voie.
-            L'infrastructure, c'est le tronc commun des deux : j'ai choisi de construire
-            des bases solides avant de me spécialiser.
-          </p>
-
-          <p class="qsj-para reveal reveal-d3">
-            Ce chemin, je ne l'ai pas fait seule. C'est dans les échanges avec
-            <strong>Tech With Women</strong> que le déclic s'est produit. Et c'est
-            <strong>la Bekka Tech Club</strong> qui m'a aidée à passer à l'action.
-          </p>
+          <div class="about-text reveal reveal-d1">
+            <p>Partie du développement web front-end, j'ai réalisé à un moment que je m'accrochais à quelque chose qui <strong>ne me portait plus vraiment</strong>. J'ai pris le temps de <strong>m'informer, d'échanger, de réfléchir</strong>.</p>
+            <div class="about-divider"></div>
+            <p>C'est en explorant <strong>le cloud et la cybersécurité</strong> que j'ai trouvé ma voie. L'infrastructure, c'est <strong>le tronc commun des deux</strong> : j'ai choisi de construire des <strong>bases solides</strong> avant de me spécialiser.</p>
+            <p>Ce chemin, je ne l'ai pas fait seule. C'est dans les échanges avec <strong>Tech With Women</strong> que le déclic s'est produit, et c'est <strong>la Bekka Tech Club</strong> qui a renforcé mon idée et m'a aidée à passer à l'action.</p>
+          </div>
 
         </div>
       </div>
@@ -96,19 +83,19 @@
 
 <style scoped>
 /* ── Section ── */
-#qui-suis-je {
-  padding: 90px 6%;
+#about {
+  padding: 60px 6%;
   position: relative;
   z-index: 1;
 }
 
 /* ── En-tête ── */
-.qsj-header {
+.about-header {
   margin-bottom: 52px;
 }
 
 /* ── Grille 2 colonnes ── */
-.qsj-grid {
+.about-grid {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   gap: 40px;
@@ -118,14 +105,14 @@
 /* ══════════════════════════════
    GAUCHE
 ══════════════════════════════ */
-.qsj-left {
+.about-left {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
 /* Carte de base */
-.qsj-card {
+.about-card {
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 14px;
@@ -134,7 +121,7 @@
 }
 
 /* Nom dans la carte identité */
-.qsj-card-name {
+.about-name {
   font-family: 'Syne', sans-serif;
   font-size: 1.05rem;
   font-weight: 800;
@@ -144,14 +131,14 @@
 }
 
 /* Tags avec point */
-.qsj-tags {
+.about-tags {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.qsj-tag {
+.about-tag {
   display: flex;
   align-items: center;
   gap: 9px;
@@ -161,45 +148,45 @@
   color: var(--slate2);
 }
 
-.tag-dot {
+.about-tag-dot {
   width: 7px;
   height: 7px;
   border-radius: 50%;
   flex-shrink: 0;
 }
 
-.tag-dot--blue { background: var(--blue); }
+.about-tag-dot--blue { background: var(--blue); }
 
 /* Cartes communauté */
-.qsj-card--community {
+.about-community-card {
   padding: 16px 20px;
 }
 
-.community-header {
+.about-community-header {
   display: flex;
   align-items: center;
   gap: 9px;
   margin-bottom: 6px;
 }
 
-.community-dot {
+.about-community-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   flex-shrink: 0;
 }
 
-.community-dot--blue { background: var(--blue); }
-.community-dot--cyan { background: var(--cyan); }
+.about-community-dot--blue { background: var(--blue); }
+.about-community-dot--cyan { background: var(--cyan); }
 
-.community-name {
+.about-community-name {
   font-family: 'Syne', sans-serif;
   font-size: 0.92rem;
   font-weight: 800;
   color: var(--navy);
 }
 
-.community-sub {
+.about-community-role {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.82rem;
   line-height: 1.55;
@@ -207,87 +194,90 @@
   padding-left: 17px;
 }
 
-/* Pills */
-.qsj-pills {
+/* Keywords */
+.about-keywords {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   padding-top: 4px;
 }
 
-.qsj-pill {
+.about-keyword {
   font-family: 'Space Mono', monospace;
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  color: var(--blue);
-  background: rgba(0, 82, 165, 0.06);
-  border: 1px solid rgba(0, 82, 165, 0.18);
+  color: var(--white);
+  background: var(--blue);
+  border: none;
+  padding: 9px 20px;
   border-radius: 100px;
-  padding: 5px 14px;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
 }
 
 /* ══════════════════════════════
    DROITE
 ══════════════════════════════ */
-.qsj-right {
+.about-right {
   display: flex;
   flex-direction: column;
   gap: 22px;
   padding-top: 8px;
 }
 
-.qsj-para {
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.about-text p {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.06rem;
   line-height: 1.8;
   color: var(--slate2);
+  text-align: justify;
 }
 
-.qsj-para strong {
+.about-text strong {
   color: var(--navy);
   font-weight: 700;
 }
 
 /* Séparateur dégradé blue → cyan */
-.qsj-sep {
+.about-divider {
   width: 40px;
   height: 2px;
   background: linear-gradient(90deg, var(--blue), var(--cyan));
   border-radius: 99px;
   flex-shrink: 0;
   align-self: flex-start;
-  margin: -4px 0;
 }
 
 /* ── Responsive ── */
 @media (max-width: 900px) {
-  .qsj-grid {
+  .about-grid {
     grid-template-columns: 1fr;
     gap: 28px;
   }
 
-  .qsj-left {
-    /* Réorganise : pills → cartes communauté → carte identité sur mobile */
+  .about-left {
     order: 1;
   }
 
-  .qsj-right {
+  .about-right {
     order: 0;
   }
 }
 
 @media (max-width: 600px) {
-  #qui-suis-je {
+  #about {
     padding: 64px 6%;
   }
 
-  .qsj-para {
+  .about-text p {
     font-size: 0.98rem;
   }
 
-  .qsj-header {
+  .about-header {
     margin-bottom: 36px;
   }
 }

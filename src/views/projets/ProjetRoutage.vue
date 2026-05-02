@@ -1,10 +1,10 @@
 <template>
   <section class="projet-hero">
     <div class="container">
-      <router-link to="/#projets" class="projet-back">← Retour aux projets</router-link>
+      <router-link to="/#projects" class="projet-back">← Retour aux projets</router-link>
       <div class="projet-breadcrumb">
         <router-link to="/">Accueil</router-link> /
-        <router-link to="/#projets">Projets</router-link> /
+        <router-link to="/#projects">Projets</router-link> /
         Routage & Commutation Réseau
       </div>
       <div class="projet-tags">
@@ -147,7 +147,7 @@
 
       <!-- ═══ NAVIGATION ═══ -->
       <div class="projet-nav">
-        <router-link to="/#projets" class="btn btn-ghost">← Tous les projets</router-link>
+        <router-link to="/#projects" class="btn btn-ghost">← Tous les projets</router-link>
         <!-- <router-link to="/projet/vlan" class="btn btn-solid">Projet suivant : VLAN →</router-link> -->
       </div>
 

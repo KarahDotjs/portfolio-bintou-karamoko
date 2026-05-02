@@ -15,7 +15,7 @@
     </div>
   </section>
 
-  <section id="projets">
+  <section id="projects">
     <div class="container">
       <div class="eyebrow reveal">// Réalisations concrètes</div>
       <h2 class="section-title reveal">Projets &amp; <span>Labo</span></h2>

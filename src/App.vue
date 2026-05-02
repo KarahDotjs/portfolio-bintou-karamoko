@@ -25,8 +25,8 @@ const isProjetPage = computed(() => route.path.startsWith('/projet'))
     </div>
     <div v-if="!isProjetPage" class="footer-links">
       <a href="#hero">Accueil</a>
-      <a href="#expertises">Expertises</a>
-      <a href="#projets">Projets</a>
+      <a href="#skills">Expertises</a>
+      <a href="#projects">Projets</a>
       <a href="#contact">Contact</a>
     </div>
   </footer>
