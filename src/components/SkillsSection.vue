@@ -1,84 +1,190 @@
 <template>
   <section id="skills">
     <div class="container">
-      <div class="eyebrow reveal">// Compétences techniques</div>
-      <h2 class="section-title reveal">Mes <span>Expertises</span></h2>
 
-      <div class="exp-groups">
-        <div class="exp-group exp-group-main">
-          <div class="exp-group-label">Cœur de métier</div>
-          <div class="exp-grid">
-            <div class="exp-card reveal reveal-d1">
-              <div class="exp-ico">🖥️</div>
-              <div class="exp-name">Systèmes &amp; Administration</div>
-              <ul class="exp-items">
-                <li>Windows Server 2019/2022 : installation, configuration, administration distante</li>
-                <li>Active Directory : création de domaine, OUs, utilisateurs, groupes</li>
-                <li>GPO : déploiement de stratégies de sécurité et configuration</li>
-                <li>Introduction Linux : culture Unix/Linux, familles de distributions</li>
-              </ul>
-              <div class="exp-level">
-                <div class="exp-level-bar" style="width: 80%"></div>
-              </div>
-            </div>
-            <div class="exp-card reveal reveal-d2">
-              <div class="exp-ico">🌐</div>
-              <div class="exp-name">Réseaux &amp; Commutation</div>
-              <ul class="exp-items">
-                <li>Cisco Packet Tracer : configuration de switches et routeurs</li>
-                <li>VLANs, routage inter-VLAN, commutation couche 3</li>
-                <li>Routage statique et dynamique, tables de routage</li>
-                <li>Modèles OSI/TCP-IP, adressage IPv4/IPv6, sous-réseaux</li>
-              </ul>
-              <div class="exp-level">
-                <div class="exp-level-bar" style="width: 78%"></div>
-              </div>
-            </div>
-            <div class="exp-card reveal reveal-d5">
-              <div class="exp-ico">🔒</div>
-              <div class="exp-name">Sécurité &amp; Bonnes pratiques</div>
-              <ul class="exp-items">
-                <li>Sécurité des ports sous Cisco Packet Tracer</li>
-                <li>Gestion des sessions et permissions Active Directory</li>
-                <li>Bonnes pratiques élémentaires de sécurité informatique</li>
-              </ul>
-              <div class="exp-level">
-                <div class="exp-level-bar" style="width: 68%"></div>
-              </div>
-            </div>
+      <div class="skills-header reveal">
+        <div class="eyebrow">// Mes expertises</div>
+        <h2 class="section-title">Ce que je <span>sais faire</span></h2>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- 1. Systèmes & Administration -->
+        <div class="skill-category reveal reveal-d1">
+          <div class="skill-cat-title">🖥️ Systèmes &amp; Administration</div>
+          <div class="skill-tags">
+            <span class="stag hot">Windows Server 2019/2022</span>
+            <span class="stag hot">Active Directory</span>
+            <span class="stag hot">GPO</span>
+            <span class="stag">Gestion utilisateurs &amp; groupes</span>
+            <span class="stag">Unités organisationnelles</span>
+            <span class="stag">Administration distante</span>
+            <span class="stag">DHCP / DNS</span>
           </div>
         </div>
 
-        <div class="exp-group exp-group-secondary">
-          <div class="exp-group-label exp-group-label--secondary">Compétences complémentaires</div>
-          <div class="exp-grid exp-grid--secondary">
-            <div class="exp-card exp-card--secondary reveal reveal-d3">
-              <div class="exp-ico">🎨</div>
-              <div class="exp-name">Développement Web</div>
-              <ul class="exp-items">
-                <li>Langages : JavaScript, HTML5 et CSS3</li>
-                <li>Framework : Vue.js</li>
-                <li>Outils : Git et VS Code</li>
-              </ul>
-              <div class="exp-level">
-                <div class="exp-level-bar" style="width: 84%"></div>
-              </div>
-            </div>
-            <div class="exp-card exp-card--secondary reveal reveal-d4">
-              <div class="exp-ico">💻</div>
-              <div class="exp-name">Bases de programmation</div>
-              <ul class="exp-items">
-                <li>Variables, types et portées</li>
-                <li>Structures de contrôle (conditions, boucles)</li>
-                <li>Opérateurs arithmétiques et logiques</li>
-              </ul>
-              <div class="exp-level">
-                <div class="exp-level-bar" style="width: 65%"></div>
-              </div>
-            </div>
+        <!-- 2. Réseaux & Protocoles -->
+        <div class="skill-category reveal reveal-d2">
+          <div class="skill-cat-title">🌐 Réseaux &amp; Protocoles</div>
+          <div class="skill-tags">
+            <span class="stag hot">Cisco Packet Tracer</span>
+            <span class="stag hot">VLANs</span>
+            <span class="stag hot">Routage statique &amp; dynamique</span>
+            <span class="stag">TCP/IP</span>
+            <span class="stag">Modèle OSI</span>
+            <span class="stag">IPv4 / IPv6</span>
+            <span class="stag">Commutation</span>
+            <span class="stag">Câblage réseau</span>
           </div>
         </div>
+
+        <div class="skill-sep"></div>
+
+        <!-- 3. Sécurité & Bonnes pratiques -->
+        <div class="skill-category reveal reveal-d1">
+          <div class="skill-cat-title">🔒 Sécurité &amp; Bonnes pratiques</div>
+          <div class="skill-tags">
+            <span class="stag hot">ACL</span>
+            <span class="stag hot">SSH</span>
+            <span class="stag hot">Port Security</span>
+            <span class="stag">HSRP</span>
+            <span class="stag">Permissions NTFS</span>
+          </div>
+        </div>
+
+        <!-- 4. Linux -->
+        <div class="skill-category reveal reveal-d2">
+          <div class="skill-cat-title">🐧 Linux</div>
+          <div class="skill-tags">
+            <span class="stag hot">Debian</span>
+            <span class="stag">Commandes shell</span>
+            <span class="stag">Gestion des droits</span>
+            <span class="stag">Services réseau</span>
+            <span class="stag">SSH</span>
+          </div>
+        </div>
+
+        <div class="skill-sep"></div>
+
+        <!-- 5. Virtualisation -->
+        <div class="skill-category reveal reveal-d1">
+          <div class="skill-cat-title">⚙️ Virtualisation</div>
+          <div class="skill-tags">
+            <span class="stag hot">VMware</span>
+            <span class="stag">UTM</span>
+            <span class="stag">Réseaux virtuels</span>
+          </div>
+        </div>
+
+        <!-- 6. PowerShell / Bash -->
+        <div class="skill-category reveal reveal-d2">
+          <div class="skill-cat-title">💻 PowerShell / Bash</div>
+          <div class="skill-tags">
+            <span class="stag hot">Scripts PowerShell</span>
+            <span class="stag">Automatisation tâches</span>
+            <span class="stag">Gestion AD via PS</span>
+            <span class="stag">Bash basique</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+#skills {
+  padding: 90px 6%;
+  position: relative;
+  z-index: 1;
+}
+
+.skills-header {
+  margin-bottom: 52px;
+}
+
+/* ── Grille 2 colonnes ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+/* ── Séparateur horizontal ── */
+.skill-sep {
+  grid-column: 1 / -1;
+  height: 1px;
+  background: rgba(0, 82, 165, 0.08);
+  margin: 32px 0;
+}
+
+/* ── Catégorie ── */
+.skill-category {
+  padding: 0 32px 32px 0;
+}
+
+.skill-category:nth-child(even) {
+  padding: 0 0 32px 32px;
+  border-left: 1px solid rgba(0, 82, 165, 0.08);
+}
+
+.skill-cat-title {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 14px;
+}
+
+/* ── Tags ── */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stag {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.84rem;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 82, 165, 0.1);
+  color: var(--slate);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stag:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
+}
+
+.stag.hot {
+  background: rgba(0, 119, 255, 0.07);
+  border-color: rgba(0, 119, 255, 0.2);
+  color: var(--blue);
+  font-weight: 600;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-sep {
+    margin: 16px 0;
+  }
+
+  .skill-category,
+  .skill-category:nth-child(even) {
+    padding: 0 0 24px 0;
+    border-left: none;
+  }
+}
+</style>

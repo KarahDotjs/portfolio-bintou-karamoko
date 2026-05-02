@@ -1,9 +1,8 @@
 <script setup>
 import { onMounted, onBeforeUnmount } from 'vue'
 import HeroSection from '../components/HeroSection.vue'
-import AboutMe from '../components/AboutMe.vue'
 import CareerTimeline from '../components/CareerTimeline.vue'
-import AboutSection from '../components/AboutSection.vue'
+import AboutMe from '../components/AboutMe.vue'
 import SkillsSection from '../components/SkillsSection.vue'
 import ProjectsSection from '../components/ProjectsSection.vue'
 import MethodologySection from '../components/MethodologySection.vue'
@@ -37,9 +36,8 @@ onBeforeUnmount(() => {
 <template>
   <main id="home-view">
     <HeroSection />
-    <AboutMe />
     <CareerTimeline />
-    <AboutSection />
+    <AboutMe />
     <SkillsSection />
     <ProjectsSection />
     <MethodologySection />

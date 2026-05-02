@@ -38,7 +38,7 @@ onBeforeUnmount(() => {
     </button>
 
     <ul class="nav-links" id="nav-menu">
-      <li><a href="/#about" @click="closeMenu">Me découvrir</a></li>
+      <li><a href="/#about" @click="closeMenu">À propos</a></li>
       <li><a href="/#career" @click="closeMenu">Parcours</a></li>
       <li><a href="/#skills" @click="closeMenu">Expertises</a></li>
       <li><a href="/#projects" @click="closeMenu">Projets</a></li>
