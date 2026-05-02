@@ -122,7 +122,7 @@
 
 /* Nom dans la carte identité */
 .about-name {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 1.05rem;
   font-weight: 800;
   color: var(--navy);
@@ -180,7 +180,7 @@
 .about-community-dot--cyan { background: var(--cyan); }
 
 .about-community-name {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 0.92rem;
   font-weight: 800;
   color: var(--navy);
@@ -231,7 +231,7 @@
 
 .about-text p {
   font-family: 'DM Sans', sans-serif;
-  font-size: 1.06rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: var(--slate2);
   text-align: justify;

@@ -39,7 +39,7 @@
 }
 /* Ajout forcé pour Netlify */
 .exp-group-label {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1.08rem;
   font-weight: 800;
   color: var(--blue);
@@ -115,7 +115,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 body {
@@ -252,7 +252,7 @@ nav {
   border-bottom: 1px solid var(--border);
 }
 .nav-logo {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1.25rem;
   font-weight: 800;
   color: var(--navy);
@@ -362,13 +362,13 @@ section {
   background: var(--electric);
 }
 .section-title {
-  font-family: "Syne", sans-serif;
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(2.2rem, 3.5vw, 3rem);
   font-weight: 800;
   color: var(--navy);
   letter-spacing: -1.5px;
   line-height: 1.05;
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 .section-title span {
   color: var(--electric);
@@ -526,7 +526,7 @@ section {
 }
 
 .hero-name {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: clamp(2.4rem, 5vw, 3.4rem);
   font-weight: 800;
   line-height: 0.95;
@@ -909,7 +909,7 @@ section {
   letter-spacing: 0.06em;
 }
 .tl-title {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--navy);
@@ -925,7 +925,7 @@ section {
   margin-bottom: 28px;
 }
 .skill-group-title {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 0.82rem;
   font-weight: 700;
   color: var(--slate2);
@@ -1034,7 +1034,7 @@ section {
   margin-bottom: 18px;
 }
 .exp-name {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--navy);
@@ -1180,16 +1180,16 @@ section {
   letter-spacing: 0.03em;
 }
 .proj-name {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 8px;
 }
 .proj-desc {
-  font-size: 0.83rem;
+  font-size: 1rem;
   color: var(--slate2);
-  line-height: 1.65;
+  line-height: 1.8;
 }
 .proj-link {
   display: inline-flex;
@@ -1266,7 +1266,7 @@ section {
   margin-bottom: 24px;
 }
 .labo-title {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 1.6rem;
   font-weight: 800;
   color: var(--white);
@@ -1275,7 +1275,7 @@ section {
   margin-bottom: 10px;
 }
 .labo-sub {
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.65);
 }
 .labo-stack {
@@ -1297,7 +1297,7 @@ section {
   padding: 36px;
 }
 .labo-details h4 {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
   color: var(--slate2);
@@ -1393,16 +1393,16 @@ section {
   flex-shrink: 0;
 }
 .mcard-name {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 0.95rem;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 6px;
 }
 .mcard-desc {
-  font-size: 0.83rem;
+  font-size: 1rem;
   color: var(--slate2);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 /* ═══════════════════════════════════════
@@ -1467,7 +1467,7 @@ section {
   margin-bottom: 12px;
 }
 .dispo-title {
-  font-family: "Syne", sans-serif;
+  font-family: "Manrope", sans-serif;
   font-size: 2.2rem;
   font-weight: 800;
   color: var(--white);
@@ -1485,9 +1485,9 @@ section {
   margin-bottom: 20px;
 }
 .dispo-sub {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.7);
-  line-height: 1.6;
+  line-height: 1.8;
 }
 .dispo-checks {
   list-style: none;
@@ -1531,9 +1531,9 @@ section {
   align-items: start;
 }
 .contact-info p {
-  font-size: 0.96rem;
+  font-size: 1rem;
   color: var(--slate2);
-  line-height: 1.75;
+  line-height: 1.8;
   margin-bottom: 32px;
 }
 .contact-items {

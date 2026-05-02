@@ -188,7 +188,7 @@ onUnmounted(() => {
 .badge-p3 { background: var(--blue); color: var(--white); border: none; }
 
 .tl-period-title {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 1rem;
   font-weight: 800;
   color: var(--navy);
@@ -330,7 +330,7 @@ onUnmounted(() => {
   margin-bottom: 4px;
 }
 .tl-final-text {
-  font-family: 'Syne', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 1.1rem;
   font-weight: 800;
   color: var(--white);
