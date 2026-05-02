@@ -178,3 +178,15 @@ const handleSubmit = async (event) => {
     </div>
   </section>
 </template>
+
+<style scoped>
+#contact {
+  padding: 90px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 6%;
+}
+</style>

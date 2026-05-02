@@ -38,8 +38,6 @@
           </div>
         </div>
 
-        <div class="skill-sep"></div>
-
         <!-- 3. Sécurité & Bonnes pratiques -->
         <div class="skill-category reveal reveal-d1">
           <div class="skill-cat-title">🔒 Sécurité &amp; Bonnes pratiques</div>
@@ -63,8 +61,6 @@
             <span class="stag">SSH</span>
           </div>
         </div>
-
-        <div class="skill-sep"></div>
 
         <!-- 5. Virtualisation -->
         <div class="skill-category reveal reveal-d1">
@@ -94,9 +90,15 @@
 
 <style scoped>
 #skills {
-  padding: 90px 6%;
+  padding: 90px 0;
   position: relative;
   z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 6%;
 }
 
 .skills-header {
@@ -107,25 +109,15 @@
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0;
-}
-
-/* ── Séparateur horizontal ── */
-.skill-sep {
-  grid-column: 1 / -1;
-  height: 1px;
-  background: rgba(0, 82, 165, 0.08);
-  margin: 32px 0;
+  gap: 16px;
 }
 
 /* ── Catégorie ── */
 .skill-category {
-  padding: 0 32px 32px 0;
-}
-
-.skill-category:nth-child(even) {
-  padding: 0 0 32px 32px;
-  border-left: 1px solid rgba(0, 82, 165, 0.08);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 82, 165, 0.08);
+  border-radius: 14px;
+  padding: 20px;
 }
 
 .skill-cat-title {
@@ -149,9 +141,9 @@
   display: inline-flex;
   align-items: center;
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.84rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  padding: 6px 12px;
+  padding: 5px 10px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 82, 165, 0.1);
@@ -175,16 +167,6 @@
 @media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: 1fr;
-  }
-
-  .skill-sep {
-    margin: 16px 0;
-  }
-
-  .skill-category,
-  .skill-category:nth-child(even) {
-    padding: 0 0 24px 0;
-    border-left: none;
   }
 }
 </style>

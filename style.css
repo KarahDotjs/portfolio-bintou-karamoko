@@ -1710,6 +1710,20 @@ footer {
 }
 
 /* ═══════════════════════════════════════
+   INTRO LAYOUT (Hero + AboutMe côte à côte)
+═══════════════════════════════════════ */
+.intro-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 100px 0 80px;
+  align-items: start;
+}
+
+
+/* ═══════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════ */
 @media (max-width: 1024px) {
@@ -1774,6 +1788,11 @@ footer {
   }
 }
 @media (max-width: 768px) {
+  .intro-layout {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 40px 6%;
+  }
   nav {
     padding: 12px 4%;
     height: auto;

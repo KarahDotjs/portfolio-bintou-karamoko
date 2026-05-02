@@ -4,7 +4,7 @@
 
       <!-- En-tête -->
       <div class="about-header reveal">
-        <div class="eyebrow">// Qui suis-je</div>
+        <div class="eyebrow">// D'où je viens ?</div>
         <h2 class="section-title">
           Une trajectoire <span>construite</span>
         </h2>
@@ -84,9 +84,19 @@
 <style scoped>
 /* ── Section ── */
 #about {
-  padding: 60px 6%;
+  padding: 0 10% 60px;
   position: relative;
   z-index: 1;
+  border-left: 1px solid rgba(0, 82, 165, 0.1);
+  padding-left: 32px;
+}
+
+.eyebrow {
+  font-size: 1.2rem;
+}
+
+.section-title {
+  font-size: 2.4rem;
 }
 
 /* ── En-tête ── */

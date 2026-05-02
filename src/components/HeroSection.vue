@@ -129,7 +129,10 @@
 #hero {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
-  padding-bottom: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  min-height: unset;
 }
 
 /* ══════════════════════════════════════
@@ -138,47 +141,54 @@
 .hero-badge {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  background: rgba(0, 200, 224, 0.08);
-  border: 1px solid rgba(0, 200, 224, 0.35);
+  gap: 10px;
+  background: rgba(0, 200, 224, 0.12);
+  border: 1.5px solid rgba(0, 200, 224, 0.5);
   color: #007a8c;
   font-family: 'Space Mono', monospace;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  padding: 7px 16px 7px 12px;
+  padding: 10px 20px 10px 14px;
   border-radius: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
   width: fit-content;
-  animation: heroIn 0.7s 0.28s ease both;
+  animation: badgePulse 2.5s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(0, 200, 224, 0.3);
+    border-color: rgba(0, 200, 224, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(0, 200, 224, 0);
+    border-color: rgba(0, 200, 224, 0.9);
+  }
 }
 
 .badge-dot {
-  width: 8px;
-  height: 8px;
-  background: var(--cyan);
+  width: 9px;
+  height: 9px;
+  background: #00c8e0;
   border-radius: 50%;
   flex-shrink: 0;
-  animation: cyanPulse 2.2s ease-in-out infinite;
+  animation: dotPulse 2.5s ease-in-out infinite;
 }
 
-@keyframes cyanPulse {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow: 0 0 0 0 rgba(0, 200, 224, 0.55);
-  }
-  50% {
-    transform: scale(0.82);
-    box-shadow: 0 0 0 6px rgba(0, 200, 224, 0);
-  }
+@keyframes dotPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.3); opacity: 0.7; }
 }
 
 /* ══════════════════════════════════════
    Intro style commentaire de code
 ══════════════════════════════════════ */
 .hero-comment {
-  font-family: 'Space Mono', monospace;
-  font-size: 1.3rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
   max-width: 440px;
   line-height: 1.75;
   color: var(--slate2);

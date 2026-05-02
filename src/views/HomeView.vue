@@ -35,9 +35,11 @@ onBeforeUnmount(() => {
 
 <template>
   <main id="home-view">
-    <HeroSection />
+    <div class="intro-layout">
+      <HeroSection />
+      <AboutMe />
+    </div>
     <CareerTimeline />
-    <AboutMe />
     <SkillsSection />
     <ProjectsSection />
     <MethodologySection />
