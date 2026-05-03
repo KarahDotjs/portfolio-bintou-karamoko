@@ -71,11 +71,18 @@
   margin-bottom: 52px;
 }
 
-/* ── Grille 3 colonnes ── */
+/* ── Flexbox centré ── */
 .methodo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.methodo-grid > * {
+  flex: 1 1 calc(33.333% - 16px);
+  max-width: calc(33.333% - 16px);
+  min-width: 280px;
 }
 
 /* ── Cards ── */
@@ -160,15 +167,10 @@
 .reveal-d5 { transition-delay: 0.40s; }
 
 /* ── Responsive ── */
-@media (max-width: 900px) {
-  .methodo-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media (max-width: 600px) {
-  .methodo-grid {
-    grid-template-columns: 1fr;
+  .methodo-grid > * {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 </style>
