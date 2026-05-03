@@ -1,14 +1,21 @@
 <template>
-  <!-- ══ HERO : 2 colonnes texte | photo hexagonale ══ -->
   <section id="hero">
+    <div class="hero-inner">
 
-    <!-- ─── GAUCHE : texte ─── -->
+    <!-- ─── Texte ─── -->
     <div class="hero-text">
 
-      <h1 class="hero-name">
-        Bintou
-        <span class="accent">KARAMOKO</span>
-      </h1>
+      <div class="hero-top">
+        <h1 class="hero-name">
+          Bintou
+          <span class="accent">KARAMOKO</span>
+        </h1>
+        <img src="/assets/pp.png"
+          alt="Portrait de Bintou Karamoko"
+          class="circle-photo"
+          fetchpriority="high"
+          decoding="async" />
+      </div>
 
       <p class="hero-role">Technicienne Systèmes &amp; Réseaux</p>
 
@@ -69,33 +76,30 @@
         </div>
       </div>
 
+      <div class="hero-certs">
+        <div class="hero-certs-label">// Certifications</div>
+        <div class="hero-certs-cards">
+          <div class="hero-cert-card">
+            <div class="hero-cert-icon">☁️</div>
+            <div class="hero-cert-info">
+              <div class="hero-cert-name">AZ-900 · Microsoft Azure Fundamentals</div>
+              <div class="hero-cert-date">Prévu · Septembre 2026</div>
+            </div>
+            <div class="hero-cert-status">Bientôt</div>
+          </div>
+          <div class="hero-cert-card">
+            <div class="hero-cert-icon">🎧</div>
+            <div class="hero-cert-info">
+              <div class="hero-cert-name">TOEIC · Test of English</div>
+              <div class="hero-cert-date">Prévu · 2026</div>
+            </div>
+            <div class="hero-cert-status">Bientôt</div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <!-- ─── DROITE : photo hexagonale ─── -->
-    <div class="hero-visual">
-      <div class="hex-wrapper">
-
-        <div class="hex-halo"></div>
-
-        <svg class="hex-ring" viewBox="-12 -12 224 224"
-          fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <polygon points="100,0 200,50 200,150 100,200 0,150 0,50"
-            stroke="var(--electric)" stroke-width="1.5" stroke-opacity="0.35"/>
-        </svg>
-
-        <div class="hex-photo-wrap">
-          <img src="/assets/pp.png"
-            alt="Portrait de Bintou Karamoko"
-            class="hex-photo"
-            fetchpriority="high"
-            decoding="async" />
-        </div>
-
-        <div class="hex-dot hex-dot-top"></div>
-        <div class="hex-dot hex-dot-br"></div>
-        <div class="hex-dot hex-dot-tl"></div>
-
-      </div>
     </div>
   </section>
 
@@ -112,6 +116,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: visible;
+  min-width: 0;
 }
 
 /* Annule les order: 2/4 injectés par le CSS global en responsive */
@@ -121,18 +127,36 @@
 }
 
 .hero-role {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   white-space: nowrap;
 }
 
-/* Override explicite du grid pour contrôler le responsive depuis ici */
 #hero {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-top: 0;
-  min-height: unset;
+  padding: 0;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hero-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.circle-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 16px rgba(0, 43, 92, 0.12);
+  flex-shrink: 0;
 }
 
 /* ══════════════════════════════════════
@@ -146,8 +170,9 @@
   border: 1.5px solid rgba(0, 200, 224, 0.5);
   color: #007a8c;
   font-family: 'Space Mono', monospace;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 700;
+  white-space: nowrap;
   padding: 10px 20px 10px 14px;
   border-radius: 100px;
   margin-bottom: 16px;
@@ -187,9 +212,8 @@
 ══════════════════════════════════════ */
 .hero-comment {
   font-family: 'Manrope', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
-  max-width: 440px;
   line-height: 1.75;
   color: var(--slate2);
   border-left: 3px solid var(--blue);
@@ -198,6 +222,7 @@
   background: rgba(0, 82, 165, 0.04);
   border-radius: 0 8px 8px 0;
   animation: heroIn 0.7s 0.38s ease both;
+  overflow: visible;
 }
 
 .comment-tag {
@@ -271,125 +296,6 @@
   display: block;
 }
 
-/* ══════════════════════════════════════
-   Colonne visuelle — surcharge l'animation globale
-   pour ajouter softFloat après le heroIn
-══════════════════════════════════════ */
-.hero-visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-width: 0;
-  animation:
-    heroIn 0.8s 0.2s ease both,
-    softFloat 8s ease-in-out infinite 1.4s;
-}
-
-/* ══════════════════════════════════════
-   Conteneur hexagonal
-══════════════════════════════════════ */
-.hex-wrapper {
-  position: relative;
-  width: min(300px, 78vw);
-  height: min(300px, 78vw);
-}
-
-/* Halo cyan qui pulse */
-.hex-halo {
-  position: absolute;
-  inset: -28px;
-  background: radial-gradient(
-    circle,
-    rgba(0, 200, 224, 0.22) 0%,
-    rgba(0, 200, 224, 0.07) 50%,
-    transparent 70%
-  );
-  border-radius: 50%;
-  animation: haloPulse 3.5s ease-in-out infinite;
-  z-index: 0;
-  pointer-events: none;
-}
-
-@keyframes haloPulse {
-  0%, 100% { opacity: 0.6; transform: scale(1); }
-  50%       { opacity: 1;   transform: scale(1.1); }
-}
-
-/* Hexagone externe qui tourne */
-.hex-ring {
-  position: absolute;
-  inset: -14px;
-  width: calc(100% + 28px);
-  height: calc(100% + 28px);
-  transform-origin: center;
-  animation: hexRotate 20s linear infinite;
-  z-index: 1;
-  pointer-events: none;
-}
-
-@keyframes hexRotate {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-
-/* Photo clippée en hexagone */
-.hex-photo-wrap {
-  position: absolute;
-  inset: 0;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  overflow: hidden;
-  z-index: 2;
-}
-
-.hex-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 10%;
-  display: block;
-}
-
-/* 3 points aux sommets */
-.hex-dot {
-  position: absolute;
-  border-radius: 50%;
-  z-index: 3;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-}
-
-.hex-dot-top {
-  width: 9px;
-  height: 9px;
-  top: 0%;
-  left: 50%;
-  background: var(--electric);
-  animation: dotGlow 2.4s ease-in-out infinite;
-}
-
-.hex-dot-br {
-  width: 8px;
-  height: 8px;
-  top: 75%;
-  left: 100%;
-  background: var(--cyan);
-  animation: dotGlow 2.4s ease-in-out infinite 0.8s;
-}
-
-.hex-dot-tl {
-  width: 7px;
-  height: 7px;
-  top: 25%;
-  left: 0%;
-  background: var(--electric);
-  animation: dotGlow 2.4s ease-in-out infinite 1.6s;
-}
-
-@keyframes dotGlow {
-  0%, 100% { transform: translate(-50%, -50%) scale(1);   opacity: 1; }
-  50%       { transform: translate(-50%, -50%) scale(1.7); opacity: 0.5; }
-}
 
 /* ══════════════════════════════════════
    RESPONSIVE
@@ -441,6 +347,114 @@
   .hex-wrapper {
     width: min(190px, 56vw);
     height: min(190px, 56vw);
+  }
+}
+
+.hero-certs {
+  margin-top: 24px;
+}
+
+.hero-certs-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--electric);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-certs-label::before {
+  content: '';
+  width: 16px;
+  height: 1.5px;
+  background: var(--electric);
+}
+
+.hero-certs-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-cert-card {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 82, 165, 0.08);
+  border-radius: 10px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hero-cert-card.planned {
+  border-style: dashed;
+  border-color: rgba(0, 82, 165, 0.2);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.hero-cert-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.hero-cert-info {
+  flex: 1;
+}
+
+.hero-cert-name {
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 2px;
+}
+
+.hero-cert-date {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.62rem;
+  color: var(--slate2);
+}
+
+.hero-cert-status {
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 100px;
+  font-family: 'Space Mono', monospace;
+  white-space: nowrap;
+  background: rgba(0, 119, 255, 0.08);
+  color: var(--blue);
+  border: 1px solid rgba(0, 119, 255, 0.2);
+}
+
+.hero-cert-status.planned {
+  background: rgba(74, 94, 114, 0.08);
+  color: var(--slate2);
+  border-color: rgba(74, 94, 114, 0.2);
+}
+
+@media (max-width: 1100px) {
+  .hero-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .circle-photo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .hero-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 </style>

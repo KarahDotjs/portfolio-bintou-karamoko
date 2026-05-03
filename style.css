@@ -343,6 +343,17 @@ section {
   padding: 0 6%;
 }
 
+.section-divider {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #0052a5, #00c8e0, transparent);
+  border-radius: 99px;
+  position: relative;
+  z-index: 100;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -527,7 +538,7 @@ section {
 
 .hero-name {
   font-family: "Manrope", sans-serif;
-  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  font-size: clamp(2rem, 4vw, 2.8rem);
   font-weight: 800;
   line-height: 0.95;
   color: var(--navy);
@@ -1714,11 +1725,11 @@ footer {
 ═══════════════════════════════════════ */
 .intro-layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.8fr 1.2fr;
   gap: 48px;
-  width: 80%;
+  width: 92%;
   margin: 0 auto;
-  padding: 100px 0 80px;
+  padding: 80px 0 60px;
   align-items: start;
 }
 
@@ -1785,6 +1796,12 @@ footer {
   }
   .labo-card {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 1100px) {
+  .intro-layout {
+    grid-template-columns: 1fr;
+    width: 92%;
   }
 }
 @media (max-width: 768px) {

@@ -3,6 +3,7 @@ import { onMounted, onBeforeUnmount } from 'vue'
 import HeroSection from '../components/HeroSection.vue'
 import CareerTimeline from '../components/CareerTimeline.vue'
 import AboutMe from '../components/AboutMe.vue'
+import EducationSection from '../components/EducationSection.vue'
 import SkillsSection from '../components/SkillsSection.vue'
 import ProjectsSection from '../components/ProjectsSection.vue'
 import MethodologySection from '../components/MethodologySection.vue'
@@ -39,11 +40,19 @@ onBeforeUnmount(() => {
       <HeroSection />
       <AboutMe />
     </div>
+    <div class="section-divider"></div>
     <CareerTimeline />
+    <div class="section-divider"></div>
+    <EducationSection />
+    <div class="section-divider"></div>
     <SkillsSection />
+    <div class="section-divider"></div>
     <ProjectsSection />
+    <div class="section-divider"></div>
     <MethodologySection />
+    <div class="section-divider"></div>
     <AvailabilitySection />
+    <div class="section-divider"></div>
     <ContactSection />
   </main>
 </template>
