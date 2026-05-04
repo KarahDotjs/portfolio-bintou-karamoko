@@ -11,42 +11,41 @@
       <p>Ce chemin, je ne l'ai pas fait seule. C'est dans les échanges avec <strong>Tech With Women</strong> que le déclic s'est produit, et c'est <strong>la Bekka Tech Club</strong> qui a renforcé mon idée et m'a aidée à passer à l'action.</p>
     </div>
 
-    <!-- 3 colonnes en bas -->
     <div class="about-bottom">
-
-      <!-- Carte identité -->
-      <div class="about-identity-card">
+      <!-- Identité full width -->
+      <div class="about-identity-card about-full">
         <div class="about-name">Bintou Karamoko</div>
-        <div class="about-tag"><span class="about-tag-dot"></span>Île-de-France</div>
-        <div class="about-tag"><span class="about-tag-dot"></span>En formation TSSR</div>
-        <div class="about-tag"><span class="about-tag-dot"></span>Objectif : Cloud Security Engineer</div>
-      </div>
-
-      <!-- Communautés -->
-      <div class="about-communities">
-        <div class="about-community">
-          <div class="community-dot blue"></div>
-          <div>
-            <div class="community-name">Tech With Women</div>
-            <div class="community-role">Là où j'apprends des expertes et construis ma vision</div>
-          </div>
-        </div>
-        <div class="about-community">
-          <div class="community-dot cyan"></div>
-          <div>
-            <div class="community-name">la Bekka Tech Club</div>
-            <div class="community-role">Là où je partage mon parcours et soutiens d'autres femmes en reconversion</div>
-          </div>
+        <div class="about-tags-row">
+          <div class="about-tag"><span class="about-tag-dot"></span>Île-de-France</div>
+          <div class="about-tag"><span class="about-tag-dot"></span>En formation TSSR</div>
+          <div class="about-tag"><span class="about-tag-dot"></span>Objectif : Cloud Security Engineer</div>
         </div>
       </div>
 
-      <!-- Keywords -->
-      <div class="about-keywords">
-        <span class="about-keyword">Persévérante</span>
-        <span class="about-keyword">Méthodique</span>
-        <span class="about-keyword">Engagée</span>
+      <!-- Communautés + Keywords en dessous -->
+      <div class="about-bottom-row">
+        <div class="about-communities">
+          <div class="about-community">
+            <div class="community-dot blue"></div>
+            <div>
+              <div class="community-name">Tech With Women</div>
+              <div class="community-role">Là où j'apprends des expertes et construis ma vision</div>
+            </div>
+          </div>
+          <div class="about-community">
+            <div class="community-dot cyan"></div>
+            <div>
+              <div class="community-name">la Bekka Tech Club</div>
+              <div class="community-role">Là où je partage mon parcours et soutiens d'autres femmes en reconversion</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-keywords">
+          <span class="about-keyword">Persévérante</span>
+          <span class="about-keyword">Méthodique</span>
+          <span class="about-keyword">Engagée</span>
+        </div>
       </div>
-
     </div>
   </section>
 </template>
@@ -58,6 +57,7 @@ section {
 
 .about-section {
   padding: 0;
+  padding-top: 0;
   border-left: 1px solid rgba(0, 82, 165, 0.1);
   padding-left: 32px;
 }
@@ -120,10 +120,25 @@ section {
 }
 
 .about-bottom {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
-  align-items: start;
+}
+
+.about-full {
+  width: 100%;
+}
+
+.about-tags-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.about-bottom-row {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 12px;
 }
 
 .about-identity-card {
@@ -135,19 +150,18 @@ section {
 
 .about-name {
   font-family: 'Manrope', sans-serif;
-  font-size: 0.88rem;
+  font-size: 1rem;
   font-weight: 800;
   color: var(--navy);
   margin-bottom: 8px;
 }
 
 .about-tag {
-  font-size: 0.75rem;
+  font-size: 0.88rem;
   color: var(--slate2);
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-bottom: 4px;
 }
 
 .about-tag-dot {
@@ -186,14 +200,14 @@ section {
 .community-dot.cyan { background: var(--cyan); }
 
 .community-name {
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 2px;
 }
 
 .community-role {
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   color: var(--slate2);
   line-height: 1.4;
 }
@@ -201,17 +215,17 @@ section {
 .about-keywords {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   justify-content: center;
 }
 
 .about-keyword {
   font-family: 'Space Mono', monospace;
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   font-weight: 700;
   color: var(--white);
   background: var(--blue);
-  padding: 8px 16px;
+  padding: 9px 18px;
   border-radius: 100px;
   text-align: center;
 }

@@ -82,10 +82,18 @@
           <div class="hero-cert-card">
             <div class="hero-cert-icon">☁️</div>
             <div class="hero-cert-info">
-              <div class="hero-cert-name">AZ-900 · Microsoft Azure Fundamentals</div>
+              <div class="hero-cert-name">AWS Cloud Practitioner</div>
               <div class="hero-cert-date">Prévu · Septembre 2026</div>
             </div>
             <div class="hero-cert-status">Bientôt</div>
+          </div>
+          <div class="hero-cert-card planned">
+            <div class="hero-cert-icon">🏗️</div>
+            <div class="hero-cert-info">
+              <div class="hero-cert-name">AWS Cloud Architect</div>
+              <div class="hero-cert-date">Objectif 2027</div>
+            </div>
+            <div class="hero-cert-status planned">Planifié</div>
           </div>
           <div class="hero-cert-card">
             <div class="hero-cert-icon">🎧</div>
@@ -132,13 +140,19 @@
 }
 
 #hero {
+  display: flex;
+  flex-direction: column;
   padding: 0;
+  padding-top: 90px;
+  min-height: unset;
+  width: 100%;
 }
 
 .hero-inner {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
 }
 
 .hero-top {
@@ -306,16 +320,13 @@
   #hero {
     display: flex;
     flex-direction: column;
-    padding-top: 90px;
+    padding-top: 0;
     gap: 20px;
     text-align: center;
   }
   .hero-text {
     align-items: center;
     order: 1;
-  }
-  .hero-visual {
-    order: -1;
   }
   .hero-comment {
     text-align: left;
@@ -451,10 +462,5 @@
     margin: 0 auto;
   }
 
-  .hero-visual {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
 }
 </style>
