@@ -150,14 +150,14 @@ section {
 
 .about-name {
   font-family: 'Manrope', sans-serif;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 800;
   color: var(--navy);
   margin-bottom: 8px;
 }
 
 .about-tag {
-  font-size: 0.88rem;
+  font-size: 0.98rem;
   color: var(--slate2);
   display: flex;
   align-items: center;
@@ -200,14 +200,14 @@ section {
 .community-dot.cyan { background: var(--cyan); }
 
 .community-name {
-  font-size: 0.88rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 2px;
 }
 
 .community-role {
-  font-size: 0.78rem;
+  font-size: 1.2rem;
   color: var(--slate2);
   line-height: 1.4;
 }

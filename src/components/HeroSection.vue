@@ -135,8 +135,12 @@
 }
 
 .hero-role {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   white-space: nowrap;
+}
+
+.hero-available {
+  font-size: 1rem;
 }
 
 #hero {
@@ -163,8 +167,8 @@
 }
 
 .circle-photo {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 18%;
@@ -184,7 +188,7 @@
   border: 1.5px solid rgba(0, 200, 224, 0.5);
   color: #007a8c;
   font-family: 'Space Mono', monospace;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 700;
   white-space: nowrap;
   padding: 10px 20px 10px 14px;
@@ -276,8 +280,8 @@
 }
 
 .icon-btn {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 1.5px solid rgba(0, 82, 165, 0.18);
   background: rgba(255, 255, 255, 0.75);
@@ -418,7 +422,7 @@
 
 .hero-cert-name {
   font-family: 'Manrope', sans-serif;
-  font-size: 0.78rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--navy);
   margin-bottom: 2px;
@@ -426,7 +430,7 @@
 
 .hero-cert-date {
   font-family: 'Space Mono', monospace;
-  font-size: 0.62rem;
+  font-size: 0.80rem;
   color: var(--slate2);
 }
 
