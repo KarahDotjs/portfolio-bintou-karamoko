@@ -21,7 +21,7 @@ const isProjetPage = computed(() => route.path.startsWith('/projet'))
   </template>
   <footer>
     <div class="footer-left">
-      © 2026 Bintou Karamoko · Administratrice Systèmes &amp; Réseaux Junior
+      © 2026 Bintou Karamoko · Technicienne Systèmes &amp; Réseaux
     </div>
     <div v-if="!isProjetPage" class="footer-links">
       <a href="#hero">Accueil</a>
