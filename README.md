@@ -76,7 +76,7 @@ npm run build
 
 ## 📬 Contact
 
-📧 bintou.karamoko.dev@gmail.com  
+📧 bintou.karamoko.tech@gmail.com  
 📍 Île-de-France  
 🔗 [LinkedIn](https://www.linkedin.com/in/bintou-karamoko/)
 

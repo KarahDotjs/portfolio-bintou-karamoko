@@ -47,7 +47,7 @@
                 <div class="check-text"><strong>Entretien</strong> · Disponible rapidement</div>
               </div>
             </div>
-            <a href="mailto:bintoukaramoko3@gmail.com" class="btn-dispo">📅 Planifier un entretien</a>
+            <a href="mailto:bintou.karamoko.tech@gmail.com" class="btn-dispo">📅 Planifier un entretien</a>
           </div>
 
         </div>
