@@ -452,7 +452,7 @@
   border-color: rgba(74, 94, 114, 0.2);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 960px) {
   .hero-top {
     flex-direction: column;
     align-items: flex-start;

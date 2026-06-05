@@ -1798,7 +1798,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 960px) {
   .intro-layout {
     grid-template-columns: 1fr;
     width: 92%;
