@@ -147,7 +147,7 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding-top: 90px;
+  padding-top: 60px;
   min-height: unset;
   width: 100%;
 }
