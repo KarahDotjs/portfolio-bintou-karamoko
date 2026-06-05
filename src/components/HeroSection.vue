@@ -21,7 +21,7 @@
 
       <div class="hero-badge">
         <div class="badge-dot"></div>
-        Disponible — Stage 3 mois · Juin 2026
+        Disponible — Stage 3 mois · Juillet 2026
       </div>
 
       <div class="hero-comment">
@@ -33,7 +33,7 @@
       </div>
 
       <div class="hero-actions">
-        <a href="/bintou_karamoko_stage_june-2026.pdf" class="btn btn-solid btn-cv"
+        <a href="/bintou-karamoko-stage-july-2026.pdf" class="btn btn-solid btn-cv"
           target="_blank" rel="noopener">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
             fill="none" stroke="currentColor" stroke-width="2.5"
