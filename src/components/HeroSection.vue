@@ -190,13 +190,13 @@
   font-family: 'Space Mono', monospace;
   font-size: 1rem;
   font-weight: 700;
-  white-space: nowrap;
   padding: 10px 20px 10px 14px;
   border-radius: 100px;
   margin-bottom: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   width: fit-content;
+  max-width: 100%;
   animation: badgePulse 2.5s ease-in-out infinite;
 }
 
