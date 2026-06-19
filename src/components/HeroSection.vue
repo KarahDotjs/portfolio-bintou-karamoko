@@ -17,7 +17,7 @@
           decoding="async" />
       </div>
 
-      <p class="hero-role">Technicienne Systèmes &amp; Réseaux</p>
+      <p class="hero-role">Administratrice Systèmes &amp; Réseaux</p>
 
       <div class="hero-badge">
         <div class="badge-dot"></div>

@@ -1,4 +1,4 @@
-# 🥷🏾 Bintou Karamoko — Portfolio Technicienne Systèmes & Réseaux
+# 🥷🏾 Bintou Karamoko — Portfolio Administratrice Systèmes & Réseaux
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c8e1e00d-6943-4f7b-b56b-f710e7549ded
 /deploy-status)](https://bintoukaramoko-admin.netlify.app)
@@ -15,7 +15,7 @@
 
 ## ✨ Aperçu
 
-Portfolio one-page conçu pour mettre en valeur mon profil de Technicienne Systèmes & Réseaux, avec un double background en développement front-end et en infrastructure.
+Portfolio one-page conçu pour mettre en valeur mon profil d'Administratrice Systèmes & Réseaux, avec un double background en développement front-end et en infrastructure.
 
 ---
 
