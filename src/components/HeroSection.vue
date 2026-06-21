@@ -188,12 +188,13 @@
   border: 1.5px solid rgba(0, 200, 224, 0.5);
   color: #007a8c;
   font-family: 'Space Mono', monospace;
-  font-size: 1rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  padding: 10px 20px 10px 14px;
+  white-space: nowrap;
+  padding: 9px 18px 9px 12px;
   border-radius: 100px;
   margin-bottom: 16px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   width: fit-content;
   max-width: 100%;
@@ -347,9 +348,16 @@
 
 /* Mobile */
 @media (max-width: 600px) {
+  .hero-role {
+    font-size: 1.15rem;
+    white-space: normal;
+    max-width: 88vw;
+  }
   .hero-badge {
     font-size: 0.68rem;
     padding: 5px 13px 5px 9px;
+    white-space: normal;
+    max-width: 88vw;
   }
   .hero-comment {
     font-size: 1.1rem;
