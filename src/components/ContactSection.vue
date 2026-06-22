@@ -78,7 +78,7 @@ const sendEmail = async () => {
               <span class="cinfo-icon">📅</span>
               <div>
                 <div class="cinfo-label">Disponibilité</div>
-                <div class="cinfo-val">Stage · Juillet 2026 · 3 mois</div>
+                <div class="cinfo-val">Stage · Septembre 2026 · 3 mois</div>
               </div>
             </div>
           </div>

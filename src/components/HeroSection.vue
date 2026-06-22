@@ -21,7 +21,7 @@
 
       <div class="hero-badge">
         <div class="badge-dot"></div>
-        Disponible dès Juillet 2026 — Stage 3 mois ou plus
+        Disponible dès Septembre 2026 — Stage 3 mois ou plus
       </div>
 
       <div class="hero-comment">

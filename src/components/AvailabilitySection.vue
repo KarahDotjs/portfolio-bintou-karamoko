@@ -8,7 +8,7 @@
           <div class="dispo-left">
             <div class="dispo-eyebrow">// Disponibilité</div>
             <div class="dispo-title">Prête à intégrer<br>votre équipe</div>
-            <div class="dispo-date">Juillet 2026</div>
+            <div class="dispo-date">Septembre 2026</div>
             <div class="dispo-sub">Île-de-France · Présentiel ou hybride<br>Stage de 3 mois minimum</div>
             <div class="dispo-stats">
               <div class="dispo-stat">
@@ -28,7 +28,7 @@
             <div class="dispo-checks">
               <div class="dispo-check">
                 <div class="check-icon">✓</div>
-                <div class="check-text"><strong>Stage 3 mois</strong> · Disponible dès juillet 2026</div>
+                <div class="check-text"><strong>Stage 3 mois</strong> · Disponible dès septembre 2026</div>
               </div>
               <div class="dispo-check">
                 <div class="check-icon">✓</div>
