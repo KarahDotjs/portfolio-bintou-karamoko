@@ -33,7 +33,7 @@
       </div>
 
       <div class="hero-actions">
-        <a href="/bintou-karamoko-stage-july-2026.pdf" class="btn btn-solid btn-cv"
+        <a href="/bintou-karamoko-stage-septembre-2026.pdf" class="btn btn-solid btn-cv"
           target="_blank" rel="noopener">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
             fill="none" stroke="currentColor" stroke-width="2.5"
