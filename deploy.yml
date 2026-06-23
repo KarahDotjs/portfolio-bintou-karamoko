@@ -1,14 +1,11 @@
 name: Deploy to Hostinger
-
 on:
   push:
     branches:
       - main
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,34 +21,18 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deplo
-
-
-- name: Deploy via FTP
-  uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-  with:
-    server: ${{ secrets.FTP_SERVER }}
-    username: ${{ secrets.FTP_USERNAME }}
-    password: ${{ secrets.FTP_PASSWORD }}
-    local-dir: ./dist/
-    server-dir: /public_html/
-    dangerous-clean-slate: true  # ← déjà présent normalement
-    state-name: .ftp-deploy-sync-state.json
-    exclude: |
-      **/.git*
-      **/.git*/**
-
       - name: Deploy via FTP
-  uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-  with:
-    server: ${{ secrets.FTP_SERVER }}
-    username: ${{ secrets.FTP_USERNAME }}
-    password: ${{ secrets.FTP_PASSWORD }}
-    local-dir: ./dist/
-    server-dir: /public_html/
-    dangerous-clean-slate: true
-    protocol: ftps
-    port: 21
-    exclude: |
-      **/.git*
-      **/.git*/**
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./dist/
+          server-dir: /domains/bintoukaramoko-admin.fr/public_html/
+          protocol: ftps
+          port: 21
+          dangerous-clean-slate: true
+          state-name: .ftp-deploy-sync-state.json
+          exclude: |
+            **/.git*
+            **/.git*/**
