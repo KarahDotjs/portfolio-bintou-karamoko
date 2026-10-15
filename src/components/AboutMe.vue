@@ -26,30 +26,12 @@
         </div>
       </div>
 
-      <!-- Communautés + Keywords en dessous -->
-      <div class="about-bottom-row">
-        <div class="about-communities">
-          <div class="about-community">
-            <div class="community-dot blue"></div>
-            <div>
-              <div class="community-name">Tech With Women</div>
-              <div class="community-role">Là où j'apprends des expertes et construis ma vision</div>
-            </div>
-          </div>
-          <div class="about-community">
-            <div class="community-dot cyan"></div>
-            <div>
-              <div class="community-name">The Stack</div>
-              <div class="community-role">Là où je partage mon parcours et soutiens d'autres femmes en reconversion</div>
-            </div>
-          </div>
-        </div>
-        <div class="about-keywords">
-          <span class="about-keyword">Persévérante</span>
-          <span class="about-keyword">Méthodique</span>
-          <span class="about-keyword">Engagée</span>
-          <span class="about-keyword">À l'écoute</span>
-        </div>
+      <!-- Keywords en dessous -->
+      <div class="about-keywords">
+        <span class="about-keyword">Persévérante</span>
+        <span class="about-keyword">Méthodique</span>
+        <span class="about-keyword">Engagée</span>
+        <span class="about-keyword">À l'écoute</span>
       </div>
     </div>
   </section>
@@ -140,12 +122,6 @@ section {
   flex-wrap: wrap;
 }
 
-.about-bottom-row {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: 12px;
-}
-
 .about-identity-card {
   background: rgba(255, 255, 255, 0.75);
   border: 1px solid rgba(0, 82, 165, 0.08);
@@ -177,51 +153,10 @@ section {
   flex-shrink: 0;
 }
 
-.about-communities {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.about-community {
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(0, 82, 165, 0.08);
-  border-radius: 10px;
-  padding: 10px 13px;
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-}
-
-.community-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  margin-top: 3px;
-}
-
-.community-dot.blue { background: var(--blue); }
-.community-dot.cyan { background: var(--cyan); }
-
-.community-name {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--navy);
-  margin-bottom: 2px;
-}
-
-.community-role {
-  font-size: 1.2rem;
-  color: var(--slate2);
-  line-height: 1.4;
-}
-
 .about-keywords {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .about-keyword {
