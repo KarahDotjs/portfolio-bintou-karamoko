@@ -17,18 +17,18 @@
           decoding="async" />
       </div>
 
-      <p class="hero-role">Administratrice Systèmes &amp; Réseaux</p>
+      <p class="hero-role">Support IT · Cloud Azure &amp; SharePoint</p>
 
       <div class="hero-badge">
         <div class="badge-dot"></div>
-        Disponible dès Septembre 2026 — Stage 3 mois ou plus
+        En poste · Support IT Cloud Azure &amp; SharePoint
       </div>
 
       <div class="hero-comment">
         <span class="comment-tag">&lt;/</span>
-        En formation TSSR, je construis et documente des labs réseaux pour
-        consolider mes compétences en infrastructure. Ouverte aux opportunités
-        qui valorisent la progression.
+        J'accompagne les utilisateurs au quotidien sur l'environnement Microsoft :
+        Azure, SharePoint et support technique. En parallèle de ma formation TSSR,
+        je continue de construire et documenter des labs pour avancer vers le Cloud Security.
         <span class="comment-tag">&gt;</span>
       </div>
 
@@ -82,26 +82,18 @@
           <div class="hero-cert-card">
             <div class="hero-cert-icon">☁️</div>
             <div class="hero-cert-info">
-              <div class="hero-cert-name">AWS Cloud Practitioner</div>
-              <div class="hero-cert-date">Prévu · Septembre 2026</div>
+              <div class="hero-cert-name">AZ-900 · Microsoft Azure Fundamentals</div>
+              <div class="hero-cert-date">Prochain objectif</div>
             </div>
             <div class="hero-cert-status">Bientôt</div>
           </div>
           <div class="hero-cert-card planned">
-            <div class="hero-cert-icon">🏗️</div>
-            <div class="hero-cert-info">
-              <div class="hero-cert-name">AWS Cloud Architect</div>
-              <div class="hero-cert-date">Objectif 2027</div>
-            </div>
-            <div class="hero-cert-status planned">Planifié</div>
-          </div>
-          <div class="hero-cert-card">
             <div class="hero-cert-icon">🎧</div>
             <div class="hero-cert-info">
               <div class="hero-cert-name">TOEIC · Test of English</div>
-              <div class="hero-cert-date">Prévu · 2026</div>
+              <div class="hero-cert-date">Prévu · 2027</div>
             </div>
-            <div class="hero-cert-status">Bientôt</div>
+            <div class="hero-cert-status planned">Planifié</div>
           </div>
         </div>
       </div>

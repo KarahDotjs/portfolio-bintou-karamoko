@@ -9,6 +9,7 @@
       <div class="about-divider"></div>
       <p>C'est en explorant <strong>le cloud et la cybersécurité</strong> que j'ai trouvé ma voie. L'infrastructure, c'est <strong>le tronc commun des deux</strong> : j'ai choisi de construire des <strong>bases solides</strong> avant de me spécialiser.</p>
       <p>Ce chemin, je ne l'ai pas fait seule. C'est dans les échanges avec <strong>Tech With Women</strong> que le déclic s'est produit, et c'est <strong>la Bekka Tech Club</strong> qui a renforcé mon idée et m'a aidée à passer à l'action.</p>
+      <p>Aujourd'hui, je mets ces bases en pratique en tant que <strong>support IT sur Azure et SharePoint</strong>, tout en poursuivant ma formation TSSR.</p>
     </div>
 
     <div class="about-bottom">
@@ -17,6 +18,7 @@
         <div class="about-name">Bintou Karamoko</div>
         <div class="about-tags-row">
           <div class="about-tag"><span class="about-tag-dot"></span>Île-de-France</div>
+          <div class="about-tag"><span class="about-tag-dot"></span>Support IT Cloud Azure &amp; SharePoint</div>
           <div class="about-tag"><span class="about-tag-dot"></span>En formation TSSR</div>
           <div class="about-tag"><span class="about-tag-dot"></span>Objectif : Cloud Security Engineer</div>
         </div>
