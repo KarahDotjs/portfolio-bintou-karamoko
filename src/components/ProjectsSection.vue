@@ -92,10 +92,10 @@
 .proj-card {
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(0, 82, 165, 0.1);
+  border: 1px solid rgba(106, 61, 130, 0.1);
   display: flex;
   flex-direction: column;
-  box-shadow: 0 8px 32px rgba(0, 43, 92, 0.08);
+  box-shadow: 0 8px 32px rgba(46, 26, 43, 0.08);
 }
 
 .proj-card-header {
@@ -108,7 +108,7 @@
 }
 
 .header-gradient {
-  background: linear-gradient(135deg, var(--navy) 0%, #003a7a 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, #4a295c 100%);
 }
 
 /* ── Badges ── */
@@ -125,9 +125,9 @@
 }
 
 .badge-cyan {
-  background: rgba(0, 200, 224, 0.15);
+  background: rgba(242, 167, 195, 0.15);
   color: var(--cyan);
-  border: 1px solid rgba(0, 200, 224, 0.3);
+  border: 1px solid rgba(242, 167, 195, 0.3);
 }
 
 .badge-orange {
@@ -220,13 +220,13 @@
 }
 
 .proj-btn-disabled {
-  background: rgba(0, 82, 165, 0.1);
+  background: rgba(106, 61, 130, 0.1);
   color: var(--slate2);
   cursor: not-allowed;
 }
 
 .proj-btn-disabled:hover {
-  background: rgba(0, 82, 165, 0.1);
+  background: rgba(106, 61, 130, 0.1);
   transform: none;
 }
 

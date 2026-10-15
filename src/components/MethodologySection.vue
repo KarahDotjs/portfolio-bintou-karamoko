@@ -45,7 +45,7 @@
           <div class="mcard-bar bar-5"></div>
           <div class="mcard-icon">🛠️</div>
           <div class="mcard-title">J'utilise les bons outils</div>
-          <div class="mcard-desc">VS Code, Git, Packet Tracer, VMware, UTM, Notion — je construis un environnement de travail pro dès maintenant pour être opérationnelle en stage.</div>
+          <div class="mcard-desc">VS Code, Git, Packet Tracer, VMware, UTM, Notion — je construis un environnement de travail pro dès maintenant pour être opérationnelle au quotidien.</div>
           <div class="mcard-tag">VS Code · Git · Notion</div>
         </div>
 
@@ -88,7 +88,7 @@
 /* ── Cards ── */
 .mcard {
   background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(0, 82, 165, 0.08);
+  border: 1px solid rgba(106, 61, 130, 0.08);
   border-radius: 14px;
   padding: 22px;
   position: relative;
@@ -101,7 +101,7 @@
 
 .mcard:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 43, 92, 0.12);
+  box-shadow: 0 12px 32px rgba(46, 26, 43, 0.12);
 }
 
 /* ── Barres de couleur ── */
@@ -113,11 +113,11 @@
   height: 3px;
 }
 
-.bar-1 { background: linear-gradient(90deg, #002b5c, #0052a5); }
-.bar-2 { background: linear-gradient(90deg, #0052a5, #0077ff); }
-.bar-3 { background: linear-gradient(90deg, #0077ff, #00c8e0); }
+.bar-1 { background: linear-gradient(90deg, #2e1a2b, #6a3d82); }
+.bar-2 { background: linear-gradient(90deg, #6a3d82, #7b4b94); }
+.bar-3 { background: linear-gradient(90deg, #7b4b94, #f2a7c3); }
 .bar-4 { background: linear-gradient(90deg, #8a5700, #c47a00); }
-.bar-5 { background: linear-gradient(90deg, #002b5c, #00c8e0); }
+.bar-5 { background: linear-gradient(90deg, #2e1a2b, #f2a7c3); }
 
 /* ── Contenu ── */
 .mcard-icon {

@@ -7,7 +7,6 @@ import EducationSection from '../components/EducationSection.vue'
 import SkillsSection from '../components/SkillsSection.vue'
 import ProjectsSection from '../components/ProjectsSection.vue'
 import MethodologySection from '../components/MethodologySection.vue'
-import AvailabilitySection from '../components/AvailabilitySection.vue'
 import ContactSection from '../components/ContactSection.vue'
 
 /** @type {IntersectionObserver | undefined} */
@@ -50,8 +49,6 @@ onBeforeUnmount(() => {
     <ProjectsSection />
     <div class="section-divider"></div>
     <MethodologySection />
-    <div class="section-divider"></div>
-    <AvailabilitySection />
     <div class="section-divider"></div>
     <ContactSection />
   </main>

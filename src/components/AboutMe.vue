@@ -3,7 +3,25 @@
     <div class="about-eyebrow">// D'où je viens ?</div>
     <div class="about-title">Une trajectoire <span>construite</span></div>
 
-    <!-- Texte en haut -->
+    <!-- Résumé rapide -->
+    <div class="about-bottom">
+      <div class="about-identity-card about-full">
+        <div class="about-tags-row">
+          <div class="about-tag"><span class="about-tag-dot"></span>Île-de-France</div>
+          <div class="about-tag"><span class="about-tag-dot"></span>En formation TSSR</div>
+          <div class="about-tag"><span class="about-tag-dot"></span>Objectif : Cloud Security Engineer</div>
+        </div>
+      </div>
+
+      <div class="about-keywords">
+        <span class="about-keyword">Persévérante</span>
+        <span class="about-keyword">Méthodique</span>
+        <span class="about-keyword">Engagée</span>
+        <span class="about-keyword">À l'écoute</span>
+      </div>
+    </div>
+
+    <!-- Histoire -->
     <div class="about-text">
       <p>Partie du développement web front-end, j'ai réalisé à un moment que je m'accrochais à quelque chose qui <strong>ne me portait plus vraiment</strong>. J'ai pris le temps de <strong>m'informer, d'échanger, de réfléchir</strong>.</p>
       <div class="about-divider"></div>
@@ -12,27 +30,6 @@
       <div class="about-divider"></div>
       <p><strong>Aujourd'hui</strong>, je suis support IT sur un environnement <strong>Cloud Azure et SharePoint</strong>. Côté Azure, je <strong>crée et dimensionne des VM</strong>, gère leur <strong>stockage et leurs mises à jour</strong>, et suis les <strong>sauvegardes et alertes</strong>. Côté utilisateurs, je <strong>prépare les postes</strong> des équipes à l'international et gère les <strong>comptes et licences via Entra ID</strong> ainsi que les <strong>tickets</strong>. En parallèle, je termine mon titre TSSR.</p>
       <p><strong>Demain</strong>, je vise la <strong>Cloud Security</strong> : la certification <strong>AZ-900</strong> est ma prochaine étape.</p>
-    </div>
-
-    <div class="about-bottom">
-      <!-- Identité full width -->
-      <div class="about-identity-card about-full">
-        <div class="about-name">Bintou Karamoko</div>
-        <div class="about-tags-row">
-          <div class="about-tag"><span class="about-tag-dot"></span>Île-de-France</div>
-          <div class="about-tag"><span class="about-tag-dot"></span>Support IT Cloud Azure &amp; SharePoint</div>
-          <div class="about-tag"><span class="about-tag-dot"></span>En formation TSSR</div>
-          <div class="about-tag"><span class="about-tag-dot"></span>Objectif : Cloud Security Engineer</div>
-        </div>
-      </div>
-
-      <!-- Keywords en dessous -->
-      <div class="about-keywords">
-        <span class="about-keyword">Persévérante</span>
-        <span class="about-keyword">Méthodique</span>
-        <span class="about-keyword">Engagée</span>
-        <span class="about-keyword">À l'écoute</span>
-      </div>
     </div>
   </section>
 </template>
@@ -45,7 +42,7 @@ section {
 .about-section {
   padding: 0;
   padding-top: 0;
-  border-left: 1px solid rgba(0, 82, 165, 0.1);
+  border-left: 1px solid rgba(106, 61, 130, 0.1);
   padding-left: 32px;
 }
 
@@ -110,6 +107,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-bottom: 28px;
 }
 
 .about-full {
@@ -124,7 +122,7 @@ section {
 
 .about-identity-card {
   background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(0, 82, 165, 0.08);
+  border: 1px solid rgba(106, 61, 130, 0.08);
   border-radius: 12px;
   padding: 14px 16px;
 }

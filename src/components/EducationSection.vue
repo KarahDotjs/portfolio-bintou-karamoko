@@ -13,12 +13,20 @@
         <div class="education-col">
           <div class="col-label">🖥️ Parcours Tech</div>
 
+          <div class="education-card reveal reveal-d1 card-planned">
+            <div class="card-status status-planned">Prévu</div>
+            <div class="card-title">Bachelor Systèmes, Réseaux &amp; Cloud</div>
+            <div class="card-school">Prochaine étape</div>
+            <div class="card-date">2027</div>
+            <div class="card-desc">Approfondir le cloud et la sécurité des infrastructures</div>
+          </div>
+
           <div class="education-card reveal reveal-d1 card-tech-current">
             <div class="card-status status-current">En cours</div>
             <div class="card-title">Titre TSSR — Technicien Supérieur Systèmes &amp; Réseaux</div>
             <div class="card-school">Studi · RNCP Niveau 5</div>
-            <div class="card-date">Mars 2026 → Octobre 2026</div>
-            <div class="card-desc">Réseaux, systèmes, cybersécurité, infrastructure</div>
+            <div class="card-date">Depuis mars 2026</div>
+            <div class="card-desc"><strong>Réseaux :</strong> VLAN, routage inter-VLAN, DHCP, segmentation, Cisco<br><strong>Systèmes :</strong> Active Directory, Windows Server, Debian, PowerShell</div>
           </div>
 
           <div class="education-card reveal reveal-d2 card-tech">
@@ -38,16 +46,16 @@
           </div>
         </div>
 
-        <!-- Colonne droite : Autres formations -->
+        <!-- Colonne droite : Compétences transférables -->
         <div class="education-col">
-          <div class="col-label">🎓 Autres formations</div>
+          <div class="col-label">🎓 Compétences transférables</div>
 
           <div class="education-card reveal reveal-d1 card-other">
-            <div class="card-status status-obtained">Obtenu</div>
-            <div class="card-title">BTS Management des Unités Commerciales</div>
+            <div class="card-status status-obtained">Formation suivie</div>
+            <div class="card-title">Formation BTS Management des Unités Commerciales</div>
             <div class="card-school">Formation professionnelle</div>
             <div class="card-date">2015</div>
-            <div class="card-desc">Gestion commerciale, management, relation client</div>
+            <div class="card-desc">Relation client, écoute, gestion des priorités : des acquis utiles au quotidien en support IT</div>
           </div>
 
           <div class="education-card reveal reveal-d2 card-other">
@@ -55,7 +63,7 @@
             <div class="card-title">CAP Pâtissier</div>
             <div class="card-school">Formation à distance · Stage en France</div>
             <div class="card-date">2020 – 2022</div>
-            <div class="card-desc">Rigueur, précision, gestion des process — compétences transférables</div>
+            <div class="card-desc">Rigueur, précision, gestion des process</div>
           </div>
         </div>
 
@@ -108,7 +116,7 @@
 /* ── Cards ── */
 .education-card {
   background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(0, 82, 165, 0.08);
+  border: 1px solid rgba(106, 61, 130, 0.08);
   border-radius: 12px;
   padding: 16px 18px;
   position: relative;
@@ -136,6 +144,16 @@
   background: #8a5700;
 }
 
+.card-planned {
+  border-style: dashed;
+  border-color: rgba(106, 61, 130, 0.25);
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.card-planned::before {
+  background: transparent;
+}
+
 /* ── Statuts ── */
 .card-status {
   font-family: 'Space Mono', monospace;
@@ -149,6 +167,7 @@
 .status-current  { color: var(--electric); }
 .status-validated { color: #2d6a4f; }
 .status-obtained  { color: #8a5700; }
+.status-planned   { color: var(--slate2); }
 
 /* ── Contenu ── */
 .card-title {

@@ -37,12 +37,18 @@
         </div>
 
         <!-- PÉRIODE 2 -->
-        <div class="tl-col reveal reveal-d2" ref="col2">
-          <div class="tl-period-badge badge-p2">2019 – 2024</div>
+        <div class="tl-col tl-col-featured reveal reveal-d2" ref="col2">
+          <div class="tl-featured-label">★ Le cœur de mon parcours</div>
+          <div class="tl-period-badge badge-p2">2018 – 2025</div>
           <div class="tl-period-title">La parenthèse qui construit</div>
-          <div class="tl-period-sub">Précision, adaptabilité, résilience</div>
+          <div class="tl-qualities">
+            <span>Précision</span>
+            <span>Adaptabilité</span>
+            <span>Résilience</span>
+          </div>
           <div class="tl-period-intro">
-            Je quitte le code, pas la rigueur. Cette parenthèse m'apprend à m'adapter à tout.
+            Londres, la pâtisserie, l'entrepreneuriat… Sept ans où j'apprends la rigueur, l'autonomie
+            et la persévérance. C'est ici que se construit la professionnelle que je suis aujourd'hui.
           </div>
           <div class="tl-connector p2" :class="{ drawn: lineDrawn }"></div>
           <div class="tl-steps">
@@ -91,13 +97,13 @@
           <svg viewBox="0 0 40 60" width="40" height="60" xmlns="http://www.w3.org/2000/svg">
             <!-- Contour sablier -->
             <path d="M8 4 L32 4 L32 8 L24 28 L32 52 L32 56 L8 56 L8 52 L16 28 L8 8 Z"
-                  fill="none" stroke="rgba(0,200,224,0.6)" stroke-width="1.5" stroke-linejoin="round"/>
+                  fill="none" stroke="rgba(242, 167, 195,0.6)" stroke-width="1.5" stroke-linejoin="round"/>
             <!-- Sable qui tombe (partie haute) -->
-            <polygon points="10,8 30,8 22,26 18,26" fill="rgba(0,200,224,0.3)" class="sand-top"/>
+            <polygon points="10,8 30,8 22,26 18,26" fill="rgba(242, 167, 195,0.3)" class="sand-top"/>
             <!-- Sable en bas -->
-            <polygon points="18,42 22,42 28,52 12,52" fill="rgba(0,200,224,0.5)" class="sand-bottom"/>
+            <polygon points="18,42 22,42 28,52 12,52" fill="rgba(242, 167, 195,0.5)" class="sand-bottom"/>
             <!-- Filet de sable -->
-            <line x1="20" y1="26" x2="20" y2="42" stroke="rgba(0,200,224,0.8)" stroke-width="1" class="sand-flow"/>
+            <line x1="20" y1="26" x2="20" y2="42" stroke="rgba(242, 167, 195,0.8)" stroke-width="1" class="sand-flow"/>
           </svg>
           <span class="tl-hourglass-label">2028</span>
         </div>
@@ -124,11 +130,12 @@ const periode2 = [
   { date: '2018 – 2021', text: '<strong>UK & CAP Pâtissier.</strong> Londres, formation à distance, stage pâtisserie en France' },
   { date: '2021 – 2023', text: '<strong>Auto-entrepreneuse.</strong> Pâtisserie en Suisse, rigueur des process' },
   { date: '2024', text: '<strong>Le Réacteur.</strong> Retour au front-end, Vue.js' },
+  { date: '2025', text: '<strong>Le déclic.</strong> Tech With Women & The Stack, je prépare ma reconversion en parallèle d\'un emploi' },
 ]
 
 const periode3 = [
   { date: 'Mars 2026', text: '<strong>Formation TSSR.</strong> Studi, réseaux & systèmes' },
-  { date: '2026', text: '<strong>Stage.</strong> Île-de-France, en recherche' },
+  { date: 'Oct. 2026', text: '<strong>Support IT.</strong> Cloud Azure & SharePoint, Île-de-France' },
   { date: 'Début 2027', text: '<strong>Bachelor.</strong> Systèmes, Réseaux & Cloud' },
 ]
 
@@ -184,7 +191,7 @@ onUnmounted(() => {
 /* ── Layout 3 colonnes + flèches ── */
 .parcours-outer {
   display: grid;
-  grid-template-columns: 1fr 28px 1fr 28px 1fr;
+  grid-template-columns: 1fr 28px 1.3fr 28px 1fr;
   gap: 24px;
   align-items: start;
   width: 100%;
@@ -193,6 +200,49 @@ onUnmounted(() => {
 /* ── Colonne ── */
 .tl-col {
   min-width: 0;
+}
+
+/* ── Colonne mise en avant ── */
+.tl-col-featured {
+  position: relative;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(138, 87, 0, 0.15);
+  border-top: 4px solid #8a5700;
+  border-radius: 18px;
+  padding: 22px 22px 18px;
+  margin-top: -22px;
+  box-shadow: var(--shadow-lg);
+}
+
+.tl-featured-label {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #8a5700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.tl-col-featured .tl-period-title {
+  font-size: 1.3rem;
+}
+
+.tl-qualities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0 12px;
+}
+
+.tl-qualities span {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #8a5700;
+  background: rgba(138, 87, 0, 0.08);
+  border: 1px solid rgba(138, 87, 0, 0.2);
+  border-radius: 100px;
+  padding: 4px 12px;
 }
 
 /* ── Badge période ── */
@@ -266,7 +316,7 @@ onUnmounted(() => {
 }
 
 .tl-connector.p1 {
-  background: linear-gradient(90deg, rgba(0, 43, 92, 0.5), rgba(0, 43, 92, 0.08));
+  background: linear-gradient(90deg, rgba(46, 26, 43, 0.5), rgba(46, 26, 43, 0.08));
 }
 
 .tl-connector.p2 {
@@ -274,7 +324,7 @@ onUnmounted(() => {
 }
 
 .tl-connector.p3 {
-  background: linear-gradient(90deg, #0052a5, rgba(0, 200, 224, 0.3));
+  background: linear-gradient(90deg, #6a3d82, rgba(242, 167, 195, 0.3));
 }
 
 /* ── Étapes ── */
@@ -288,7 +338,7 @@ onUnmounted(() => {
   padding: 10px 12px;
   background: rgba(255, 255, 255, 0.75);
   border-radius: 10px;
-  border: 1px solid rgba(0, 82, 165, 0.07);
+  border: 1px solid rgba(106, 61, 130, 0.07);
   opacity: 0;
   transform: translateY(8px);
   transition: opacity 0.4s ease, transform 0.4s ease;
@@ -301,12 +351,12 @@ onUnmounted(() => {
 
 .tl-step.amber {
   border-color: rgba(196, 122, 0, 0.1);
-  background: rgba(255, 248, 235, 0.75);
+  background: rgba(248, 241, 236, 0.75);
 }
 
 .tl-step.teal {
-  border-color: rgba(0, 82, 165, 0.1);
-  background: rgba(235, 244, 255, 0.75);
+  border-color: rgba(106, 61, 130, 0.1);
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .tl-step-date {
@@ -349,7 +399,7 @@ onUnmounted(() => {
 .tl-arrow-line {
   width: 1px;
   height: 24px;
-  background: rgba(0, 82, 165, 0.35);
+  background: rgba(106, 61, 130, 0.35);
 }
 
 .tl-arrow-head {
@@ -357,7 +407,7 @@ onUnmounted(() => {
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 9px solid rgba(0, 119, 255, 0.5);
+  border-top: 9px solid rgba(123, 75, 148, 0.5);
 }
 
 .tl-arrow-label {
@@ -369,7 +419,7 @@ onUnmounted(() => {
   letter-spacing: 0.08em;
   margin-top: 6px;
   opacity: 0.8;
-  background: rgba(0, 82, 165, 0.06);
+  background: rgba(106, 61, 130, 0.06);
   padding: 4px 3px;
   border-radius: 4px;
 }
@@ -403,8 +453,8 @@ onUnmounted(() => {
 }
 
 .tl-final-badge {
-  background: rgba(0, 200, 224, 0.15);
-  border: 1px solid rgba(0, 200, 224, 0.3);
+  background: rgba(242, 167, 195, 0.15);
+  border: 1px solid rgba(242, 167, 195, 0.3);
   color: var(--cyan);
   font-size: 0.68rem;
   font-weight: 700;
@@ -449,6 +499,10 @@ onUnmounted(() => {
     gap: 32px;
   }
 
+  .tl-col-featured {
+    margin-top: 0;
+  }
+
   .tl-arrow {
     flex-direction: row;
     padding-top: 0;
@@ -467,7 +521,7 @@ onUnmounted(() => {
     border-right: 0;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-left: 7px solid rgba(0, 119, 255, 0.3);
+    border-left: 7px solid rgba(123, 75, 148, 0.3);
   }
 
   .tl-arrow-label {

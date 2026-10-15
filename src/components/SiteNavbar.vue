@@ -43,7 +43,6 @@ onBeforeUnmount(() => {
       <li><a href="/#education" @click="closeMenu">Formations</a></li>
       <li><a href="/#skills" @click="closeMenu">Expertises</a></li>
       <li><a href="/#projects" @click="closeMenu">Projets</a></li>
-      <li><a href="/#availability" @click="closeMenu">Disponibilité</a></li>
       <li><a href="/#contact" class="nav-cta" @click="closeMenu">Contact</a></li>
     </ul>
   </nav>

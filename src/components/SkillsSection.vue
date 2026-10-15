@@ -16,8 +16,10 @@
             <span class="stag hot">Windows Server 2019/2022</span>
             <span class="stag hot">Active Directory</span>
             <span class="stag hot">GPO</span>
+            <span class="stag">Création de domaine &amp; contrôleur de domaine</span>
+            <span class="stag">Nommage RFC 1178</span>
             <span class="stag">Gestion utilisateurs &amp; groupes</span>
-            <span class="stag">Unités organisationnelles</span>
+            <span class="stag">Unités d'organisation (OU)</span>
             <span class="stag">Administration distante</span>
             <span class="stag">DHCP / DNS</span>
           </div>
@@ -29,7 +31,9 @@
           <div class="skill-tags">
             <span class="stag hot">Cisco Packet Tracer</span>
             <span class="stag hot">VLANs</span>
+            <span class="stag hot">Routage inter-VLAN</span>
             <span class="stag hot">Routage statique &amp; dynamique</span>
+            <span class="stag">DHCP multi-VLAN (relais)</span>
             <span class="stag">TCP/IP</span>
             <span class="stag">Modèle OSI</span>
             <span class="stag">IPv4 / IPv6</span>
@@ -45,6 +49,9 @@
             <span class="stag hot">ACL</span>
             <span class="stag hot">SSH</span>
             <span class="stag hot">Port Security</span>
+            <span class="stag hot">Segmentation réseau</span>
+            <span class="stag">Authentification LDAP / AD</span>
+            <span class="stag">Recommandations ANSSI</span>
             <span class="stag">HSRP</span>
             <span class="stag">Permissions NTFS</span>
           </div>
@@ -54,11 +61,13 @@
         <div class="skill-category reveal reveal-d2">
           <div class="skill-cat-title">🐧 Linux</div>
           <div class="skill-tags">
-            <span class="stag hot">Debian</span>
+            <span class="stag hot">Debian 12 (sans interface)</span>
+            <span class="stag hot">Déploiement Wiki.js</span>
+            <span class="stag">PostgreSQL</span>
+            <span class="stag">Sauvegarde BDD &amp; cron</span>
             <span class="stag">Commandes shell</span>
             <span class="stag">Gestion des droits</span>
             <span class="stag">Services réseau</span>
-            <span class="stag">SSH</span>
           </div>
         </div>
 
@@ -77,9 +86,35 @@
           <div class="skill-cat-title">💻 PowerShell / Bash</div>
           <div class="skill-tags">
             <span class="stag hot">Scripts PowerShell</span>
+            <span class="stag hot">Création d'utilisateurs AD depuis CSV</span>
             <span class="stag">Automatisation tâches</span>
-            <span class="stag">Gestion AD via PS</span>
             <span class="stag">Bash basique</span>
+          </div>
+        </div>
+
+        <!-- 7. Cloud & Microsoft 365 -->
+        <div class="skill-category reveal reveal-d1">
+          <div class="skill-cat-title">☁️ Cloud Azure &amp; Microsoft 365</div>
+          <div class="skill-tags">
+            <span class="stag hot">Machines virtuelles Azure</span>
+            <span class="stag hot">Entra ID</span>
+            <span class="stag">Dimensionnement &amp; stockage des VM</span>
+            <span class="stag">Mises à jour des VM</span>
+            <span class="stag">Azure Backup</span>
+            <span class="stag">Azure Monitor</span>
+            <span class="stag">Comptes &amp; licences M365</span>
+            <span class="stag">Traitement des tickets</span>
+          </div>
+        </div>
+
+        <!-- 8. Documentation -->
+        <div class="skill-category reveal reveal-d2">
+          <div class="skill-cat-title">📚 Documentation &amp; Support</div>
+          <div class="skill-tags">
+            <span class="stag hot">Base de connaissances (Wiki.js)</span>
+            <span class="stag">Procédures techniques</span>
+            <span class="stag">Préparation de postes</span>
+            <span class="stag">Installation d'OS</span>
           </div>
         </div>
 
@@ -115,7 +150,7 @@
 /* ── Catégorie ── */
 .skill-category {
   background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(0, 82, 165, 0.08);
+  border: 1px solid rgba(106, 61, 130, 0.08);
   border-radius: 14px;
   padding: 20px;
 }
@@ -146,7 +181,7 @@
   padding: 5px 10px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 82, 165, 0.1);
+  border: 1px solid rgba(106, 61, 130, 0.1);
   color: var(--slate);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -157,8 +192,8 @@
 }
 
 .stag.hot {
-  background: rgba(0, 119, 255, 0.07);
-  border-color: rgba(0, 119, 255, 0.2);
+  background: rgba(123, 75, 148, 0.07);
+  border-color: rgba(123, 75, 148, 0.2);
   color: var(--blue);
   font-weight: 600;
 }

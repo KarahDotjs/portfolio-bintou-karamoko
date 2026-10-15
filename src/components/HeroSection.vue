@@ -21,7 +21,7 @@
 
       <div class="hero-badge">
         <div class="badge-dot"></div>
-        En poste · Support IT Cloud Azure &amp; SharePoint
+        Actuellement en poste
       </div>
 
       <div class="hero-comment">
@@ -165,7 +165,7 @@
   object-fit: cover;
   object-position: center 18%;
   border: 2px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 4px 16px rgba(0, 43, 92, 0.12);
+  box-shadow: 0 4px 16px rgba(46, 26, 43, 0.12);
   flex-shrink: 0;
 }
 
@@ -176,9 +176,9 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: rgba(0, 200, 224, 0.12);
-  border: 1.5px solid rgba(0, 200, 224, 0.5);
-  color: #007a8c;
+  background: rgba(242, 167, 195, 0.12);
+  border: 1.5px solid rgba(242, 167, 195, 0.5);
+  color: #6a3d82;
   font-family: 'Space Mono', monospace;
   font-size: 0.78rem;
   font-weight: 700;
@@ -195,19 +195,19 @@
 
 @keyframes badgePulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 rgba(0, 200, 224, 0.3);
-    border-color: rgba(0, 200, 224, 0.5);
+    box-shadow: 0 0 0 0 rgba(242, 167, 195, 0.3);
+    border-color: rgba(242, 167, 195, 0.5);
   }
   50% {
-    box-shadow: 0 0 0 8px rgba(0, 200, 224, 0);
-    border-color: rgba(0, 200, 224, 0.9);
+    box-shadow: 0 0 0 8px rgba(242, 167, 195, 0);
+    border-color: rgba(242, 167, 195, 0.9);
   }
 }
 
 .badge-dot {
   width: 9px;
   height: 9px;
-  background: #00c8e0;
+  background: #f2a7c3;
   border-radius: 50%;
   flex-shrink: 0;
   animation: dotPulse 2.5s ease-in-out infinite;
@@ -230,7 +230,7 @@
   border-left: 3px solid var(--blue);
   padding: 12px 16px;
   margin-bottom: 28px;
-  background: rgba(0, 82, 165, 0.04);
+  background: rgba(106, 61, 130, 0.04);
   border-radius: 0 8px 8px 0;
   animation: heroIn 0.7s 0.38s ease both;
   overflow: visible;
@@ -262,7 +262,7 @@
 .actions-sep {
   width: 1px;
   height: 38px;
-  background: rgba(0, 82, 165, 0.18);
+  background: rgba(106, 61, 130, 0.18);
   flex-shrink: 0;
 }
 
@@ -276,7 +276,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 1.5px solid rgba(0, 82, 165, 0.18);
+  border: 1.5px solid rgba(106, 61, 130, 0.18);
   background: rgba(255, 255, 255, 0.75);
   display: inline-flex;
   align-items: center;
@@ -297,8 +297,8 @@
   border-color: var(--electric);
   color: var(--electric);
   transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(0, 119, 255, 0.2);
-  background: rgba(0, 119, 255, 0.06);
+  box-shadow: 0 4px 14px rgba(123, 75, 148, 0.2);
+  background: rgba(123, 75, 148, 0.06);
 }
 
 .icon-btn svg {
@@ -397,7 +397,7 @@
 
 .hero-cert-card {
   background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(0, 82, 165, 0.08);
+  border: 1px solid rgba(106, 61, 130, 0.08);
   border-radius: 10px;
   padding: 10px 14px;
   display: flex;
@@ -407,7 +407,7 @@
 
 .hero-cert-card.planned {
   border-style: dashed;
-  border-color: rgba(0, 82, 165, 0.2);
+  border-color: rgba(106, 61, 130, 0.2);
   background: rgba(255, 255, 255, 0.4);
 }
 
@@ -441,15 +441,15 @@
   border-radius: 100px;
   font-family: 'Space Mono', monospace;
   white-space: nowrap;
-  background: rgba(0, 119, 255, 0.08);
+  background: rgba(123, 75, 148, 0.08);
   color: var(--blue);
-  border: 1px solid rgba(0, 119, 255, 0.2);
+  border: 1px solid rgba(123, 75, 148, 0.2);
 }
 
 .hero-cert-status.planned {
-  background: rgba(74, 94, 114, 0.08);
+  background: rgba(110, 90, 106, 0.08);
   color: var(--slate2);
-  border-color: rgba(74, 94, 114, 0.2);
+  border-color: rgba(110, 90, 106, 0.2);
 }
 
 @media (max-width: 960px) {
