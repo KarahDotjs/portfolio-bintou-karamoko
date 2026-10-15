@@ -8,8 +8,10 @@
       <p>Partie du développement web front-end, j'ai réalisé à un moment que je m'accrochais à quelque chose qui <strong>ne me portait plus vraiment</strong>. J'ai pris le temps de <strong>m'informer, d'échanger, de réfléchir</strong>.</p>
       <div class="about-divider"></div>
       <p>C'est en explorant <strong>le cloud et la cybersécurité</strong> que j'ai trouvé ma voie. L'infrastructure, c'est <strong>le tronc commun des deux</strong> : j'ai choisi de construire des <strong>bases solides</strong> avant de me spécialiser.</p>
-      <p>Ce chemin, je ne l'ai pas fait seule. C'est dans les échanges avec <strong>Tech With Women</strong> que le déclic s'est produit, et c'est <strong>la Bekka Tech Club</strong> qui a renforcé mon idée et m'a aidée à passer à l'action.</p>
-      <p>Aujourd'hui, je mets ces bases en pratique en tant que <strong>support IT sur Azure et SharePoint</strong>, tout en poursuivant ma formation TSSR.</p>
+      <p>Ce chemin, je ne l'ai pas fait seule. C'est dans les échanges avec <strong>Tech With Women</strong> que le déclic s'est produit, et c'est <strong>The Stack</strong> qui a renforcé mon idée et m'a aidée à passer à l'action.</p>
+      <div class="about-divider"></div>
+      <p><strong>Aujourd'hui</strong>, je suis support IT sur un environnement <strong>Cloud Azure et SharePoint</strong>. Côté infrastructure, je gère les <strong>mises à jour des VM</strong>, l'<strong>extension de leur stockage</strong> et l'<strong>installation d'OS</strong> pour des équipes à l'international. Côté utilisateurs, je m'occupe des <strong>comptes et licences via Entra ID</strong>, de Teams et OneDrive, et du <strong>traitement des tickets</strong>. En parallèle, je termine mon titre TSSR.</p>
+      <p><strong>Demain</strong>, je vise la <strong>Cloud Security</strong> : la certification <strong>AZ-900</strong> est ma prochaine étape.</p>
     </div>
 
     <div class="about-bottom">
@@ -37,7 +39,7 @@
           <div class="about-community">
             <div class="community-dot cyan"></div>
             <div>
-              <div class="community-name">la Bekka Tech Club</div>
+              <div class="community-name">The Stack</div>
               <div class="community-role">Là où je partage mon parcours et soutiens d'autres femmes en reconversion</div>
             </div>
           </div>
@@ -46,6 +48,7 @@
           <span class="about-keyword">Persévérante</span>
           <span class="about-keyword">Méthodique</span>
           <span class="about-keyword">Engagée</span>
+          <span class="about-keyword">À l'écoute</span>
         </div>
       </div>
     </div>
