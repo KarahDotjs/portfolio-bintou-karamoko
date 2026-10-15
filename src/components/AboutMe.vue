@@ -10,7 +10,7 @@
       <p>C'est en explorant <strong>le cloud et la cybersécurité</strong> que j'ai trouvé ma voie. L'infrastructure, c'est <strong>le tronc commun des deux</strong> : j'ai choisi de construire des <strong>bases solides</strong> avant de me spécialiser.</p>
       <p>Ce chemin, je ne l'ai pas fait seule. C'est dans les échanges avec <strong>Tech With Women</strong> que le déclic s'est produit, et c'est <strong>The Stack</strong> qui a renforcé mon idée et m'a aidée à passer à l'action.</p>
       <div class="about-divider"></div>
-      <p><strong>Aujourd'hui</strong>, je suis support IT sur un environnement <strong>Cloud Azure et SharePoint</strong>. Côté infrastructure, je gère les <strong>mises à jour des VM</strong>, l'<strong>extension de leur stockage</strong> et l'<strong>installation d'OS</strong> pour des équipes à l'international. Côté utilisateurs, je m'occupe des <strong>comptes et licences via Entra ID</strong>, de Teams et OneDrive, et du <strong>traitement des tickets</strong>. En parallèle, je termine mon titre TSSR.</p>
+      <p><strong>Aujourd'hui</strong>, je suis support IT sur un environnement <strong>Cloud Azure et SharePoint</strong>. Côté Azure, je <strong>crée et dimensionne des VM</strong>, gère leur <strong>stockage et leurs mises à jour</strong>, et suis les <strong>sauvegardes et alertes</strong>. Côté utilisateurs, je <strong>prépare les postes</strong> des équipes à l'international et gère les <strong>comptes et licences via Entra ID</strong> ainsi que les <strong>tickets</strong>. En parallèle, je termine mon titre TSSR.</p>
       <p><strong>Demain</strong>, je vise la <strong>Cloud Security</strong> : la certification <strong>AZ-900</strong> est ma prochaine étape.</p>
     </div>
 
