@@ -38,8 +38,10 @@
 
         <!-- PÉRIODE 2 -->
         <div class="tl-col tl-col-featured reveal reveal-d2" ref="col2">
-          <div class="tl-featured-label">★ Le cœur de mon parcours</div>
-          <div class="tl-period-badge badge-p2">2018 – 2025</div>
+          <div class="tl-featured-head">
+            <div class="tl-period-badge badge-p2">2018 – 2025</div>
+            <div class="tl-featured-label">★ Le cœur de mon parcours</div>
+          </div>
           <div class="tl-period-title">La parenthèse qui construit</div>
           <div class="tl-qualities">
             <span>Précision</span>
@@ -192,14 +194,28 @@ onUnmounted(() => {
 .parcours-outer {
   display: grid;
   grid-template-columns: 1fr 28px 1.3fr 28px 1fr;
-  gap: 24px;
-  align-items: start;
+  gap: 12px;
+  align-items: stretch;
   width: 100%;
 }
 
 /* ── Colonne ── */
 .tl-col {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Les étapes occupent la hauteur restante : le bas des 3 colonnes s'aligne */
+.tl-col .tl-steps {
+  flex: 1;
+}
+
+.tl-col .tl-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* ── Colonne mise en avant ── */
@@ -209,30 +225,54 @@ onUnmounted(() => {
   border: 1px solid rgba(138, 87, 0, 0.15);
   border-top: 4px solid #8a5700;
   border-radius: 18px;
-  padding: 22px 22px 18px;
-  margin-top: -22px;
+  padding: 18px 20px 16px;
+  margin-top: -18px;
   box-shadow: var(--shadow-lg);
+}
+
+.tl-featured-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+  margin-bottom: 8px;
+}
+
+.tl-featured-head .tl-period-badge {
+  margin-bottom: 0;
 }
 
 .tl-featured-label {
   font-family: 'Space Mono', monospace;
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   font-weight: 700;
   color: #8a5700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 12px;
+  letter-spacing: 0.06em;
 }
 
 .tl-col-featured .tl-period-title {
   font-size: 1.3rem;
 }
 
+.tl-col-featured .tl-period-intro {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.tl-col-featured .tl-connector {
+  margin-bottom: 10px;
+}
+
+.tl-col-featured .tl-steps {
+  gap: 6px;
+}
+
 .tl-qualities {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin: 8px 0 12px;
+  margin: 6px 0 10px;
 }
 
 .tl-qualities span {
@@ -393,7 +433,7 @@ onUnmounted(() => {
   align-items: center;
   justify-content: flex-start;
   padding-top: 44px;
-  width: 36px;
+  width: 28px;
 }
 
 .tl-arrow-line {
@@ -493,6 +533,16 @@ onUnmounted(() => {
 }
 
 /* ── Responsive ── */
+/* Grands écrans : la grille déborde du conteneur pour élargir les colonnes, le titre reste aligné */
+@media (min-width: 1100px) {
+  .parcours-outer,
+  .tl-final {
+    width: auto;
+    margin-left: -48px;
+    margin-right: -48px;
+  }
+}
+
 @media (max-width: 900px) {
   .parcours-outer {
     grid-template-columns: 1fr;
