@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
   <title id="title">Favicon Bintou Karamoko</title>
-  <desc id="desc">Icône violette avec l'initiale B</desc>
+  <desc id="desc">Icône violette : un B relié à un petit circuit</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#4E2A63" />
@@ -8,6 +8,15 @@
     </linearGradient>
   </defs>
   <rect width="128" height="128" rx="28" fill="url(#bg)" />
-  <circle cx="96" cy="32" r="10" fill="#F7EEEA" opacity="0.95" />
-  <path d="M24 96V32h24c16 0 26 8 26 21 0 8-4 14-11 17 10 3 15 10 15 20 0 16-12 26-31 26H24Zm18-39h14c7 0 11-4 11-10s-4-10-11-10H42v20Zm0 29h16c8 0 13-4 13-11 0-8-5-12-14-12H42v23Z" fill="#ffffff" />
+  <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M72 46H90V33" />
+    <path d="M75 62H101" />
+    <path d="M76 80H90V95" />
+  </g>
+  <g fill="#F7EEEA">
+    <circle cx="90" cy="27" r="7" />
+    <circle cx="108" cy="62" r="7" />
+    <circle cx="90" cy="101" r="7" />
+  </g>
+  <path fill="#ffffff" fill-rule="evenodd" d="M18 28H52C66 28 74 36 74 46C74 53 70 58 64 61C73 64 78 71 78 80C78 92 69 100 56 100H18Z M32 40H50C56 40 60 43 60 47C60 52 56 55 50 55H32Z M32 67H54C61 67 64 71 64 76C64 82 61 87 54 87H32Z" />
 </svg>
